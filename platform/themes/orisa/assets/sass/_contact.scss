@@ -1,0 +1,214 @@
+// Contact page / Shortcode form styles
+.contact-form,
+.contact-form-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  @media (max-width: 767.98px) {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .contact-title {
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    margin-bottom: 2.5rem;
+    color: var(--at-neutral-900);
+    line-height: 1.1;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+
+    label {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--at-neutral-900);
+      margin-bottom: 8px;
+    }
+  }
+
+  .form-control,
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"],
+  textarea {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1.5px solid var(--at-neutral-100, #DFDFDF) !important;
+    border-radius: 0 !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    height: auto !important;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: var(--at-neutral-900);
+    transition: border-color 0.2s ease;
+    box-shadow: none !important;
+
+    &:focus {
+      border-color: var(--at-neutral-900) !important;
+      background: transparent !important;
+    }
+
+    &::placeholder {
+      color: var(--at-neutral-500);
+      opacity: 0.6;
+    }
+  }
+
+  textarea.form-control {
+    min-height: 120px;
+    resize: none;
+  }
+
+
+  .form-check {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+
+    .form-check-input {
+      margin-top: 0;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+
+      &:checked {
+        background-color: var(--at-neutral-900);
+        border-color: var(--at-neutral-900);
+      }
+    }
+
+    .form-check-label {
+      margin-inline-start: 10px;
+      font-size: 14px;
+      color: var(--at-neutral-500);
+      cursor: pointer;
+    }
+  }
+
+  .contact-button,
+  .sec-4-about-form__btn,
+  button[type="submit"] {
+    margin-top: 30px;
+
+    &.btn,
+    &:not(.contact-button) {
+      background-color: var(--at-neutral-900, #1D1D1D);
+      border: none;
+      border-radius: 50px;
+      padding: 18px 45px;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      color: var(--at-neutral-0, #FEFEFE);
+      transition: all 0.3s ease;
+
+      &:hover,
+      &:focus {
+        background-color: var(--at-neutral-900, #1D1D1D);
+        opacity: 0.85;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+// Fixed alignment for Terms and Privacy Policy
+.contact-form .form-check-label a {
+  color: var(--at-neutral-900);
+  font-weight: 600;
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+[data-bs-theme="dark"] .contact-form,
+[data-bs-theme="dark"] .contact-form-section {
+  .contact-title, label {
+    color: var(--at-neutral-dark-900, #efefef);
+  }
+
+  .form-control, textarea {
+    color: var(--at-neutral-dark-900);
+    border-bottom-color: var(--at-neutral-dark-300, #404040) !important;
+
+    &:focus {
+      border-color: var(--at-neutral-dark-500, #B3B3B3) !important;
+    }
+  }
+
+
+  .form-check-input:checked {
+    background-color: var(--at-neutral-dark-900);
+    border-color: var(--at-neutral-dark-900);
+  }
+
+  .contact-button .btn,
+  .sec-4-about-form__btn,
+  button[type="submit"] {
+    background-color: var(--at-neutral-dark-900);
+    color: var(--at-neutral-dark-0);
+
+    &:hover {
+      background-color: var(--at-neutral-dark-900);
+    }
+  }
+}
+
+// Flatten the default Botble ContactForm grid for sec-4-about-form to match Orisa HTML
+.sec-4-about-form {
+  .row {
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  .col-md-6, .col-12, .col-md-12 {
+    width: 100% !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  // contact-public.css floats .contact-column-6 from 992px up. Once the grid is
+  // flattened above, those floats leave the field wrappers out of flow, so the
+  // next non-floated wrapper (subject/message) is laid out over them and eats
+  // clicks meant for the field above it - the phone input becomes untypable.
+  .contact-column-6,
+  .contact-column-12 {
+    float: none !important;
+  }
+
+  .form-group,
+  .form-group.mb-3 {
+    margin-bottom: 20px !important;
+    width: 100%;
+  }
+
+  // Hide field labels to prefer placeholders like the static design
+  label:not(.form-check-label) {
+    display: none !important;
+  }
+
+  // Lift inputs above the wrapper so they remain clickable/focusable
+  &__field {
+    position: relative;
+
+    input,
+    textarea,
+    // intl-tel-input ships `.iti input { z-index: 0 }` from an inline style block
+    // that loads after the theme, so the phone input needs the extra specificity.
+    .iti input {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}

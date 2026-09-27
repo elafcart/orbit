@@ -1,0 +1,1177 @@
+@import 'auth';
+@import 'contact';
+@import 'customer';
+
+// Orisa Theme - Custom theme styles
+// DM Sans font is loaded via Theme::typography() in functions.php — NO CDN imports (Envato compliance)
+
+// ---- Theme color & font overrides via CSS custom properties ----
+// These variables are set dynamically in base.blade.php from theme_option() values.
+// Fallback values here match the defaults so the theme works without customization.
+
+body {
+  color: var(--at-neutral-900);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--at-neutral-900);
+}
+
+// The orisa-html `main.css` sets `a, button { color: inherit }` so links pick up
+// their parent's text color by default — matching the HTML template's intent.
+// Only apply the configurable `link_color` accent inside user-generated content
+// areas (.ck-content for posts/pages) and explicit `.themed-link` opt-ins.
+// Previously this was a global `a` rule, which cascaded into headers, footers,
+// blog cards, buttons, etc. painting everything orange and fighting every
+// component-level color override.
+.ck-content a,
+.themed-link {
+  color: var(--link-color, #F0460E);
+
+  &:hover,
+  &:focus {
+    color: var(--link-hover-color, #c93a0b);
+  }
+}
+
+// ---- Comment form styling to match theme ----
+.fob-comment-form-section {
+  .fob-comment-title {
+    font-weight: 600;
+    color: var(--at-neutral-900);
+  }
+
+  .fob-comment-form-note {
+    color: var(--at-neutral-500);
+  }
+}
+
+.fob-comment-form {
+  .form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--at-neutral-100, #DFDFDF);
+    border-radius: 0;
+    padding: 16px 0;
+    height: auto;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: var(--at-neutral-900);
+    transition: border-color 0.2s ease;
+    box-shadow: none;
+
+    &:focus {
+      border-color: var(--at-neutral-900);
+      box-shadow: none;
+      background: transparent;
+    }
+
+    &::placeholder {
+      color: var(--at-neutral-500);
+    }
+
+    &:focus::placeholder {
+      opacity: 0;
+    }
+  }
+
+  textarea.form-control {
+    min-height: 120px;
+    max-height: 300px;
+    resize: vertical;
+  }
+
+  label {
+    font-weight: 500;
+    color: var(--at-neutral-900);
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  .form-check-label {
+    font-weight: 400;
+    color: var(--at-neutral-500);
+    font-size: 14px;
+  }
+
+  .form-check-input:checked {
+    background-color: var(--at-neutral-900);
+    border-color: var(--at-neutral-900);
+  }
+
+  .btn-primary {
+    background-color: var(--at-neutral-900, #1D1D1D);
+    border: none;
+    border-radius: 50px;
+    padding: 17px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.05em;
+    text-transform: capitalize;
+    color: var(--at-neutral-0, #FEFEFE);
+    transition: opacity 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: var(--at-neutral-900, #1D1D1D);
+      opacity: 0.85;
+      color: var(--at-neutral-0, #FEFEFE);
+    }
+  }
+}
+
+// ---- Comment list styling ----
+.fob-comment-list-section {
+  .fob-comment-item-author {
+    color: var(--at-neutral-900);
+  }
+
+  .fob-comment-item-date {
+    color: var(--at-neutral-500);
+  }
+
+  .fob-comment-item-reply {
+    color: var(--at-neutral-500);
+    border-bottom-color: var(--at-neutral-100, #DFDFDF);
+  }
+
+  .fob-comment-item-admin-badge {
+    background-color: var(--at-neutral-900);
+  }
+}
+
+// ---- Newsletter popup styling to match Orisa theme ----
+.newsletter-popup {
+  .modal-dialog {
+    overflow: hidden;
+    background: transparent !important;
+    border-radius: 0 !important;
+
+    .newsletter-popup-bg {
+      background-color: var(--at-neutral-950, #1D1D1D);
+      padding: 0;
+      margin: 0;
+    }
+
+    .modal-content {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+      background-color: #fff;
+
+      .btn-close {
+        top: 1.25rem;
+        inset-inline-end: 1.25rem;
+        width: 2rem;
+        height: 2rem;
+        opacity: 0.5;
+        transition: opacity 0.2s ease;
+        z-index: 10;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .newsletter-popup-content {
+        @media (min-width: 768px) {
+          padding: 3.5rem 2.5rem;
+        }
+
+        .modal-subtitle {
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          font-size: 13px;
+          font-weight: 600;
+          color: var(--primary-color, #F0460E);
+        }
+
+        .modal-title {
+          font-weight: 700;
+          letter-spacing: -0.03em;
+          color: var(--at-neutral-900);
+          line-height: 1.15;
+        }
+
+        .modal-text {
+          color: var(--at-neutral-500, #585959);
+          font-size: 15px;
+          line-height: 1.6;
+        }
+      }
+
+      form {
+        label {
+          font-size: 13px;
+          font-weight: 600;
+          letter-spacing: 0.02em;
+          color: var(--at-neutral-900, #1D1D1D);
+          margin-bottom: 6px;
+
+          &.required:after {
+            color: var(--primary-color, #F0460E);
+          }
+        }
+
+        .form-control,
+        input[type='email'] {
+          background: transparent;
+          border: none;
+          border-bottom: 1.5px solid var(--at-neutral-100, #DFDFDF);
+          border-radius: 0;
+          padding: 14px 0;
+          height: auto;
+          font-size: 15px;
+          line-height: 1.5;
+          letter-spacing: -0.02em;
+          color: var(--at-neutral-900, #1D1D1D);
+          transition: border-color 0.2s ease;
+
+          &:focus {
+            border-color: var(--at-neutral-900, #1D1D1D);
+            box-shadow: none;
+            background: transparent;
+            outline: none;
+          }
+
+          &::placeholder {
+            color: var(--at-neutral-500, #999);
+          }
+        }
+
+        button[type='submit'] {
+          background-color: var(--at-neutral-900, #1D1D1D) !important;
+          border: none !important;
+          border-radius: 50px !important;
+          padding: 15px 30px !important;
+          font-weight: 600;
+          font-size: 15px;
+          letter-spacing: -0.03em;
+          text-transform: capitalize;
+          color: var(--at-neutral-0, #FEFEFE) !important;
+          transition: opacity 0.3s ease;
+          margin-top: 0.75rem;
+
+          &:hover,
+          &:focus {
+            background-color: var(--at-neutral-900, #1D1D1D) !important;
+            opacity: 0.85;
+            color: var(--at-neutral-0, #FEFEFE) !important;
+          }
+        }
+
+        .form-check {
+          margin-top: 0.5rem;
+
+          .form-check-input:checked {
+            background-color: var(--at-neutral-900, #1D1D1D);
+            border-color: var(--at-neutral-900, #1D1D1D);
+          }
+
+          .form-check-label {
+            font-size: 13px;
+            color: var(--at-neutral-500, #999);
+            font-weight: 400;
+          }
+        }
+      }
+
+      .newsletter-message {
+        border-radius: 8px;
+        border-left-width: 4px;
+        font-size: 14px;
+
+        &.newsletter-success-message {
+          background-color: #ecfdf5;
+          border-color: #10b981;
+          color: #065f46;
+        }
+
+        &.newsletter-error-message {
+          background-color: #fef2f2;
+          border-color: #ef4444;
+          color: #991b1b;
+        }
+      }
+    }
+  }
+}
+
+[data-bs-theme="dark"] .newsletter-popup {
+  .modal-dialog .modal-content {
+    background-color: var(--at-neutral-dark-100, #212121);
+
+    .btn-close {
+      filter: invert(1) grayscale(100%) brightness(200%);
+    }
+
+    .newsletter-popup-content {
+      .modal-title {
+        color: var(--at-neutral-dark-900, #EFEFEF);
+      }
+
+      .modal-text {
+        color: var(--at-neutral-dark-500, #B3B3B3);
+      }
+    }
+
+    form {
+      label {
+        color: var(--at-neutral-dark-900, #EFEFEF);
+      }
+
+      .form-control,
+      input[type='email'] {
+        color: var(--at-neutral-dark-900, #EFEFEF);
+        border-bottom-color: var(--at-neutral-dark-300, #404040);
+
+        &:focus {
+          border-color: var(--at-neutral-dark-500, #B3B3B3);
+        }
+
+        &::placeholder {
+          color: var(--at-neutral-dark-500, #B3B3B3);
+        }
+      }
+
+      button[type='submit'] {
+        background-color: var(--at-neutral-dark-900, #EFEFEF) !important;
+        color: var(--at-neutral-dark-0, #0C0C0C) !important;
+
+        &:hover,
+        &:focus {
+          background-color: var(--at-neutral-dark-900, #EFEFEF) !important;
+          color: var(--at-neutral-dark-0, #0C0C0C) !important;
+        }
+      }
+
+      .form-check-input:checked {
+        background-color: var(--at-neutral-dark-900, #EFEFEF);
+        border-color: var(--at-neutral-dark-900, #EFEFEF);
+      }
+
+      .form-check-label {
+        color: var(--at-neutral-dark-500, #B3B3B3) !important;
+      }
+    }
+  }
+}
+
+// ---- Logo switching for dark mode ----
+[data-bs-theme="dark"] .logo-light { display: none !important; }
+[data-bs-theme="dark"] .logo-dark { display: block !important; }
+[data-bs-theme="light"] .logo-dark, :root .logo-dark { display: none !important; }
+[data-bs-theme="light"] .logo-light, :root .logo-light { display: block !important; }
+
+// ---- Header logo: force heading color ----
+// The HTML template's `a { color: inherit }` rule would normally suffice, but
+// Bootstrap's link color may bleed through in edge cases — keep the override
+// explicit so the brand text is always the configured heading color.
+.at-header-logo a,
+.at-offcanvas-logo a {
+  color: var(--at-neutral-900);
+
+  &:hover,
+  &:focus {
+    color: var(--at-neutral-900);
+  }
+
+  p {
+    color: inherit;
+  }
+}
+
+// ---- Hamburger offcanvas: social links horizontal wrap layout ----
+// Overrides default at-offcanvas-social__link width:100% so items wrap inline.
+.at-hamburger-social {
+  .at-offcanvas-social__grid {
+    gap: 14px 28px;
+  }
+
+  .at-offcanvas-social__link {
+    width: auto;
+  }
+}
+
+// ---- Hamburger offcanvas: scrollable menu list ----
+// Override the vendor rule `.at-offcanvas-2-left .at-offcanvas-menu ul`
+// which applies `max-height: 450px` to EVERY ul (including submenus and
+// inner megamenu uls). Scope it to the top-level ul only, so long menus
+// scroll while submenus expand naturally.
+.at-offcanvas-2-left .at-offcanvas-menu {
+  // Neutralize the blanket rule on nested uls.
+  nav ul ul {
+    max-height: none;
+    overflow: visible;
+  }
+
+  // Ensure the top-level menu ul scrolls when items overflow.
+  > nav > ul {
+    max-height: calc(100vh - 320px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+}
+
+// ---- Mobile offcanvas: Language & Currency switchers (flat list) ----
+// Used inside .at-offcanvas-2-wrapper hamburger panel.
+.at-mobile-switchers {
+  margin-top: 40px;
+
+  .at-mobile-switcher-label {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--at-neutral-900);
+    margin-bottom: 10px;
+  }
+}
+
+.currency-list-mobile,
+.language-list-mobile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 18px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+
+.currency-list-mobile .currency-item,
+.language-list-mobile .language-item {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  white-space: nowrap;
+  color: var(--at-neutral-500, #585959);
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  position: relative;
+  padding-bottom: 4px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    inset-inline-start: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color, #F0460E);
+    transition: width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  &:hover {
+    color: var(--at-neutral-900);
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &.active {
+    color: var(--primary-color, #F0460E);
+    font-weight: 700;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.currency-list-mobile .currency-item .currency-symbol {
+  margin-inline-end: 6px;
+  font-weight: 600;
+}
+
+.language-list-mobile .language-item {
+  .language-flag {
+    display: inline-flex;
+    align-items: center;
+    margin-inline-end: 8px;
+
+    svg, img {
+      width: 20px;
+      height: auto;
+    }
+  }
+
+  .language-name {
+    line-height: 20px;
+  }
+}
+
+[data-bs-theme="dark"] {
+  .at-mobile-switchers .at-mobile-switcher-label {
+    color: var(--at-neutral-0, #fefefe);
+  }
+
+  .currency-list-mobile .currency-item,
+  .language-list-mobile .language-item {
+    color: var(--at-neutral-dark-300, #bbb);
+
+    &:hover,
+    &.active {
+      color: var(--primary-color, #F0460E);
+    }
+  }
+}
+
+// ---- Hero Banner Style 1: full-viewport height ----
+// Matches HTML template's visual height regardless of title length.
+// Short titles (e.g. 2 lines) would otherwise collapse the hero below the fold.
+.shortcode-hero-banner-style-1.at-hero-area {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media (max-width: 991.98px) {
+    min-height: auto;
+  }
+}
+
+// ---- Footer Style 5 (Home5) ----
+// The orisa-html template's default `.alt-footer-link-item ul li a` rule uses
+// `color: var(--at-neutral-300)` (light grey) for default state and
+// `var(--at-neutral-0)` (off-white) on hover — designed for a dark footer.
+// Home5's footer card is bg-neutral-0 (white), so those defaults render links
+// as invisible light grey/white text. Override to the dark neutral while
+// preserving the underline-reveal hover animation from main.css.
+.at-footer-style-5 .at-footer-widget .alt-footer-link-item ul li a {
+  color: var(--at-neutral-900, #1d1d1d);
+
+  // main.css `.alt-footer-link-item ul li a::before` paints a white SVG arrow
+  // (fill="%23FEFEFE") that reveals on hover — invisible on white bg. Invert.
+  &::before {
+    filter: invert(1);
+  }
+
+  &:hover {
+    color: var(--at-neutral-900, #1d1d1d);
+  }
+}
+
+[data-bs-theme="dark"] .at-footer-style-5 .at-footer-widget .alt-footer-link-item ul li a {
+  color: var(--at-neutral-0, #fefefe);
+
+  &::before {
+    filter: none;
+  }
+
+  &:hover {
+    color: var(--at-neutral-0, #fefefe);
+  }
+}
+
+// Header top bar — colors come from Theme options (Header top text/background color).
+// The partials expose them as --header-top-bg / --header-top-text on the bar itself.
+.header-top {
+  background-color: var(--header-top-bg, #1D1D1D);
+  color: var(--header-top-text, #FEFEFE);
+
+  a,
+  p,
+  span {
+    color: inherit;
+  }
+}
+
+// Global intl-tel-input (.iti) styling for premium inputs
+// Keeps country flag and dial code perfectly aligned inside the under-lined single inputs
+.iti {
+  width: 100%;
+  margin-top: 5px; // slight push down from label
+
+  .iti__flag-container {
+    padding: 12px 0; // Match input vertically
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+  }
+
+  .iti__selected-flag {
+    background-color: transparent !important;
+    padding-inline-start: 0;
+    border-radius: 0;
+
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+}
+
+// Dark mode intl-tel-input
+[data-bs-theme="dark"] {
+  .iti .iti__selected-flag {
+    border-bottom-color: var(--at-neutral-dark-300, #404040);
+  }
+}
+
+// ---- Display-size font utilities — finer responsive scale ----
+// Original main.css ships only one breakpoint (1401px). On 1024–1280px laptops
+// the headings (.fz-200, .fz-160, etc.) are still oversized — buyers report this
+// and patch it with custom CSS. Add intermediate breakpoints so the defaults
+// scale gracefully from phone to 4K. Selectors use !important to win over the
+// non-media-query fallback in main.css.
+@media (max-width: 1399.98px) {
+  .fz-160 { font-size: 100px !important; }
+  .fz-170 { font-size: 108px !important; }
+  .fz-200 { font-size: 130px !important; }
+  .fz-290 { font-size: 180px !important; }
+  .fz-ds-1 { font-size: 100px !important; }
+  .footer-2-connect-title { font-size: 180px !important; }
+}
+
+@media (max-width: 1199.98px) {
+  .fz-160 { font-size: 84px !important; }
+  .fz-170 { font-size: 90px !important; }
+  .fz-200 { font-size: 100px !important; }
+  .fz-290 { font-size: 140px !important; }
+  .fz-120 { font-size: 70px !important; }
+  .fz-ds-1 { font-size: 80px !important; }
+  .footer-2-connect-title { font-size: 140px !important; }
+}
+
+@media (max-width: 991.98px) {
+  .fz-160 { font-size: 64px !important; }
+  .fz-170 { font-size: 70px !important; }
+  .fz-200 { font-size: 80px !important; }
+  .fz-290 { font-size: 100px !important; }
+  .fz-120 { font-size: 56px !important; }
+  .fz-ds-1 { font-size: 60px !important; }
+  // Fluid rather than fixed: the connect title is buyer-supplied text of any
+  // length, so a hard px value overflows as soon as the phrase is longer than
+  // the demo's. The clamp keeps the previous 100px ceiling on wide tablets and
+  // scales down with the viewport below that.
+  .footer-2-connect-title { font-size: clamp(3rem, 9vw, 6.25rem) !important; }
+}
+
+@media (max-width: 575.98px) {
+  .fz-160 { font-size: 48px !important; }
+  .fz-170 { font-size: 52px !important; }
+  .fz-200 { font-size: 56px !important; }
+  .fz-290 { font-size: 72px !important; }
+  .fz-120 { font-size: 44px !important; }
+  .fz-ds-1 { font-size: 44px !important; }
+  // At the old fixed 72px a 13-character title ("Let's Connect") measured ~467px
+  // against a 386px phone viewport, wrapping onto a second line that collided
+  // with the animated shadow duplicate offset 1.05em below it (ticket 4576241).
+  // 11vw keeps a title of that length on one line down to ~360px wide.
+  .footer-2-connect-title { font-size: clamp(2rem, 11vw, 4.5rem) !important; }
+}
+
+// ---- Pricing Plans (style 3) section heading ----
+// The block's Title renders with `.h3` (up to 64px on large screens). The demo
+// uses a short phrase, but buyers frequently enter a full sentence as the title
+// (support ticket 4571017). At 52–64px a long sentence wraps over many lines and
+// overpowers the pricing cards, making the section look awkward. Replace the
+// fixed size with a fluid clamp so short titles still read large while long
+// titles stay proportionate. Scoped to `.home-2-section-12` so the many other
+// `.reveal-text` headings across the theme are untouched. Specificity (0,2,0)
+// already beats `.h3` (0,1,0), so no !important is needed.
+.home-2-section-12 .reveal-text {
+  font-size: clamp(28px, 3.4vw, 48px);
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+// The search overlay sits on z-index:9999 with `position: fixed` and a 1136px-wide
+// hit-box anchored at the top of the viewport. When inactive (opacity:0) it still
+// captures pointer events, blocking clicks on Botble's admin-bar (z-index:1049).
+// Make it click-through when hidden; restore interactivity once `.active` opens it.
+.at-search-form-toggle,
+.at-search-body-overlay {
+  pointer-events: none;
+
+  &.active {
+    pointer-events: auto;
+  }
+}
+
+// Footer style-1 contact email: long addresses with no break opportunities
+// (e.g. a long domain) overflowed the right-aligned column and got clipped at
+// the viewport edge. Allow them to wrap mid-string.
+.at-footer-title-wrap h5 {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+// Projects listing card title (projects/styles/style-1) uses the at-title-anim
+// hover roll-up: it paints a colored copy of each character exactly 1.05em below
+// it (via text-shadow), normally clipped by .fix{overflow:hidden}. That only works
+// on a single line - a long project name that wraps to two lines puts line 1's
+// hidden copy on top of line 2, so the title looks doubled. Keep the card title on
+// one line so the ghost copy stays clipped and the title truncates cleanly.
+.cs-portfolio-title.at-title-anim .at-title-text {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Cart "remove item" button. The base rule in main.css renders a bare 24px icon
+// with only an opacity shift on hover, which reads as a weak affordance. Give it a
+// proper rounded hit-area, a clear danger-red hover, and a visible focus ring.
+// theme.css loads after main.css, so these win at equal specificity.
+.cart-item-delete {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: var(--at-neutral-500, #8a8a8a);
+  background: transparent;
+  transition: color 0.2s ease, background-color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--bs-danger, #dc3545);
+    background-color: rgba(var(--bs-danger-rgb, 220, 53, 69), 0.1);
+    opacity: 1;
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(var(--bs-danger-rgb, 220, 53, 69), 0.4);
+    outline-offset: 2px;
+  }
+
+  i {
+    font-size: 18px;
+  }
+
+  [data-bs-theme="dark"] & {
+    color: var(--at-neutral-dark-500, #B3B3B3);
+  }
+}
+
+// ---- Footer style 2: keep the fixed "curtain" footer reachable on phones ----
+// `.footer-fixed-bottom` is position:fixed/bottom:0 and is revealed as the page
+// scrolls over it. That only works while the footer is shorter than the screen:
+// once the columns stack on a phone the footer grew to ~929px against a 656px
+// viewport, so its top 273px (logo + contact block) sat permanently above the
+// viewport with no way to scroll to it — buyers report the footer "starts at the
+// address" (ticket 4576241). Tighten the vertical rhythm below the tablet
+// breakpoint so the whole footer fits, and cap the height as a safety net for
+// shorter screens or longer address/nav content.
+@media (max-width: 767.98px) {
+  .footer-fixed-bottom {
+    max-height: 100vh;
+    overflow-y: auto;
+
+    .mp-footer-style-2 {
+      padding-top: 24px !important;
+
+      .row.g-5 {
+        --bs-gutter-y: 1rem !important;
+      }
+    }
+
+    .footer-2-border {
+      padding-top: 16px !important;
+      padding-bottom: 16px !important;
+    }
+  }
+}
+
+// ---- Search overlay: mobile sizing ----
+// `.at-search-form-btn` is absolutely positioned inside the field and ships no
+// mobile rules, while the input stays at the desktop 24px. On a 386px viewport
+// the button measured 127px against a 227px field (56% of it), covering 124px of
+// the input's 178px so the placeholder was unreadable (ticket 4576241). Shrink
+// both and reserve room on the right so typed text never runs under the button.
+@media (max-width: 767.98px) {
+  .at-search-form-input {
+    padding: 8px 8px 8px 16px !important;
+
+    input {
+      font-size: 16px !important;
+      // main.css sets a 636px flex gap for the desktop layout; on a phone it
+      // pushes the caret off the field.
+      gap: 0 !important;
+      // main.css also makes the field `display: inline-flex`, which costs an
+      // <input> its implicit overflow clipping — the placeholder is then painted
+      // past the field's own box and straight over the button, no matter how the
+      // box is sized. Restore the normal input display so the text clips.
+      display: block !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+      // Reserve the button's strip by SHRINKING the field, not by padding it:
+      // padding sits inside the input's box, so a long placeholder (any
+      // translated locale, e.g. the Persian string in ticket 4579759) is still
+      // painted across it and slides under the button. A narrower box clips.
+      padding-right: 0 !important;
+      width: calc(100% - 96px) !important;
+      margin-right: 96px !important;
+
+      &::placeholder {
+        font-size: 16px !important;
+      }
+    }
+  }
+
+  .at-search-form-btn {
+    font-size: 13px !important;
+    padding: 8px 12px !important;
+    right: 8px !important;
+  }
+}
+
+// ---- Offcanvas menu: visible +/- indicator on items with a submenu ----
+// main.js appends `<button class="at-menu-close"><i class="fa-solid fa-plus"></i></button>`
+// to every offcanvas item that owns a submenu, but the theme ships no Font Awesome
+// webfont (only the `--at-ff-fontawesome` variable survives from the HTML template),
+// so the glyph renders nothing and the button measures 0x0 — buyers see no hint that
+// a parent item expands (ticket 4576446). Hide that empty button and draw the
+// indicator on the link itself, where it stays aligned with the label at any font
+// size. The link already carries the open/close handler, so no JS change is needed.
+.at-offcanvas-menu {
+  .at-menu-close {
+    display: none !important;
+  }
+
+  nav ul li.has-dropdown > a {
+    position: relative;
+    padding-right: 28px;
+
+    // Two crossed bars painted as gradient layers so a single pseudo-element can
+    // animate from "+" to "-" by collapsing the vertical layer.
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 14px;
+      height: 14px;
+      margin-top: -7px;
+      opacity: .75;
+      background-image:
+        linear-gradient(currentColor, currentColor),
+        linear-gradient(currentColor, currentColor);
+      background-repeat: no-repeat;
+      background-position: center center, center center;
+      background-size: 100% 2px, 2px 100%;
+      transition: background-size .25s ease, opacity .25s ease;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
+  // main.js toggles `.active` on the <li> when the submenu slides open.
+  nav ul li.has-dropdown.active > a::after {
+    background-size: 100% 2px, 0 100%;
+    opacity: 1;
+  }
+}
+
+// ---- Footer style 3: brand name clipped off-screen on phones ----
+// main.css pulls the brand block 30px left (`.footer-3-logo{transform:translate(-30px)}`)
+// as a desktop bleed against the wide column. On a 390px viewport the block starts at
+// x=-18 while `#smooth-wrapper` clips overflow, so the "O" of the brand is sliced off
+// (ticket 4576446). The bleed only makes sense once the column has room for it.
+@media (max-width: 991.98px) {
+  .footer-3-logo {
+    transform: none !important;
+  }
+}
+
+// ---- Content offset below the overlaying header ----
+// The header is rendered as a sibling of `#smooth-wrapper`, so it paints over the
+// page instead of pushing it down, and every view has to reserve its own top space.
+// Fixed paddings (`pt-150`, which main.css drops to 100px below 1400px) cannot track
+// a header whose height changes with the style, the topbar toggle and the breakpoint:
+// with header style 2 + topbar the header runs to 172px, so a project title landed
+// underneath it (ticket 4576446). `--at-header-height` is published by the header
+// partial (as the bar's bottom edge, because header style 1 overlays the page with an
+// absolutely positioned bar and so collapses to zero height itself) and kept current
+// on resize. The 60px is the breathing room the original `pt-150` left under header
+// style 1; the 90px fallback reproduces that same 150px if the script never runs.
+.at-header-offset {
+  padding-top: calc(var(--at-header-height, 90px) + 60px);
+}
+
+// ---- Newsletter shortcode (style 2): field and submit button alignment ----
+// The submit button is authored as `p-absolute end-0 ... me-3`, i.e. inset against
+// the right edge of the field. Its offset parent is `.input-group` (424px), but
+// `.input-subscribe` only takes its content width (193px), so the button landed
+// 159px clear of the field it belongs to (ticket 4576446). Let the field fill the
+// group and reserve room on the right so typed text never runs under the button.
+.box-newsletter {
+  .input-subscribe {
+    flex: 1 1 auto;
+    width: 100%;
+    // 56px button + 16px `me-3` inset + 12px breathing room.
+    padding-right: 84px;
+  }
+}
+
+// ---- Single product "Gallery" image layout (Theme options -> Ecommerce) ----
+// Digital-store alternative to the default 2-column image grid: one large main
+// image with a clickable thumbnail strip below it (ticket 4576446). Neutral
+// vars carry the dark-mode palette, so the surfaces flip automatically.
+.product-detail-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__main {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: var(--at-neutral-50, #f2f2f2);
+  }
+
+  &__main-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.25s ease;
+  }
+
+  &__thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  &__thumb {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    background-color: var(--at-neutral-50, #f2f2f2);
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: border-color 0.2s ease;
+
+    &:hover {
+      border-color: var(--at-neutral-300, #b7b7b7);
+    }
+
+    &.active {
+      border-color: var(--at-neutral-900, #1d1d1d);
+    }
+
+    // main.css sets a global `button { outline: none }`, so without this the
+    // thumbs give keyboard users no visible focus target.
+    &:focus-visible {
+      outline: 2px solid var(--at-neutral-900, #1d1d1d);
+      outline-offset: 2px;
+    }
+  }
+
+  &__thumb-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .product-detail-gallery__main {
+    height: 360px;
+  }
+
+  .product-detail-gallery__thumb {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .product-detail-gallery__main {
+    height: 420px;
+  }
+}
+
+// Full-width Description/Reviews tabs used by the gallery layout.
+.content-product-right__tabs--full {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid var(--at-neutral-100, #dfdfdf);
+
+  @media (max-width: 575.98px) {
+    margin-top: 32px;
+    padding-top: 24px;
+  }
+}
+
+// ---- Nice Select: replace the Font Awesome caret with a painted chevron ----
+// `.nice-select:after` in main.css renders `content: "\f107"` in
+// `var(--at-ff-fontawesome)`, but the theme ships no Font Awesome webfont (same
+// root cause as the offcanvas +/- indicator above), so every `.at-select`
+// dropdown — the products page "Sort by" control among them — draws a
+// missing-glyph tofu box in BOTH LTR and RTL (ticket 4579759). Paint the caret
+// with a mask instead: the glyph inherits `color: var(--at-neutral-900)` from
+// the base rule, so it still flips with dark mode, and main.css's
+// `.open:after { rotate(-180deg) }` keeps working because the mask is a plain
+// chevron that reads correctly upside-down.
+.nice-select::after {
+  content: '' !important;
+  width: 12px;
+  height: 12px;
+  font-size: 0 !important;
+  background-color: currentColor;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 9l7 7 7-7'/%3E%3C/svg%3E");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 9l7 7 7-7'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
+// ---- Sale badge + compare-at price ----
+// Shown wherever a product's front sale price is below its list price
+// (ThemeHelper::saleDiscountPercent). Positioned with logical properties so the
+// badge moves to the other corner under [dir="rtl"] with no extra override.
+.product-card__badge {
+  position: absolute;
+  inset-block-start: 12px;
+  inset-inline-start: 12px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 100px;
+  background-color: var(--at-neutral-900, #1d1d1d);
+  color: var(--at-neutral-0, #fefefe);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.product-card__price-old {
+  margin-inline-start: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--at-neutral-500, #585959);
+  text-decoration: line-through;
+}
+
+.content-product-right__save-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 100px;
+  background-color: var(--at-neutral-900, #1d1d1d);
+  color: var(--at-neutral-0, #fefefe);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+// ---- Product specification sidebar (gallery product layout) ----
+// Narrow column beside the description/review tabs. Label sits above the value
+// so long attribute names wrap without squeezing the value into a sliver.
+.product-specification-sidebar {
+  &__section + &__section {
+    margin-block-start: 32px;
+  }
+
+  &__title {
+    margin-block-end: 16px;
+    font-weight: 600;
+    color: var(--at-neutral-900, #1d1d1d);
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-block: 10px;
+    border-block-end: 1px solid var(--at-neutral-100, #dfdfdf);
+
+    &:last-child {
+      border-block-end: 0;
+    }
+  }
+
+  &__label {
+    font-size: 13px;
+    color: var(--at-neutral-500, #585959);
+  }
+
+  &__value {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--at-neutral-900, #1d1d1d);
+    overflow-wrap: anywhere;
+  }
+}
+
+// ---- UI block "Title font size" ----
+// Set per block in the page builder (ThemeHelper::titleFontSizeClass). The theme's
+// own title utilities include `.fz-ds-1 { font-size: ...!important }`, so these have
+// to carry !important too or the block's built-in size wins.
+//
+// clamp() rather than a fixed px: a flat value would freeze the title at one size on
+// every breakpoint, which is exactly the responsive behaviour the preset list exists
+// to preserve. letter-spacing is expressed in em so the display tracking shrinks with
+// the type instead of tearing small titles apart.
+$orisa-title-sizes: (
+  'sm': (20px, 2.2vw, 28px),
+  'md': (24px, 3vw, 36px),
+  'lg': (30px, 4vw, 48px),
+  'xl': (36px, 5.5vw, 64px),
+);
+
+@each $key, $steps in $orisa-title-sizes {
+  .orisa-title-size-#{$key} {
+    font-size: clamp(nth($steps, 1), nth($steps, 2), nth($steps, 3)) !important;
+    letter-spacing: -0.02em;
+  }
+}
+
+// ---- Menu item icons ----
+// Icons picked in Admin -> Appearance -> Menus render as inline Tabler SVGs
+// (24x24 intrinsic size) or as an uploaded image. Scale them to the menu's own
+// font size so they sit on the text baseline instead of blowing up the row height.
+.at-main-menu nav ul li a,
+.at-offcanvas-mobile-menu li a {
+  svg[class*='svg-icon-ti'] {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+  }
+
+  img.menu-icon-image {
+    width: 1em;
+    height: 1em;
+    object-fit: contain;
+    vertical-align: -0.125em;
+  }
+}

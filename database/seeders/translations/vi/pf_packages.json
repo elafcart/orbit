@@ -1,0 +1,32 @@
+{
+    "Trial Plan": {
+        "name": "Gói dùng thử",
+        "description": "Gói dùng thử miễn phí",
+        "features": "+Một thành viên\n+Hơn 1200 khối UI\n+10 GB lưu trữ đám mây\n-Tài khoản email cá nhân\n-Hỗ trợ ưu tiên",
+        "action_label": "Bắt đầu"
+    },
+    "Standard": {
+        "name": "Tiêu chuẩn",
+        "description": "Phù hợp cho nhóm lớn",
+        "price": "$49",
+        "annual_price": "$441",
+        "features": "+05 Thành viên\n+Tất cả kênh đa phương tiện\n+Tất cả tính năng CRM nâng cao\n+Tối đa 15.000 liên hệ\n+Hỗ trợ 24/7 (Email, Chat)",
+        "action_label": "Bắt đầu"
+    },
+    "Business": {
+        "name": "Doanh nghiệp",
+        "description": "Dự án nâng cao",
+        "price": "$69",
+        "annual_price": "$621",
+        "features": "+50 Thành viên\n+Hơn 1500 khối UI\n+100 GB lưu trữ đám mây\n+Tài khoản email cá nhân\n+Hỗ trợ ưu tiên",
+        "action_label": "Bắt đầu"
+    },
+    "Enterprise": {
+        "name": "Doanh nghiệp lớn",
+        "description": "Cho công ty lớn",
+        "price": "$99",
+        "annual_price": "$891",
+        "features": "+Tính năng tùy chỉnh\n+Khả năng mở rộng & bảo mật\n+Quản lý tài khoản\n+Lịch sử chat không giới hạn\n+50 Tích hợp",
+        "action_label": "Bắt đầu"
+    }
+}

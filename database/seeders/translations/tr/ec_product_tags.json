@@ -1,0 +1,20 @@
+{
+    "Fashion": {
+        "name": "Moda"
+    },
+    "Casual": {
+        "name": "Gündelik"
+    },
+    "Formal": {
+        "name": "Resmi"
+    },
+    "Winter": {
+        "name": "Kış"
+    },
+    "Streetwear": {
+        "name": "Sokak modası"
+    },
+    "Essentials": {
+        "name": "Temeller"
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "What services does Orisa offer?": {
+        "question": "Quels sont les services proposés par Orisa ?",
+        "answer": "Orisa est une agence de création complète proposant la conception UI/UX, l'identité de marque, le développement Web, le marketing numérique, l'animation graphique et la stratégie de contenu. Nous travaillons avec des startups, des PME et des marques du monde entier."
+    },
+    "How do I get started with a project?": {
+        "question": "Comment démarrer un projet ?",
+        "answer": "La mise en route est simple. Contactez-nous via notre page Contact ou envoyez-nous un e-mail à hello@orisa.com. Nous organiserons un appel de découverte pour comprendre vos objectifs, votre calendrier et votre budget avant de recommander la bonne solution."
+    },
+    "What industries do you work with?": {
+        "question": "Avec quels secteurs travaillez-vous ?",
+        "answer": "Nous travaillons avec des clients issus de divers secteurs, notamment la technologie, la mode, la santé, la fintech, l'hôtellerie, le commerce électronique et bien plus encore. Notre processus créatif flexible nous aide à obtenir des résultats pour chaque secteur."
+    },
+    "How long does a typical project take?": {
+        "question": "Combien de temps dure un projet typique ?",
+        "answer": "La durée du projet varie en fonction de sa portée et de sa complexité. Un projet d'identité de marque prend généralement 3 à 6 semaines, tandis qu'une conception et un développement complets d'un site Web peuvent prendre 6 à 12 semaines. Nous fournirons un calendrier détaillé lors de la phase de proposition."
+    },
+    "Do you work with startups or only established brands?": {
+        "question": "Travaillez-vous avec des startups ou uniquement des marques établies ?",
+        "answer": "Nous aimons travailler avec les entreprises à chaque étape. Que vous soyez une startup construisant une marque de toutes pièces ou une grande entreprise souhaitant rafraîchir son identité, nous avons la méthode et le prix qui vous conviennent."
+    },
+    "How is your pricing structured?": {
+        "question": "Comment votre tarification est-elle structurée ?",
+        "answer": "Nos prix sont par projet et adaptés à l'étendue des travaux. Nous proposons des forfaits à prix fixe pour les projets propres et des devis personnalisés pour les projets plus complexes. Tous les prix sont transparents, pas de frais cachés."
+    },
+    "Do you offer monthly retainer plans?": {
+        "question": "Proposez-vous des plans de rétention mensuels ?",
+        "answer": "Oui, nous proposons des packages de maintenance continue pour les clients qui ont besoin d’une assistance continue en matière de conception, de marketing ou de développement. Le forfait maintient des paiements mensuels et peut être augmenté ou diminué selon les besoins."
+    },
+    "What payment methods do you accept?": {
+        "question": "Quels modes de paiement acceptez-vous ?",
+        "answer": "Nous acceptons les virements bancaires, les cartes de crédit/débit et PayPal. Pour les projets groupés, nous exigeons généralement un acompte de 50 % pour démarrer, le reste étant payé à la fin du projet."
+    },
+    "What is your revision policy?": {
+        "question": "Quelle est votre politique de révision ?",
+        "answer": "Les packages standards incluent un certain nombre de modifications à chaque étape. Nous l’indiquons clairement dans la proposition de projet. Des modifications supplémentaires en dehors du champ d’application de l’accord peuvent être effectuées aux taux horaires standard."
+    },
+    "Will I own the final design files and assets?": {
+        "question": "Serai-je propriétaire des fichiers et des actifs de conception finaux ?",
+        "answer": "Avoir. Une fois le paiement intégral effectué, la pleine propriété de tous les livrables et fichiers sources vous est transférée. Vous recevrez tous les éléments de marque, fichiers de conception et code source pertinents."
+    },
+    "Do you offer post-launch support?": {
+        "question": "Offrez-vous un support post-lancement ?",
+        "answer": "Complètement. Nous fournissons 30 jours d'assistance gratuite après la livraison du projet pour résoudre tout problème. Pour une assistance continue, nous proposons un package de maintenance et d’assistance adapté à vos besoins."
+    },
+    "Can you work with our existing team or platform?": {
+        "question": "Pouvez-vous travailler avec notre équipe ou notre plateforme existante ?",
+        "answer": "Avoir. Nous avons de l'expérience dans la collaboration avec des équipes internes, des développeurs tiers et des outils ou plateformes existants. Nous nous adaptons à vos processus et à votre style de communication pour une collaboration fluide."
+    },
+    "How do you handle feedback and communication during a project?": {
+        "question": "Comment gérez-vous les commentaires et la communication pendant un projet ?",
+        "answer": "Nous utilisons des outils de gestion de projet comme Notion, Figma et Slack pour une collaboration transparente. Vous recevrez des mises à jour régulières sur les progrès et aurez un accès direct au chef de projet tout au long du processus."
+    },
+    "Do you offer remote design services?": {
+        "question": "Proposez-vous des services de conception à distance ?",
+        "answer": "Oui, nous travaillons avec des clients mondiaux et sommes entièrement équipés pour la collaboration à distance. L'équipe couvre plusieurs fuseaux horaires et utilise des outils de pointe pour garantir une communication et une livraison fluides, quel que soit le lieu."
+    },
+    "What makes Orisa different from other agencies?": {
+        "question": "Qu’est-ce qui différencie Orisa des autres agences ?",
+        "answer": "Chez Orisa, nous combinons réflexion stratégique et excellence créative. Nous ne nous contentons pas de donner une belle apparence aux choses : nous veillons à ce que chaque décision de conception serve vos objectifs commerciaux. L'équipe est passionnée, réactive et véritablement investie dans votre réussite."
+    },
+    "Can I see examples of your previous work?": {
+        "question": "Puis-je voir des exemples de vos travaux antérieurs ?",
+        "answer": "Bien sûr! Visitez la page Portfolio pour explorer des études de cas provenant d'une variété d'industries et de types de projets. Nous sommes heureux de partager sur demande des échantillons de travaux supplémentaires liés à votre secteur."
+    },
+    "How do you ensure brand consistency across deliverables?": {
+        "question": "Comment garantissez-vous la cohérence de la marque entre les livrables ?",
+        "answer": "Chaque projet comprend un guide complet de style de marque documentant les couleurs, la typographie, la voix, l'utilisation du logo et les principes de conception. Cela garantit une application cohérente sur chaque point de contact, qu’il soit géré par nous ou par une équipe interne."
+    },
+    "What happens if I need changes after the project is complete?": {
+        "question": "Que se passe-t-il si j'ai besoin de modifications une fois le projet terminé ?",
+        "answer": "Nous sommes toujours un compagnon à long terme. Une fois le projet terminé, nous fournissons un package de demande de modification flexible. Contactez simplement votre responsable de compte et nous évaluerons rapidement le travail supplémentaire."
+    }
+}

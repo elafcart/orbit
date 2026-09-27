@@ -1,0 +1,29 @@
+{
+    "Design Thinking": {
+        "name": "Pensée conceptuelle"
+    },
+    "Branding": {
+        "name": "Image de marque"
+    },
+    "UI/UX": {
+        "name": "UI/UX"
+    },
+    "Digital Marketing": {
+        "name": "Marketing numérique"
+    },
+    "Web Development": {
+        "name": "Développement Web"
+    },
+    "Industry Insights": {
+        "name": "Aperçu de l'industrie"
+    },
+    "Agency Life": {
+        "name": "Vie de l'agence"
+    },
+    "Case Studies": {
+        "name": "Études de cas"
+    },
+    "Creative Process": {
+        "name": "Processus créatif"
+    }
+}

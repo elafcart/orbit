@@ -1,0 +1,18 @@
+{
+    "Homepage": {"name": "Trang chủ"},
+    "Portfolio": {"name": "Dự án"},
+    "Services 1": {"name": "Dịch vụ 1"},
+    "Services 2": {"name": "Dịch vụ 2"},
+    "Services 3": {"name": "Dịch vụ 3"},
+    "Our Team": {"name": "Đội ngũ"},
+    "Blog": {"name": "Blog"},
+    "Contact 1": {"name": "Liên hệ 1"},
+    "Contact 2": {"name": "Liên hệ 2"},
+    "About 1": {"name": "Giới thiệu 1"},
+    "About 2": {"name": "Giới thiệu 2"},
+    "About 3": {"name": "Giới thiệu 3"},
+    "Pricing": {"name": "Bảng giá"},
+    "FAQ": {"name": "Câu hỏi thường gặp"},
+    "Coming Soon": {"name": "Sắp ra mắt"},
+    "Privacy Policy": {"name": "Chính sách bảo mật"}
+}

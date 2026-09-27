@@ -1,0 +1,29 @@
+{
+    "Design Thinking": {
+        "name": "Tasarım odaklı düşünme"
+    },
+    "Branding": {
+        "name": "Markalaşma"
+    },
+    "UI/UX": {
+        "name": "UI/UX"
+    },
+    "Digital Marketing": {
+        "name": "Dijital Pazarlama"
+    },
+    "Web Development": {
+        "name": "Web Geliştirme"
+    },
+    "Industry Insights": {
+        "name": "Sektör Bilgileri"
+    },
+    "Agency Life": {
+        "name": "Ajans Hayatı"
+    },
+    "Case Studies": {
+        "name": "Vaka Çalışmaları"
+    },
+    "Creative Process": {
+        "name": "Yaratıcı Süreç"
+    }
+}

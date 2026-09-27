@@ -1,0 +1,26 @@
+{
+    "Senior Full Stack Engineer": {
+        "name": "Kỹ sư Full Stack cao cấp",
+        "description": "Tham gia đội ngũ với vai trò Kỹ sư Full Stack cao cấp và giúp chúng tôi xây dựng các giải pháp tiên tiến để hỗ trợ nhà sáng tạo trên toàn thế giới."
+    },
+    "Lead Backend Developer": {
+        "name": "Trưởng nhóm phát triển Backend",
+        "description": "Cơ hội hấp dẫn cho Trưởng nhóm Backend dẫn dắt đội ngũ backend trong việc xây dựng hệ thống có khả năng mở rộng và mạnh mẽ."
+    },
+    "UI/UX Designer": {
+        "name": "Nhà thiết kế UI/UX",
+        "description": "Chúng tôi đang tìm kiếm nhà thiết kế UI/UX tài năng để tạo ra trải nghiệm người dùng trực quan và ấn tượng về mặt hình ảnh cho sản phẩm."
+    },
+    "Product Manager": {
+        "name": "Quản lý sản phẩm",
+        "description": "Với vai trò Quản lý sản phẩm, bạn sẽ thúc đẩy phát triển và chiến lược sản phẩm để đáp ứng nhu cầu của người dùng ngày càng tăng."
+    },
+    "Data Scientist": {
+        "name": "Nhà khoa học dữ liệu",
+        "description": "Tìm kiếm Nhà khoa học dữ liệu để phân tích tập dữ liệu lớn và rút ra thông tin hữu ích để hỗ trợ quyết định kinh doanh."
+    },
+    "DevOps Engineer": {
+        "name": "Kỹ sư DevOps",
+        "description": "Chúng tôi đang tuyển Kỹ sư DevOps để tối ưu hóa quy trình phát triển và đảm bảo độ tin cậy cũng như khả năng mở rộng của hạ tầng."
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "id": "botble/orisa",
+    "name": "Orisa",
+    "namespace": "Theme\\Orisa\\",
+    "author": "Botble Technologies",
+    "url": "https://botble.com",
+    "version": "1.0.5",
+    "description": "Orisa - Creative Agency & Portfolio Theme",
+    "required_plugins": [],
+    "presets": [
+        {
+            "id": "creative-agency",
+            "name": "Creative Agency",
+            "screenshot": "screenshot-creative-agency.png"
+        },
+        {
+            "id": "digital-agency",
+            "name": "Digital Agency",
+            "screenshot": "screenshot-digital-agency.png"
+        },
+        {
+            "id": "marketing-agency",
+            "name": "Marketing Agency",
+            "screenshot": "screenshot-marketing-agency.png"
+        },
+        {
+            "id": "ai-tech-agency",
+            "name": "AI & Tech Agency",
+            "screenshot": "screenshot-ai-tech-agency.png"
+        },
+        {
+            "id": "personal-creative",
+            "name": "Personal Creative",
+            "screenshot": "screenshot-personal-creative.png"
+        }
+    ]
+}

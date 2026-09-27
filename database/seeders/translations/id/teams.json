@@ -1,0 +1,42 @@
+{
+    "Michael Anderson": {
+        "name": "Michael Anderson",
+        "title": "Direktur kreatif",
+        "address": "123 Penggerak Kreatif, San Francisco, CA 94102"
+    },
+    "Jennifer Brown": {
+        "name": "Jennifer Brown",
+        "title": "CEO & Pendiri",
+        "address": "456 Pusat Agensi, New York, NY 10001"
+    },
+    "Sarah Brown": {
+        "name": "Sarah Brown",
+        "title": "Kepala departemen desain UX",
+        "address": "789 Desain Boulevard, Austin, TX 78701"
+    },
+    "David Clark": {
+        "name": "David Clark",
+        "title": "Ketua tim desain UI",
+        "address": "321 Studio Street, Seattle, WA 98101"
+    },
+    "Jessica Carter": {
+        "name": "Jessica Carter",
+        "title": "Pemrogram Ujung Depan",
+        "address": "654 Web Avenue, Denver, CO 80202"
+    },
+    "Lauren Graham": {
+        "name": "Lauren Graham",
+        "title": "Pakar strategi merek",
+        "address": "987 Jalur Strategi, Boston, MA 02101"
+    },
+    "James Bennett": {
+        "name": "James Bennett",
+        "title": "Kepala Departemen Pemasaran Digital",
+        "address": "246 Pusat Pemasaran, Chicago, IL 60601"
+    },
+    "William Foster": {
+        "name": "William Foster",
+        "title": "Perancang gerak",
+        "address": "135 Motion Plaza, Los Angeles, CA 90001"
+    }
+}

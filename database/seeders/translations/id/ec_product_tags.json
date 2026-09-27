@@ -1,0 +1,20 @@
+{
+    "Fashion": {
+        "name": "Mode"
+    },
+    "Casual": {
+        "name": "Kasual"
+    },
+    "Formal": {
+        "name": "Resmi"
+    },
+    "Winter": {
+        "name": "Musim dingin"
+    },
+    "Streetwear": {
+        "name": "Jalanan"
+    },
+    "Essentials": {
+        "name": "Penting"
+    }
+}

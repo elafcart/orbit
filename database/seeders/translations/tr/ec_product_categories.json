@@ -1,0 +1,58 @@
+{
+    "Women": {
+        "name": "Kadınlar",
+        "description": "Özenle seçilmiş kadın modası, modern estetiği zamansız işçilikle birleştiriyor."
+    },
+    "Men": {
+        "name": "Erkekler",
+        "description": "Özenle seçilmiş erkek modası, modern estetiği zamansız işçilikle birleştiriyor."
+    },
+    "Dresses": {
+        "name": "Elbiseler"
+    },
+    "Tops": {
+        "name": "Üstler"
+    },
+    "Jackets": {
+        "name": "Ceketler"
+    },
+    "Shirts": {
+        "name": "Gömlekler"
+    },
+    "Hoodies": {
+        "name": "Kapüşonlular"
+    },
+    "Pants": {
+        "name": "Pantolon"
+    },
+    "Blazers": {
+        "name": "Blazerler"
+    },
+    "Coats": {
+        "name": "Mont"
+    },
+    "Sweaters": {
+        "name": "Kazaklar"
+    },
+    "Knitwear": {
+        "name": "Triko"
+    },
+    "Outerwear": {
+        "name": "Dış giyim"
+    },
+    "Accessories": {
+        "name": "Aksesuarlar"
+    },
+    "Sweatshirts": {
+        "name": "Tişörtü"
+    },
+    "Scarves": {
+        "name": "Eşarplar"
+    },
+    "Cardigans": {
+        "name": "Hırka"
+    },
+    "New Arrivals": {
+        "name": "Yeni Gelenler"
+    }
+}

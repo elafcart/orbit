@@ -1,0 +1,26 @@
+{
+    "UI/UX Design": {
+        "name": "Kullanıcı Arayüzü/UX Tasarımı",
+        "description": "Piyasayı ve kullanıcıları anlayarak başarılı ürünler oluşturmanıza yardımcı oluyoruz."
+    },
+    "Branding": {
+        "name": "Markalaşma",
+        "description": "Piyasayı ve kullanıcıları anlayarak başarılı ürünler oluşturmanıza yardımcı oluyoruz."
+    },
+    "Development": {
+        "name": "Gelişim",
+        "description": "Piyasayı ve kullanıcıları anlayarak başarılı ürünler oluşturmanıza yardımcı oluyoruz."
+    },
+    "3D Animations": {
+        "name": "3D Animasyonlar",
+        "description": "Piyasayı ve kullanıcıları anlayarak başarılı ürünler oluşturmanıza yardımcı oluyoruz."
+    },
+    "Digital Marketing": {
+        "name": "Dijital Pazarlama",
+        "description": "Piyasayı ve kullanıcıları anlayarak başarılı ürünler oluşturmanıza yardımcı oluyoruz."
+    },
+    "Content Strategy": {
+        "name": "İçerik Stratejisi",
+        "description": "Piyasayı ve kullanıcıları anlayarak başarılı ürünler oluşturmanıza yardımcı oluyoruz."
+    }
+}

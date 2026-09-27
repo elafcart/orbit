@@ -1,0 +1,50 @@
+{
+    "Homepage": {
+        "name": "Page d'accueil"
+    },
+    "Portfolio": {
+        "name": "Portefeuille"
+    },
+    "Services 1": {
+        "name": "Prestations 1"
+    },
+    "Services 2": {
+        "name": "Prestations 2"
+    },
+    "Services 3": {
+        "name": "Prestations 3"
+    },
+    "Our Team": {
+        "name": "Notre équipe"
+    },
+    "Blog": {
+        "name": "Blog"
+    },
+    "Contact 1": {
+        "name": "Contacter 1"
+    },
+    "Contact 2": {
+        "name": "Contacter 2"
+    },
+    "About 1": {
+        "name": "Environ 1"
+    },
+    "About 2": {
+        "name": "Environ 2"
+    },
+    "About 3": {
+        "name": "Environ 3"
+    },
+    "Pricing": {
+        "name": "Tarifs"
+    },
+    "FAQ": {
+        "name": "FAQ"
+    },
+    "Coming Soon": {
+        "name": "À venir"
+    },
+    "Privacy Policy": {
+        "name": "politique de confidentialité"
+    }
+}

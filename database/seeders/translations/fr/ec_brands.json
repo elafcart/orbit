@@ -1,0 +1,34 @@
+{
+    "KOMONO": {
+        "name": "KOMONO",
+        "description": "Lunettes et accessoires haut de gamme avec une philosophie de design minimaliste."
+    },
+    "BRAVEN": {
+        "name": "BRAVEN",
+        "description": "La mode masculine contemporaine allie style urbain et couture raffinée."
+    },
+    "HALSTON & CO.": {
+        "name": "HALSTON & CO.",
+        "description": "Des tricots intemporels et des essentiels de mode inspirés du patrimoine."
+    },
+    "LORCAN STUDIO": {
+        "name": "LORCAN STUDIO",
+        "description": "Áo khoác ngoài kiến trúc được chế tác với sự chú ý đến cấu trúc và chi tiết."
+    },
+    "ETIQUE": {
+        "name": "ETIQUE",
+        "description": "Une mode féminine sophistiquée mettant l'accent sur l'élégance moderne."
+    },
+    "MIRETTI": {
+        "name": "MIRETTI",
+        "description": "Mode décontractée haut de gamme conçue pour le confort et un style sophistiqué."
+    },
+    "SOLENE": {
+        "name": "SOLENE",
+        "description": "Une mode d'inspiration française avec une élégance sans effort et des silhouettes épurées."
+    },
+    "RIDGEWAY": {
+        "name": "RIDGEWAY",
+        "description": "Une coupe britannique classique réinventée pour le professionnel moderne."
+    }
+}

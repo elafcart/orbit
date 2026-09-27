@@ -1,0 +1,42 @@
+{
+    "Michael Anderson": {
+        "name": "Michael Anderson",
+        "title": "Yaratıcı yönetmen",
+        "address": "123 Yaratıcı Sürücü, San Francisco, CA 94102"
+    },
+    "Jennifer Brown": {
+        "name": "Jennifer Brown",
+        "title": "CEO ve Kurucu",
+        "address": "456 Ajans Merkezi, New York, NY 10001"
+    },
+    "Sarah Brown": {
+        "name": "Sarah Brown",
+        "title": "UX tasarım departmanı başkanı",
+        "address": "789 Tasarım Bulvarı, Austin, Teksas 78701"
+    },
+    "David Clark": {
+        "name": "David Clark",
+        "title": "Kullanıcı arayüzü tasarım ekibi lideri",
+        "address": "321 Stüdyo Caddesi, Seattle, WA 98101"
+    },
+    "Jessica Carter": {
+        "name": "Jessica Carter",
+        "title": "Ön Uç Programcı",
+        "address": "654 Web Caddesi, Denver, CO 80202"
+    },
+    "Lauren Graham": {
+        "name": "Lauren Graham",
+        "title": "Marka stratejisi uzmanı",
+        "address": "987 Strateji Şeridi, Boston, MA 02101"
+    },
+    "James Bennett": {
+        "name": "James Bennett",
+        "title": "Dijital Pazarlama Bölüm Başkanı",
+        "address": "246 Pazarlama Merkezi, Chicago, IL 60601"
+    },
+    "William Foster": {
+        "name": "William Foster",
+        "title": "Hareket tasarımcısı",
+        "address": "135 Hareket Plaza, Los Angeles, CA 90001"
+    }
+}

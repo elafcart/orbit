@@ -1,0 +1,58 @@
+{
+    "Lumina Brand Identity": {
+        "name": "Identitas Merek Lumina",
+        "description": "Sistem identitas merek yang lengkap untuk merek perawatan kulit mewah, termasuk logo, tipografi, palet warna, desain kemasan, dan pedoman merek.",
+        "client": "Perawatan Kulit Lumina",
+        "place": "San Fransisco",
+        "author": "Michael Anderson"
+    },
+    "Nomad Travel App": {
+        "name": "Aplikasi Perjalanan Pengembara",
+        "description": "Desain UI/UX untuk aplikasi pemesanan perjalanan seluler untuk pengembara digital, dengan perencanaan perjalanan cerdas dan fitur komunitas.",
+        "client": "Pengembara Co.",
+        "place": "New York",
+        "author": "Jennifer Brown"
+    },
+    "Verde E-Commerce Platform": {
+        "name": "Platform E-niaga Verde",
+        "description": "Situs web e-niaga berfitur lengkap untuk merek fesyen ramah lingkungan, dengan antarmuka bersih, pembayaran lancar, dan CMS terintegrasi.",
+        "client": "Mode Verde",
+        "place": "London",
+        "author": "David Clark"
+    },
+    "Pulse Digital Campaign": {
+        "name": "Kampanye Digital Pulsa",
+        "description": "Kampanye pemasaran digital multi-saluran mendorong kesadaran merek dan pertumbuhan prospek 3x lipat melalui SEO bertarget dan iklan media sosial.",
+        "client": "Kebugaran Pulsa",
+        "place": "Berlin",
+        "author": "Sarah Johnson"
+    },
+    "Bloom Agency Website": {
+        "name": "Situs Web Agensi Bloom",
+        "description": "Desain ulang situs web agensi kreatif dengan animasi khusus, tampilan portofolio, dan identitas visual yang kuat.",
+        "client": "Studio Mekar",
+        "place": "Singapura",
+        "author": "Robert Williams"
+    },
+    "Helio SaaS Dashboard": {
+        "name": "Dasbor Helio SaaS",
+        "description": "Rancang antarmuka dasbor yang kompleks untuk platform analitik SaaS, dengan fokus pada kejelasan data, aksesibilitas, dan efisiensi alur kerja.",
+        "client": "Analisis Helio",
+        "place": "Tokyo",
+        "author": "Emily Davis"
+    },
+    "Craft Coffee Branding": {
+        "name": "Branding Kopi Kerajinan",
+        "description": "Identitas merek dan desain kemasan untuk pemanggangan kopi artisanal, menunjukkan kehangatan dan keahlian di balik setiap cangkir kopi.",
+        "client": "Kerajinan Kopi Co.",
+        "place": "Sidney",
+        "author": "James Wilson"
+    },
+    "Zora NFT Marketplace": {
+        "name": "Pasar Zora NFT",
+        "description": "Desain UI/UX dan pengembangan front-end platform Web3 untuk pasar NFT dengan profil artis dan fitur lelang.",
+        "client": "Zora Digital",
+        "place": "Toronto",
+        "author": "Amanda Martinez"
+    }
+}

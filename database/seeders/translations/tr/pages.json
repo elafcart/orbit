@@ -1,0 +1,50 @@
+{
+    "Homepage": {
+        "name": "Ana sayfa"
+    },
+    "Portfolio": {
+        "name": "Portföy"
+    },
+    "Services 1": {
+        "name": "Hizmetler 1"
+    },
+    "Services 2": {
+        "name": "Hizmetler 2"
+    },
+    "Services 3": {
+        "name": "Hizmetler 3"
+    },
+    "Our Team": {
+        "name": "Ekibimiz"
+    },
+    "Blog": {
+        "name": "Blog"
+    },
+    "Contact 1": {
+        "name": "İletişim 1"
+    },
+    "Contact 2": {
+        "name": "İletişim 2"
+    },
+    "About 1": {
+        "name": "Yaklaşık 1"
+    },
+    "About 2": {
+        "name": "Yaklaşık 2"
+    },
+    "About 3": {
+        "name": "Yaklaşık 3"
+    },
+    "Pricing": {
+        "name": "Fiyatlandırma"
+    },
+    "FAQ": {
+        "name": "FAQ"
+    },
+    "Coming Soon": {
+        "name": "Yakında gelecek"
+    },
+    "Privacy Policy": {
+        "name": "Gizlilik Politikası"
+    }
+}

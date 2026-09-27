@@ -1,0 +1,74 @@
+{
+    "What services does Orisa offer?": {
+        "question": "Orisa hangi hizmetleri sunuyor?",
+        "answer": "Orisa, UI/UX tasarımı, marka kimliği, web geliştirme, dijital pazarlama, hareketli grafikler ve içerik stratejisi sağlayan kapsamlı bir yaratıcı ajanstır. Dünya çapında startuplar, KOBİ'ler ve kurumsal markalarla çalışıyoruz."
+    },
+    "How do I get started with a project?": {
+        "question": "Bir projeye nasıl başlayabilirim?",
+        "answer": "Başlamak basittir. İletişim sayfamız aracılığıyla bizimle iletişime geçin veya hello@orisa.com adresinden bize e-posta gönderin. Doğru çözümü önermeden önce hedeflerinizi, programınızı ve bütçenizi anlamak için bir keşif görüşmesi ayarlayacağız."
+    },
+    "What industries do you work with?": {
+        "question": "Hangi sektörlerle çalışıyorsunuz?",
+        "answer": "Teknoloji, moda, sağlık hizmetleri, fintech, konaklama, e-ticaret ve daha fazlasını içeren çeşitli sektörlerdeki müşterilerle çalışıyoruz. Esnek yaratıcı sürecimiz her sektör için sonuçlar sunmamıza yardımcı olur."
+    },
+    "How long does a typical project take?": {
+        "question": "Tipik bir proje ne kadar sürer?",
+        "answer": "Proje süresi kapsam ve karmaşıklığa bağlı olarak değişir. Bir marka kimliği projesi genellikle 3-6 hafta sürerken, tam bir web sitesi tasarımı ve geliştirilmesi 6-12 hafta sürebilir. Teklif aşamasında ayrıntılı bir program sunacağız."
+    },
+    "Do you work with startups or only established brands?": {
+        "question": "Startup'larla mı yoksa yalnızca köklü markalarla mı çalışıyorsunuz?",
+        "answer": "İşletmelerle her aşamada çalışmayı seviyoruz. İster sıfırdan marka yaratan bir startup, ister kimliğini yenilemek isteyen büyük bir şirket olun, sizin için doğru yöntem ve fiyata sahibiz."
+    },
+    "How is your pricing structured?": {
+        "question": "Fiyatlandırmanız nasıl yapılandırılmıştır?",
+        "answer": "Fiyatlarımız proje bazlı olup, işin kapsamına uygundur. Temiz projeler için sabit fiyat paketleri ve daha karmaşık projeler için özel teklifler sunuyoruz. Tüm fiyatlar şeffaftır, gizli ücret yoktur."
+    },
+    "Do you offer monthly retainer plans?": {
+        "question": "Aylık hizmet planları sunuyor musunuz?",
+        "answer": "Evet, sürekli tasarım, pazarlama veya geliştirme desteğine ihtiyaç duyan müşterilerimize sürekli bakım paketleri sunuyoruz. Paket aylık ödemeleri sürdürür ve ihtiyaca göre artırılıp azaltılabilir."
+    },
+    "What payment methods do you accept?": {
+        "question": "Hangi ödeme yöntemlerini kabul ediyorsunuz?",
+        "answer": "Banka havalelerini, kredi/banka kartlarını ve PayPal'ı kabul ediyoruz. Paket projeler için genellikle başlangıç ​​için %50 depozito talep ediyoruz, geri kalanı proje tamamlandığında ödeniyor."
+    },
+    "What is your revision policy?": {
+        "question": "Revizyon politikanız nedir?",
+        "answer": "Standart paketler her aşamada belirli sayıda düzenleme içerir. Bunu proje teklifinde açıkça belirtiyoruz. Sözleşme kapsamı dışında ek düzenlemeler standart saatlik ücretlerle yapılabilir."
+    },
+    "Will I own the final design files and assets?": {
+        "question": "Nihai tasarım dosyalarına ve varlıklarına sahip olacak mıyım?",
+        "answer": "Sahip olmak. Ödemenin tamamı yapıldıktan sonra tüm teslimatların ve kaynak dosyaların tam mülkiyeti size devredilir. İlgili tüm marka varlıklarını, tasarım dosyalarını ve kaynak kodunu alacaksınız."
+    },
+    "Do you offer post-launch support?": {
+        "question": "Lansman sonrası destek sunuyor musunuz?",
+        "answer": "Tamamen. Proje tesliminden sonra her türlü sorunu çözmek için 30 gün ücretsiz destek sağlıyoruz. Sürekli destek için ihtiyaçlarınıza uygun bir bakım ve destek paketimiz mevcuttur."
+    },
+    "Can you work with our existing team or platform?": {
+        "question": "Mevcut ekibimiz veya platformumuzla çalışabilir misiniz?",
+        "answer": "Sahip olmak. Dahili ekipler, üçüncü taraf geliştiriciler ve mevcut araçlar veya platformlarla işbirliği yapma deneyimimiz var. Kusursuz işbirliği için süreçlerinize ve iletişim tarzınıza uyum sağlıyoruz."
+    },
+    "How do you handle feedback and communication during a project?": {
+        "question": "Bir proje sırasında geri bildirimi ve iletişimi nasıl ele alıyorsunuz?",
+        "answer": "Şeffaf işbirliği için Notion, Figma ve Slack gibi proje yönetimi araçlarını kullanıyoruz. Düzenli ilerleme güncellemeleri alacaksınız ve süreç boyunca proje yöneticisine doğrudan erişebileceksiniz."
+    },
+    "Do you offer remote design services?": {
+        "question": "Uzaktan tasarım hizmetleri sunuyor musunuz?",
+        "answer": "Evet, küresel müşterilerle çalışıyoruz ve uzaktan işbirliği için tam donanıma sahibiz. Ekip birden fazla zaman dilimini kapsıyor ve konumdan bağımsız olarak sorunsuz iletişim ve teslimat sağlamak için son teknoloji araçları kullanıyor."
+    },
+    "What makes Orisa different from other agencies?": {
+        "question": "Orisa'yı diğer ajanslardan farklı kılan nedir?",
+        "answer": "Orisa'da stratejik düşünceyi yaratıcı mükemmellikle birleştiriyoruz. Biz sadece her şeyin iyi görünmesini sağlamakla kalmıyoruz; her tasarım kararının iş hedeflerinize hizmet etmesini sağlıyoruz. Ekip tutkulu, duyarlı ve başarınıza gerçekten yatırım yapıyor."
+    },
+    "Can I see examples of your previous work?": {
+        "question": "Önceki çalışmalarınızın örneklerini görebilir miyim?",
+        "answer": "Elbette! Çeşitli sektörlerden ve proje türlerinden vaka çalışmalarını keşfetmek için Portföy sayfasını ziyaret edin. Talep edilmesi halinde sektörünüzle ilgili ek iş örneklerini paylaşmaktan mutluluk duyarız."
+    },
+    "How do you ensure brand consistency across deliverables?": {
+        "question": "Teslimatlar arasında marka tutarlılığını nasıl sağlıyorsunuz?",
+        "answer": "Her proje; renkleri, tipografiyi, sesi, logo kullanımını ve tasarım ilkelerini belgeleyen kapsamlı bir marka stili kılavuzu içerir. Bu, ister bizim tarafımızdan ister dahili bir ekip tarafından yönetilsin, her temas noktasında tutarlı uygulama sağlar."
+    },
+    "What happens if I need changes after the project is complete?": {
+        "question": "Proje tamamlandıktan sonra değişiklik yapmam gerekirse ne olur?",
+        "answer": "Biz her zaman uzun vadeli bir yol arkadaşıyız. Projenin tamamlanmasının ardından esnek bir değişiklik talebi paketi sağlıyoruz. Hesap yöneticinizle iletişime geçmeniz yeterli; ek çalışmaların kapsamını hızlı bir şekilde belirleyeceğiz."
+    }
+}

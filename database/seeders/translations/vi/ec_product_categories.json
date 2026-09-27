@@ -1,0 +1,20 @@
+{
+    "Women": {"name": "Nữ", "description": "Thời trang nữ được tuyển chọn kỹ lưỡng, kết hợp thẩm mỹ hiện đại với tay nghề vượt thời gian."},
+    "Men": {"name": "Nam", "description": "Thời trang nam được tuyển chọn kỹ lưỡng, kết hợp thẩm mỹ hiện đại với tay nghề vượt thời gian."},
+    "Dresses": {"name": "Đầm"},
+    "Tops": {"name": "Áo"},
+    "Jackets": {"name": "Áo khoác"},
+    "Shirts": {"name": "Áo sơ mi"},
+    "Hoodies": {"name": "Áo hoodie"},
+    "Pants": {"name": "Quần"},
+    "Blazers": {"name": "Blazer"},
+    "Coats": {"name": "Áo khoác dài"},
+    "Sweaters": {"name": "Áo len"},
+    "Knitwear": {"name": "Đồ đan"},
+    "Outerwear": {"name": "Áo ngoài"},
+    "Accessories": {"name": "Phụ kiện"},
+    "Sweatshirts": {"name": "Áo nỉ"},
+    "Scarves": {"name": "Khăn quàng"},
+    "Cardigans": {"name": "Cardigan"},
+    "New Arrivals": {"name": "Hàng mới về"}
+}

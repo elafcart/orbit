@@ -1,0 +1,50 @@
+{
+    "Homepage": {
+        "name": "Beranda"
+    },
+    "Portfolio": {
+        "name": "Portofolio"
+    },
+    "Services 1": {
+        "name": "Layanan 1"
+    },
+    "Services 2": {
+        "name": "Layanan 2"
+    },
+    "Services 3": {
+        "name": "Layanan 3"
+    },
+    "Our Team": {
+        "name": "Tim kami"
+    },
+    "Blog": {
+        "name": "Blog"
+    },
+    "Contact 1": {
+        "name": "Hubungi 1"
+    },
+    "Contact 2": {
+        "name": "Hubungi 2"
+    },
+    "About 1": {
+        "name": "Sekitar 1"
+    },
+    "About 2": {
+        "name": "Sekitar 2"
+    },
+    "About 3": {
+        "name": "Sekitar 3"
+    },
+    "Pricing": {
+        "name": "Harga"
+    },
+    "FAQ": {
+        "name": "FAQ"
+    },
+    "Coming Soon": {
+        "name": "Segera hadir"
+    },
+    "Privacy Policy": {
+        "name": "Kebijakan Privasi"
+    }
+}

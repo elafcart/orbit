@@ -1,0 +1,26 @@
+{
+    "UI/UX Design": {
+        "name": "Thiết kế UI/UX",
+        "description": "Chúng tôi giúp bạn xây dựng sản phẩm thành công bằng cách hiểu thị trường và người dùng."
+    },
+    "Branding": {
+        "name": "Xây dựng thương hiệu",
+        "description": "Chúng tôi giúp bạn xây dựng sản phẩm thành công bằng cách hiểu thị trường và người dùng."
+    },
+    "Development": {
+        "name": "Phát triển",
+        "description": "Chúng tôi giúp bạn xây dựng sản phẩm thành công bằng cách hiểu thị trường và người dùng."
+    },
+    "3D Animations": {
+        "name": "Hoạt hình 3D",
+        "description": "Chúng tôi giúp bạn xây dựng sản phẩm thành công bằng cách hiểu thị trường và người dùng."
+    },
+    "Digital Marketing": {
+        "name": "Marketing số",
+        "description": "Chúng tôi giúp bạn xây dựng sản phẩm thành công bằng cách hiểu thị trường và người dùng."
+    },
+    "Content Strategy": {
+        "name": "Chiến lược nội dung",
+        "description": "Chúng tôi giúp bạn xây dựng sản phẩm thành công bằng cách hiểu thị trường và người dùng."
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "Trial Plan": {
+        "name": "Rencana Percobaan",
+        "description": "Paket uji coba gratis",
+        "features": "+Satu anggota\n+Lebih dari 1200 blok UI\nPenyimpanan awan +10 GB\n-Akun email pribadi\n-Dukungan prioritas",
+        "action_label": "Mulai"
+    },
+    "Standard": {
+        "name": "Standar",
+        "description": "Cocok untuk kelompok besar",
+        "price": "$49",
+        "annual_price": "$441",
+        "features": "+05 Anggota\n+Semua saluran multimedia\n+Semua fitur CRM tingkat lanjut\n+Hingga 15.000 kontak\n+ Dukungan 24/7 (Email, Obrolan)",
+        "action_label": "Mulai"
+    },
+    "Business": {
+        "name": "Bisnis",
+        "description": "Proyek lanjutan",
+        "price": "$69",
+        "annual_price": "$621",
+        "features": "+50 Anggota\n+Lebih dari 1500 blok UI\nPenyimpanan awan +100 GB\n+Akun email pribadi\n+Dukungan prioritas",
+        "action_label": "Mulai"
+    },
+    "Enterprise": {
+        "name": "Perusahaan",
+        "description": "Untuk perusahaan besar",
+        "price": "$99",
+        "annual_price": "$891",
+        "features": "+Fitur penyesuaian\n+ Skalabilitas & keamanan\n+Manajemen akun\n+Riwayat obrolan tidak terbatas\n+50 Integrasi",
+        "action_label": "Mulai"
+    }
+}

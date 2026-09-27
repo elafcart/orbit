@@ -1,0 +1,630 @@
+// Orisa RTL - Right-to-left overrides
+// Applied conditionally when RTL is enabled via config.php
+// Bootstrap RTL handles grid, utilities (ms-/me-, text-start/end), and most
+// component flipping. These overrides target theme-specific directional
+// properties in main.css that Bootstrap RTL cannot reach.
+
+[dir="rtl"] {
+
+  // ============================================================
+  // 0. Arabic letter-joining — reset letter-spacing
+  // ============================================================
+  // The Latin design applies letter-spacing on headings/display text,
+  // but ANY non-zero letter-spacing breaks the cursive letter-joining of
+  // Arabic (and other connected scripts) in the browser, rendering letters
+  // detached. It also inflates the gaps between digits (e.g. counters like
+  // "38+"). Normalizing letter-spacing across RTL text restores proper
+  // Arabic shaping and tight numerals.
+  &,
+  * {
+    letter-spacing: normal !important;
+  }
+
+  // ============================================================
+  // 1. Offcanvas Panel (Style 1) — slide from LEFT in RTL
+  // ============================================================
+  .at-offcanvas {
+    right: auto;
+    left: -100%;
+
+    &.opened {
+      right: auto;
+      left: 0;
+    }
+  }
+
+  // ============================================================
+  // 2. Offcanvas-2 (Hamburger Menu) — mirror positioning & clip-path
+  // ============================================================
+  .at-offcanvas-2-area {
+    left: auto;
+    right: 100%;
+
+    .offcanvas-bg {
+      right: auto;
+      left: 0;
+      clip-path: circle(0% at 45px 45px);
+    }
+
+    // The open panel is a fixed-width column; it must dock to the LEFT edge in
+    // RTL so it lines up with the mirrored .offcanvas-bg above. Keeping the LTR
+    // `right: 0` leaves the menu on the right while its background sits left.
+    &.menu-open,
+    &.menu-open-temp {
+      left: 0;
+      right: auto;
+    }
+
+    &.menu-open .offcanvas-bg {
+      clip-path: circle(150% at 45px 45px);
+    }
+
+    &:not(.menu-open) .offcanvas-bg {
+      clip-path: circle(0% at 45px 45px);
+    }
+  }
+
+  // Offcanvas-2 wrapper padding (asymmetric on medium screens)
+  @media only screen and (min-width: 1200px) and (max-width: 1399px),
+    only screen and (min-width: 992px) and (max-width: 1199px) {
+    .at-offcanvas-2-wrapper {
+      padding-right: 50px;
+      padding-left: 60px;
+    }
+  }
+
+  // ============================================================
+  // 3. Main Menu — dropdown arrow, submenu, megamenu
+  // ============================================================
+  .at-main-menu nav ul li {
+    &.has-dropdown > a::after {
+      right: auto;
+      left: 12px;
+      transform: scaleX(-1);
+    }
+
+    a::before {
+      left: auto;
+      right: 0;
+    }
+
+    .submenu {
+      left: auto;
+      right: 0;
+      transform-origin: 100% 0;
+
+      li .submenu {
+        left: auto;
+        right: 100%;
+      }
+    }
+
+    // Megamenu title padding
+    .at-megamenu-title {
+      padding-left: 6px;
+      padding-right: 18px;
+    }
+  }
+
+  // ============================================================
+  // 4. Offcanvas Menu — submenu indent, dots, hover, close btn
+  // ============================================================
+  .at-offcanvas-menu ul li .submenu .submenu {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  .at-menu-close {
+    right: auto;
+    left: 7px;
+  }
+
+  // The +/- indicator that theme.scss draws on parent links (the Font Awesome
+  // glyph the template expected is not bundled) hangs off the right edge in LTR.
+  .at-offcanvas-menu nav ul li.has-dropdown > a {
+    padding-right: 0;
+    padding-left: 28px;
+
+    &::after {
+      right: auto;
+      left: 0;
+    }
+  }
+
+  // Submenu link dot & hover shift (hamburger panel)
+  .at-offcanvas-2-wrapper .at-offcanvas-menu {
+    > nav > ul > li .submenu > li > a {
+      &::before {
+        left: auto;
+        right: 0;
+      }
+
+      &:hover {
+        transform: translateX(-15px);
+      }
+    }
+
+    nav ul li .at-megamenu li a {
+      &::before {
+        left: auto;
+        right: 0;
+      }
+
+      &:hover {
+        transform: translateX(-15px);
+      }
+    }
+  }
+
+  // ============================================================
+  // 5. Hamburger Sticky Menu Button
+  // ============================================================
+  .hamburger-sticky-menu {
+    right: auto;
+    left: 20px;
+  }
+
+  // ============================================================
+  // 6. Back-to-Top Button
+  // ============================================================
+  .back-to-top-wrapper {
+    right: auto;
+    left: 50px;
+
+    @media (max-width: 574.98px) {
+      right: auto;
+      left: 20px;
+    }
+  }
+
+  // ============================================================
+  // 7. Footer — link arrows, social items
+  // ============================================================
+  .alt-footer-link-item ul li a::before {
+    margin-left: 0;
+    margin-right: 14px;
+    left: auto;
+    right: 100%;
+    transform: translate(15px, -40%) scaleX(-1);
+  }
+
+  .alt-footer-link-item ul li a:hover::before {
+    transform: translate(50%, -50%) scaleX(-1);
+  }
+
+  .alt-footer-social-item ul li::before {
+    left: auto;
+    right: 0;
+  }
+
+  // ============================================================
+  // 8. Service Items — thumb alignment
+  // ============================================================
+  .at-service-item .thumb {
+    text-align: left;
+  }
+
+  // ============================================================
+  // 9. Hero Sections
+  // ============================================================
+  .at-hero-shape {
+    margin-right: 0;
+    margin-left: 7px;
+  }
+
+  .at-hero-service ul {
+    padding-left: 0;
+    padding-right: 13px;
+  }
+
+  // cs-hero small text (Home 3)
+  .cs-hero-title .text-sm {
+    text-align: right;
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .cs-hero-title .text-sm-video {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  // mg-hero scroll link SVG
+  .mg-hero-scrool a svg {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  // mg-hero slider symbol (®)
+  .mg-hero-slider-symbol {
+    right: auto;
+    left: -60px;
+  }
+
+  // ============================================================
+  // 10. About Section
+  // ============================================================
+  .at-about-subtitle svg {
+    margin-right: 0;
+    margin-left: 4px;
+  }
+
+  .at-about-svg-wrap > svg:nth-child(1) {
+    left: auto;
+    right: 0;
+  }
+
+  .at-about-svg-wrap > svg:nth-child(3) {
+    left: auto;
+    right: 56px;
+  }
+
+  // ============================================================
+  // 11. Postbox (Blog) — play button SVG
+  // ============================================================
+  .postbox-play-btn a svg {
+    margin-left: 0;
+    margin-right: 3px;
+  }
+
+  // ============================================================
+  // 12. Border Direction Utilities
+  // ============================================================
+  .border-white\/01 {
+    border-right: none;
+    border-left: 1px solid var(--at-neutral-100);
+  }
+
+  .border-dark\/01 {
+    border-right: none;
+    border-left: 1px solid var(--at-neutral-900);
+  }
+
+  // alt-hero title wrap (Home 2)
+  .alt-hero-title-wrap {
+    border-left: 1px solid rgba(30, 30, 30, 0.1);
+    border-right: 1px solid rgba(30, 30, 30, 0.1);
+  }
+
+  // ============================================================
+  // 13. FAQ — button text-align, padding, number margin
+  // ============================================================
+  .at-faq-button {
+    text-align: right;
+    padding-right: 50px;
+    padding-left: 0;
+
+    span {
+      margin-right: 0;
+      margin-left: 70px;
+
+      @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 574.98px) {
+        margin-left: 30px;
+      }
+    }
+
+    &::before, &::after {
+      right: auto;
+      left: 0;
+    }
+  }
+
+  .at-faq-body {
+    padding-right: 45px;
+    padding-left: 112px;
+
+    @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 574.98px) {
+      padding-left: 0;
+    }
+  }
+
+  // ============================================================
+  // 14. Process Cards — meta label
+  // ============================================================
+  .process-scroll .process-card__meta-label {
+    margin-left: 0;
+    margin-right: 4px;
+  }
+
+  // ============================================================
+  // 15. Case Studies Metrics — padding swap
+  // ============================================================
+  .card_case__studies-metric:first-child {
+    padding-right: 0;
+    padding-left: 32px;
+  }
+
+  .card_case__studies-metric:last-child {
+    padding-left: 0;
+    padding-right: 32px;
+  }
+
+  // ============================================================
+  // 16. Portfolio — tag spacing, SVG
+  // ============================================================
+  .cs-portfolio-tag ul li:not(:first-child) {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  .alt-portfolio-main-title span svg {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  // ============================================================
+  // 17. Testimonials — avatar/image margins
+  // ============================================================
+  .cilent-word-wide-content .avatar {
+    margin-left: 0;
+    margin-right: -25px;
+
+    &:first-child {
+      margin-right: 0;
+    }
+  }
+
+  .block-author .avatar {
+    margin-right: 0;
+    margin-left: -22px;
+  }
+
+  .block-author :nth-last-child(1) {
+    margin-left: 0;
+  }
+
+  .testimonial-cart-wrap.style-2 .testimonial-left-img {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .testimonial-top-left-img {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .testimonial-top-right-logo {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  // ============================================================
+  // 18. Buttons — icon margin & SVG position
+  // ============================================================
+  .at-btn i {
+    margin-left: 0;
+    margin-right: 4px;
+
+    svg {
+      left: auto;
+      right: 1px;
+      transform: translateY(-2px) scaleX(-1);
+    }
+  }
+
+  // ============================================================
+  // 19. Pricing Card — period & feature icon
+  // ============================================================
+  .home-2-pricing-card__price-period {
+    margin-left: 0;
+    margin-right: 2px;
+  }
+
+  .home-2-pricing-card__feature-icon {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+
+  // ============================================================
+  // 20. Journey Timeline — padding & line position
+  // ============================================================
+  .block-journey .journey-list-wrap {
+    padding-left: 0;
+    padding-right: 80px;
+
+    @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 574.98px) {
+      padding-right: 30px;
+    }
+  }
+
+  .block-journey .journey-list-line {
+    left: auto;
+    right: 0;
+  }
+
+  // ============================================================
+  // 21. Product page — benefits list
+  // ============================================================
+  .content-product-right__benefits {
+    padding-left: 0;
+    padding-right: 21px;
+  }
+
+  // ============================================================
+  // 22. Checkout — phone input, card icons
+  // ============================================================
+  .checkout-billing__input--phone {
+    padding-left: 0;
+    padding-right: 120px;
+  }
+
+  .checkout-payment__input--card {
+    padding-right: 0;
+    padding-left: 160px;
+
+    @media (max-width: 991px) {
+      padding-left: 24px;
+    }
+  }
+
+  .checkout-payment__card-icons {
+    right: auto;
+    left: 21px;
+  }
+
+  // ============================================================
+  // 23. Nice Select — padding & text-align
+  // ============================================================
+  .nice-select {
+    padding-left: 30px;
+    padding-right: 55px;
+  }
+
+  .nice-select .option {
+    padding-left: 29px;
+    padding-right: 18px;
+    text-align: right;
+  }
+
+  // ============================================================
+  // 24. Text Scale Animation origin
+  // ============================================================
+  .text-scale-anim {
+    transform-origin: top right;
+  }
+
+  // ============================================================
+  // 25. Newsletter popup — message border
+  // ============================================================
+  .newsletter-popup .modal-dialog .modal-content .newsletter-message {
+    border-left-width: 0;
+    border-right-width: 4px;
+  }
+
+  // ============================================================
+  // 26. Rotate utility (arrow icons)
+  // ============================================================
+  .rotate-90 {
+    rotate: -90deg;
+  }
+
+  // ============================================================
+  // 27. Newsletter Popup — border-radius & message border
+  // ============================================================
+  .newsletter-popup .modal-dialog .modal-content {
+    .newsletter-popup-content {
+      @media (min-width: 768px) {
+        border-top-left-radius: var(--bs-border-radius-lg);
+        border-bottom-left-radius: var(--bs-border-radius-lg);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+
+    .newsletter-message {
+      border-left: none;
+      border-right: 5px solid #eee;
+      padding: 15px 15px 15px 30px;
+    }
+  }
+
+  // ============================================================
+  // 28. Search Form — button position & input padding
+  // ============================================================
+  .at-search-form-btn {
+    right: auto;
+    left: 12px;
+  }
+
+  .at-search-form-input {
+    padding-left: 15px;
+    padding-right: 32px;
+  }
+
+  // ============================================================
+  // 29. Hamburger off-canvas panel — align menu labels to the reading edge
+  // ============================================================
+  // The big vertical menu links are display:block, so their inline text needs an
+  // explicit alignment. In RTL that is the right edge: the panel is 600px wide
+  // with only 100px of wrapper padding, so right-aligned labels stay well inside
+  // the visible backdrop no matter which edge the panel docks to, and they read
+  // from the same side as the rest of the page.
+  .at-offcanvas-2-wrapper .at-offcanvas-menu ul li > a {
+    text-align: right;
+  }
+
+  // ============================================================
+  // 30. Keyword Ticker / marquee — keep the scroller LTR
+  // ============================================================
+  // The carouselTicker plugin floats items left and positions them with
+  // absolute `left` pixels, and the GSAP .scroll-move-* helpers translate on X;
+  // neither is RTL-aware, so under [dir="rtl"] the "right"-moving set is pushed
+  // off-canvas and disappears. Forcing the scroller itself to LTR restores the
+  // plugin's geometry; each item's Arabic text still shapes correctly on its own.
+  .carouselTicker,
+  .carouselTicker__list,
+  .carouselTicker__item {
+    direction: ltr;
+  }
+
+  // ============================================================
+  // 31. Odometer counters — keep digits in numeric (LTR) order
+  // ============================================================
+  // Odometer lays each digit out as an inline element; under [dir="rtl"] the
+  // inline flow reverses and "25" renders as "52". Force the counter to LTR so
+  // multi-digit numbers keep their natural order regardless of page direction.
+  .odometer,
+  .odometer.odometer-auto-theme,
+  .odometer.odometer-theme-default {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+  }
+
+  // ============================================================
+  // 32. Nice Select — mirror the bar and the caret
+  // ============================================================
+  // main.css pins `:before` (the 48px rule) to `left: 0` and `:after` (the
+  // caret) to `right: 0`. Neither is a logical property, so under [dir="rtl"]
+  // the pair keeps its Latin order and the caret lands on the text side of the
+  // label instead of the outer edge (ticket 4579759).
+  .nice-select {
+    &::before {
+      left: auto;
+      right: 0;
+    }
+
+    &::after {
+      right: auto;
+      left: 0;
+    }
+  }
+
+  // ============================================================
+  // 33. Newsletter shortcode (style 2) — reserve room on the correct side
+  // ============================================================
+  // theme.scss reserves `padding-right: 84px` on `.input-subscribe` for the
+  // absolutely-positioned submit button. Bootstrap RTL correctly flips the
+  // button's `end-0`/`me-3` to the LEFT edge, but the reserved padding stays on
+  // the right, so the arrow sits on top of the placeholder (ticket 4579759).
+  .box-newsletter .input-subscribe {
+    padding-right: 0;
+    padding-left: 84px;
+  }
+
+  // ============================================================
+  // 34. Search overlay (mobile) — keep the submit button on one edge
+  // ============================================================
+  // The mobile block in theme.scss carries `!important` on
+  // `.at-search-form-btn { right: 8px }` and on the input's `padding-right`.
+  // Section 28 above is unprefixed, so on an RTL phone the `right` declaration
+  // survives alongside the RTL `left`, anchoring the button to BOTH edges — it
+  // stretches the full width of the field and hides the input entirely
+  // (ticket 4579759). Match the specificity so the button stays on the left
+  // only, and move the reserved text room to the matching side.
+  @media (max-width: 767.98px) {
+    .at-search-form-input {
+      padding: 8px 16px 8px 8px !important;
+
+      input {
+        margin-right: 0 !important;
+        margin-left: 96px !important;
+      }
+    }
+
+    .at-search-form-btn {
+      right: auto !important;
+      left: 8px !important;
+    }
+  }
+
+}

@@ -1,0 +1,11 @@
+{
+    "Services & Process": {
+        "name": "Hizmetler ve Süreç"
+    },
+    "Pricing & Billing": {
+        "name": "Fiyatlandırma ve Faturalandırma"
+    },
+    "Support & Delivery": {
+        "name": "Destek ve Teslimat"
+    }
+}

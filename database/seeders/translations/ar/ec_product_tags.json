@@ -1,0 +1,20 @@
+{
+    "Fashion": {
+        "name": "موضة"
+    },
+    "Casual": {
+        "name": "غير رسمي"
+    },
+    "Formal": {
+        "name": "رَسمِيّ"
+    },
+    "Winter": {
+        "name": "شتاء"
+    },
+    "Streetwear": {
+        "name": "ملابس الشارع"
+    },
+    "Essentials": {
+        "name": "أساسيات"
+    }
+}

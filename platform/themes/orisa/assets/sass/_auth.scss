@@ -1,0 +1,347 @@
+// Auth page styles (Login, Register, Forgot Password, etc.)
+.auth-card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  background-color: var(--at-neutral-0, #fff);
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+
+  @media (max-width: 767.98px) {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  &.auth-card__horizontal {
+    .auth-card__right {
+      background-color: rgba(var(--primary-color-rgb, 240, 70, 14), 0.03);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      [data-bs-theme="dark"] & {
+        background-color: rgba(var(--primary-color-rgb, 240, 70, 14), 0.05);
+      }
+    }
+
+    .auth-card__left {
+      padding: 0;
+      overflow: hidden;
+
+      .auth-card__banner {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .auth-card__banner {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  // The Ecommerce plugin ships `.auth-card { background-color: #f8f9fa !important }`
+  // in front-auth.css, so the dark card background has to be !important too or the
+  // card stays light while the dark-mode label/input colours still apply.
+  [data-bs-theme="dark"] & {
+    &,
+    .card-header {
+      background-color: var(--at-neutral-dark-100, #212121) !important;
+    }
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .auth-card__header {
+    padding: 3rem 3rem 1.5rem;
+
+    @media (max-width: 767.98px) {
+      padding: 2rem 1.5rem 1rem;
+    }
+
+    .auth-card__header-icon {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      background-color: var(--at-neutral-100, #f3f4f6) !important;
+      border-radius: 12px !important;
+      color: var(--primary-color, #F0460E) !important;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+      &:hover {
+        transform: scale(1.1) rotate(5deg);
+      }
+
+      [data-bs-theme="dark"] & {
+        background-color: var(--at-neutral-dark-200, #333) !important;
+      }
+    }
+
+    .auth-card__header-title {
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--at-neutral-900);
+      margin-bottom: 0.5rem;
+    }
+
+    .auth-card__header-description {
+      font-size: 15px;
+      color: var(--at-neutral-500);
+      line-height: 1.6;
+    }
+  }
+
+  .auth-card__body {
+    padding: 0 3rem 3rem;
+
+    @media (max-width: 767.98px) {
+      padding: 0 1.5rem 2.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+
+      label {
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--at-neutral-900);
+        margin-bottom: 8px;
+        display: block;
+      }
+    }
+
+    .form-control {
+      background: transparent;
+      border: none;
+      border-bottom: 1.5px solid var(--at-neutral-100, #DFDFDF);
+      border-radius: 0;
+      padding-top: 12px !important;
+      padding-bottom: 12px !important;
+      padding-inline-start: 0;
+      padding-inline-end: 0;
+      height: auto;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: -0.02em;
+      color: var(--at-neutral-900);
+      transition: all 0.2s ease;
+      box-shadow: none;
+
+      &:focus {
+        border-color: var(--at-neutral-900);
+        box-shadow: none;
+        background: transparent;
+      }
+
+      &::placeholder {
+        color: var(--at-neutral-500);
+        opacity: 0.5;
+      }
+    }
+
+    .btn-auth-submit {
+      background-color: var(--at-neutral-900, #1D1D1D) !important;
+      border: none !important;
+      border-radius: 50px !important;
+      padding: 16px 30px !important;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      text-transform: capitalize;
+      color: var(--at-neutral-0, #FEFEFE) !important;
+      transition: all 0.3s ease;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      i, svg {
+        font-size: 18px;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: var(--at-neutral-900, #1D1D1D) !important;
+        opacity: 0.9;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .form-check {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+
+      .form-check-input {
+        margin-top: 0;
+        width: 18px;
+        height: 18px;
+        border-color: var(--at-neutral-100);
+        cursor: pointer;
+
+        &:checked {
+          background-color: var(--at-neutral-900);
+          border-color: var(--at-neutral-900);
+        }
+      }
+
+      .form-check-label {
+        margin-bottom: 0;
+        margin-inline-start: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--at-neutral-500);
+        cursor: pointer;
+      }
+    }
+
+    .text-decoration-underline {
+      color: var(--at-neutral-500);
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--at-neutral-900);
+      }
+    }
+
+    // Register link (matches the default Ecommerce structure)
+    .mt-3.text-center {
+      margin-top: 2rem !important;
+      font-size: 15px;
+      color: var(--at-neutral-500);
+
+      a {
+        color: var(--at-neutral-900);
+        font-weight: 600;
+        text-decoration: none !important;
+        margin-inline-start: 5px;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s ease;
+
+        &:hover {
+          border-bottom-color: var(--at-neutral-900);
+        }
+      }
+    }
+
+    // Form Field Icons (Ecommerce structure)
+    .position-relative {
+      .auth-input-icon {
+        background: transparent !important;
+        border: 0 !important;
+        inset-inline-start: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        color: var(--at-neutral-500);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 40px;
+        height: 100%;
+
+        i, svg {
+          stroke-width: 1.5;
+          height: 1.25rem;
+          width: 1.25rem;
+        }
+      }
+
+      .form-control,
+      .input-group .form-control {
+        padding-inline-start: 2.5rem;
+      }
+    }
+  }
+}
+
+[data-bs-theme="dark"] .auth-card {
+  .auth-card__header-title {
+    color: var(--at-neutral-dark-900, #EFEFEF);
+  }
+
+  .auth-card__header-description {
+    color: var(--at-neutral-dark-500, #B3B3B3);
+  }
+
+  .auth-card__body {
+    .form-control {
+      color: var(--at-neutral-dark-900, #EFEFEF);
+      border-bottom-color: var(--at-neutral-dark-300, #404040);
+
+      &:focus {
+        border-color: var(--at-neutral-dark-500, #B3B3B3);
+      }
+
+      &::placeholder {
+        color: var(--at-neutral-dark-500, #B3B3B3);
+      }
+    }
+
+    label {
+      color: var(--at-neutral-dark-900, #EFEFEF);
+    }
+
+    .form-check-label {
+      color: var(--at-neutral-dark-500, #B3B3B3);
+    }
+
+    // Remember-me checkbox: dark fill + visible outline in dark mode. When checked,
+    // use the brand color so Bootstrap's white checkmark stays legible on the dark card.
+    .form-check-input {
+      background-color: var(--at-neutral-dark-200, #333);
+      border-color: var(--at-neutral-dark-300, #404040);
+
+      &:checked {
+        background-color: var(--primary-color, #F0460E);
+        border-color: var(--primary-color, #F0460E);
+      }
+    }
+
+    // Leading field icons (email / password) need to lift against the dark card
+    .auth-input-icon {
+      color: var(--at-neutral-dark-500, #B3B3B3);
+    }
+
+    .btn-auth-submit {
+      background-color: var(--at-neutral-dark-900, #EFEFEF) !important;
+      color: var(--at-neutral-dark-0, #0C0C0C) !important;
+
+      &:hover {
+        background-color: var(--at-neutral-dark-900, #EFEFEF) !important;
+      }
+    }
+
+    .text-decoration-underline {
+      color: var(--at-neutral-dark-500, #B3B3B3);
+
+      &:hover {
+        color: var(--at-neutral-dark-900, #EFEFEF);
+      }
+    }
+
+    .mt-3.text-center {
+      color: var(--at-neutral-dark-500, #B3B3B3);
+
+      a {
+        color: var(--at-neutral-dark-900, #EFEFEF);
+
+        &:hover {
+          border-bottom-color: var(--at-neutral-dark-900, #EFEFEF);
+        }
+      }
+    }
+  }
+}

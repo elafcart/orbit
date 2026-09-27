@@ -1,0 +1,18 @@
+{
+    "Branding": {
+        "name": "merek",
+        "description": "Desain identitas merek, pembuatan logo, dan strategi gambar."
+    },
+    "UI/UX Design": {
+        "name": "Desain UI/UX",
+        "description": "Desain antarmuka dan pengalaman pengguna untuk web dan seluler."
+    },
+    "Web Development": {
+        "name": "Pengembangan Web",
+        "description": "Kembangkan situs web dan aplikasi web khusus."
+    },
+    "Digital Marketing": {
+        "name": "Pemasaran Digital",
+        "description": "SEO, jejaring sosial, dan layanan pemasaran kinerja."
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "Homepage": {
+        "name": "الصفحة الرئيسية"
+    },
+    "Portfolio": {
+        "name": "مَلَفّ"
+    },
+    "Services 1": {
+        "name": "الخدمات 1"
+    },
+    "Services 2": {
+        "name": "الخدمات 2"
+    },
+    "Services 3": {
+        "name": "الخدمات 3"
+    },
+    "Our Team": {
+        "name": "فريقنا"
+    },
+    "Blog": {
+        "name": "Blog"
+    },
+    "Contact 1": {
+        "name": "الاتصال 1"
+    },
+    "Contact 2": {
+        "name": "الاتصال 2"
+    },
+    "About 1": {
+        "name": "حوالي 1"
+    },
+    "About 2": {
+        "name": "حوالي 2"
+    },
+    "About 3": {
+        "name": "حوالي 3"
+    },
+    "Pricing": {
+        "name": "التسعير"
+    },
+    "FAQ": {
+        "name": "FAQ"
+    },
+    "Coming Soon": {
+        "name": "قريباً"
+    },
+    "Privacy Policy": {
+        "name": "سياسة الخصوصية"
+    }
+}

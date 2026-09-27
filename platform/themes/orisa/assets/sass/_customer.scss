@@ -1,0 +1,149 @@
+// Customer dashboard (ecommerce plugin) adjustments for the Orisa shell.
+//
+// The plugin ships the dashboard for a theme whose header sits in the normal
+// flow and whose palette is light-only - `customer.scss` hardcodes #ffffff,
+// #f8fafc, #111827, #64748b and friends throughout, with no dark-mode branch.
+// Orisa overlays the header and supports dark mode, so those surfaces have to be
+// re-stated here (ticket 4576241). `!important` is deliberate: the plugin's own
+// rules are deeply nested (up to 5 levels) and load from a stylesheet we do not
+// control, so matching their specificity selector-for-selector would be far more
+// brittle than overriding outright.
+
+// ---- 1. Clear the overlaying header ----
+// `.bb-customer-page` only reserves `margin: 50px 0 0`, which is shorter than the
+// Orisa header (110px on a default install, more with the topbar or header style
+// 2), so the sidebar card renders underneath the logo. `--at-header-height` is
+// published by the header partial and updated on resize, so this tracks the real
+// bar height.
+.bb-customer-page {
+  margin-top: 0;
+  padding-top: calc(var(--at-header-height, 110px) + 40px);
+
+  @media (max-width: 991.98px) {
+    padding-top: calc(var(--at-header-height, 110px) + 24px);
+  }
+}
+
+// ---- 2. Country flag / dial code on phone fields ----
+// The global `.iti` rule centres the flag with `transform: translateY(-50%)`,
+// which turns `.iti__flag-container` into a stacking context and traps the
+// `z-index: 1` intl-tel-input puts on `.iti__selected-flag`. The input is
+// `position: relative; z-index: 0` and comes after the container in the DOM, so
+// its opaque background painted over the flag and the dial code - the phone
+// field looked like it had a blank gap instead of "+880".
+.iti .iti__flag-container {
+  z-index: 2;
+}
+
+// That same global rule also zeroes the flag's inline-start padding, which is
+// right for the borderless underlined contact inputs it was written for but
+// leaves the flag jammed against the border on the bordered `.form-control`
+// fields the dashboard and checkout use.
+.bb-customer-page,
+.bb-ecommerce-checkout {
+  .iti .iti__selected-flag {
+    padding-inline-start: 12px;
+  }
+}
+
+// ---- 3. Dark mode ----
+[data-bs-theme="dark"] {
+  // Opaque light surfaces -> dark. The dashboard's Bootstrap cards use
+  // `bg-*-opacity-10`, so those tints resolve dark on their own once what sits
+  // behind them is dark; only the solid layers below need re-stating.
+  .bb-customer-page,
+  .bb-customer-page .table-responsive {
+    background-color: var(--at-neutral-dark-0, #0C0C0C) !important;
+  }
+
+  .bb-customer-page .bg-white,
+  .bb-customer-page .bb-customer-card,
+  .bb-customer-page .bb-customer-card-header,
+  .bb-customer-page .bb-customer-profile,
+  .bb-customer-page .bb-empty,
+  .bb-customer-page .table-responsive tbody tr,
+  .bb-customer-page .pagination .page-item .page-link,
+  .bb-customer-sidebar-wrapper,
+  .bb-customer-sidebar-wrapper .bb-customer-sidebar .bb-customer-sidebar-heading,
+  .bb-customer-sidebar-wrapper .bb-customer-sidebar-footer {
+    background: #171717 !important;
+    background-color: #171717 !important;
+  }
+
+  .bb-customer-page .border-border,
+  .bb-customer-page .border-bottom,
+  .bb-customer-page .bb-profile-content .bb-profile-header,
+  .bb-customer-page .bb-customer-card,
+  .bb-customer-page .bb-customer-card-header,
+  .bb-customer-page .bb-customer-profile,
+  .bb-customer-page .bb-empty,
+  .bb-customer-page .pagination .page-item .page-link,
+  .bb-customer-sidebar-wrapper,
+  .bb-customer-sidebar-wrapper .bb-customer-sidebar .bb-customer-sidebar-heading,
+  .bb-customer-sidebar-wrapper .bb-customer-sidebar-footer {
+    border-color: #333333 !important;
+  }
+
+  .bb-customer-page .table-responsive tbody tr td {
+    border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+  }
+
+  // Primary copy
+  .bb-customer-page,
+  .bb-customer-page .bb-profile-content .bb-profile-header .bb-profile-header-title,
+  .bb-customer-page h2.customer-page-title,
+  .bb-customer-page label,
+  .bb-customer-page .form-label,
+  .bb-customer-page .bb-customer-card-title,
+  .bb-customer-page .bb-customer-card-title .value,
+  .bb-customer-page .bb-customer-card-body .form-group label,
+  .bb-customer-page .bb-customer-card-info .info-item .value,
+  .bb-customer-page .bb-empty .bb-empty-title,
+  .bb-customer-page .bb-customer-profile-info h4,
+  .bb-customer-page .table,
+  .bb-customer-page .table th,
+  .bb-customer-page .table td,
+  .bb-customer-sidebar-wrapper .bb-customer-sidebar .bb-customer-sidebar-heading .name {
+    color: var(--at-neutral-dark-900, #EFEFEF) !important;
+  }
+
+  // Secondary copy
+  .bb-customer-page .text-muted,
+  .bb-customer-page .bb-empty .bb-empty-subtitle,
+  .bb-customer-page .bb-customer-card-info .info-item .label,
+  .bb-customer-page .pagination .page-item .page-link,
+  .bb-customer-sidebar-wrapper .bb-customer-sidebar .bb-customer-sidebar-heading .email,
+  .bb-customer-sidebar-wrapper .bb-customer-sidebar .bb-customer-navigation .nav-section-title {
+    color: #A0A0A0 !important;
+  }
+
+  // Sidebar navigation - `.active` keeps the plugin's primary-colour pill.
+  .bb-customer-sidebar-wrapper .bb-customer-sidebar .bb-customer-navigation .nav-pills .nav-item .nav-link:not(.active),
+  .bb-customer-sidebar-wrapper .bb-customer-sidebar .bb-customer-navigation .nav-pills .nav-item .nav-link:not(.active) .nav-icon {
+    color: #D5D5D5 !important;
+  }
+
+  .bb-customer-sidebar-wrapper .bb-customer-sidebar .bb-customer-navigation .nav-pills .nav-item .nav-link:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: #FFFFFF !important;
+  }
+
+  // Inputs
+  .bb-customer-page .form-control,
+  .bb-customer-page .form-select,
+  .bb-customer-page .input-group-text {
+    background-color: var(--at-neutral-dark-100, #212121) !important;
+    border-color: var(--at-neutral-dark-300, #404040) !important;
+    color: var(--at-neutral-dark-900, #EFEFEF) !important;
+  }
+
+  .bb-customer-page .form-control::placeholder {
+    color: #8A8A8A !important;
+  }
+
+  .bb-customer-page .form-control:disabled,
+  .bb-customer-page .form-control[readonly] {
+    background-color: #1A1A1A !important;
+    color: #A0A0A0 !important;
+  }
+}

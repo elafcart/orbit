@@ -1,0 +1,58 @@
+{
+    "Lumina Brand Identity": {
+        "name": "Identité de marque Lumina",
+        "description": "Un système d'identité de marque complet pour une marque de soins de luxe, comprenant le logo, la typographie, la palette de couleurs, la conception de l'emballage et les directives de la marque.",
+        "client": "Soins de la peau Lumina",
+        "place": "San Francisco",
+        "author": "Michael Anderson"
+    },
+    "Nomad Travel App": {
+        "name": "Application de voyage nomade",
+        "description": "Conception UI/UX pour une application mobile de réservation de voyages pour les nomades numériques, avec une planification intelligente des voyages et des fonctionnalités communautaires.",
+        "client": "Compagnie Nomade.",
+        "place": "New York",
+        "author": "Jennifer Brun"
+    },
+    "Verde E-Commerce Platform": {
+        "name": "Plateforme de commerce électronique Verde",
+        "description": "Site Web de commerce électronique complet pour les marques de mode durable, avec une interface claire, un paiement transparent et un CMS intégré.",
+        "client": "Mode Verte",
+        "place": "Londres",
+        "author": "David Clark"
+    },
+    "Pulse Digital Campaign": {
+        "name": "Campagne numérique Pulse",
+        "description": "Une campagne de marketing numérique multicanal stimule la notoriété de la marque et multiplie par trois la croissance des prospects grâce à un référencement ciblé et à une publicité sur les réseaux sociaux.",
+        "client": "Fitness pulsé",
+        "place": "Berlin",
+        "author": "Sarah Johnson"
+    },
+    "Bloom Agency Website": {
+        "name": "Site Web de l'agence Bloom",
+        "description": "Refonte du site internet de l'agence de création avec animations personnalisées, vitrine de portfolio et identité visuelle forte.",
+        "client": "Studio Bloom",
+        "place": "Singapour",
+        "author": "Robert Williams"
+    },
+    "Helio SaaS Dashboard": {
+        "name": "Tableau de bord Helio SaaS",
+        "description": "Concevez des interfaces de tableau de bord complexes pour les plateformes d'analyse SaaS, en vous concentrant sur la clarté des données, l'accessibilité et l'efficacité des flux de travail.",
+        "client": "Hélio Analytics",
+        "place": "Tokyo",
+        "author": "Emilie Davis"
+    },
+    "Craft Coffee Branding": {
+        "name": "Image de marque du café artisanal",
+        "description": "Identité de marque et conception d'emballage pour la torréfaction de café artisanale, démontrant la chaleur et le savoir-faire derrière chaque tasse de café.",
+        "client": "Café artisanal Co.",
+        "place": "Sidney",
+        "author": "James Wilson"
+    },
+    "Zora NFT Marketplace": {
+        "name": "Marché Zora NFT",
+        "description": "Conception UI/UX et développement front-end de la plateforme Web3 pour le marché NFT avec profils d'artistes et fonctionnalités d'enchères.",
+        "client": "Zora Numérique",
+        "place": "Toronto",
+        "author": "Amandine Martinez"
+    }
+}

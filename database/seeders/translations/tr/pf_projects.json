@@ -1,0 +1,58 @@
+{
+    "Lumina Brand Identity": {
+        "name": "Lumina Marka Kimliği",
+        "description": "Lüks bir cilt bakımı markası için logo, tipografi, renk paleti, ambalaj tasarımı ve marka yönergelerini içeren eksiksiz bir marka kimliği sistemi.",
+        "client": "Lumina Cilt Bakımı",
+        "place": "San Francisco",
+        "author": "Michael Anderson"
+    },
+    "Nomad Travel App": {
+        "name": "Nomad Travel Uygulaması",
+        "description": "Akıllı yolculuk planlaması ve topluluk özelliklerine sahip, dijital göçebelere yönelik bir mobil seyahat rezervasyon uygulaması için UI/UX tasarımı.",
+        "client": "Nomad A.Ş.",
+        "place": "New York",
+        "author": "Jennifer Brown"
+    },
+    "Verde E-Commerce Platform": {
+        "name": "Verde E-Ticaret Platformu",
+        "description": "Temiz bir arayüz, kusursuz ödeme ve entegre CMS ile sürdürülebilir moda markaları için tam özellikli e-ticaret web sitesi.",
+        "client": "Verde Modası",
+        "place": "Londra",
+        "author": "David Clark"
+    },
+    "Pulse Digital Campaign": {
+        "name": "Darbe Dijital Kampanyası",
+        "description": "Çok kanallı dijital pazarlama kampanyası, hedefli SEO ve sosyal medya reklamcılığı yoluyla marka bilinirliğini artırır ve 3 kat büyüme sağlar.",
+        "client": "Nabız Sporu",
+        "place": "Berlin",
+        "author": "Sarah Johnson"
+    },
+    "Bloom Agency Website": {
+        "name": "Bloom Ajansı Web Sitesi",
+        "description": "Yaratıcı ajans web sitesinin özel animasyonlar, portföy vitrini ve güçlü görsel kimlikle yeniden tasarlanması.",
+        "client": "Bloom Stüdyo",
+        "place": "Singapur",
+        "author": "Robert Williams"
+    },
+    "Helio SaaS Dashboard": {
+        "name": "Helio SaaS Kontrol Paneli",
+        "description": "Veri netliği, erişilebilirlik ve iş akışı verimliliğine odaklanarak SaaS analiz platformları için karmaşık kontrol paneli arayüzleri tasarlayın.",
+        "client": "Helio Analizi",
+        "place": "Tokyo",
+        "author": "Emily Davis"
+    },
+    "Craft Coffee Branding": {
+        "name": "Craft Kahve Markalama",
+        "description": "Her fincan kahvenin ardındaki sıcaklığı ve işçiliği gösteren, zanaatkâr kahvehanenin marka kimliği ve ambalaj tasarımı.",
+        "client": "Craft Coffee Co.",
+        "place": "Sidney",
+        "author": "James Wilson"
+    },
+    "Zora NFT Marketplace": {
+        "name": "Zora NFT Pazaryeri",
+        "description": "Sanatçı profilleri ve açık artırma özellikleriyle NFT pazarı için UI/UX tasarımı ve Web3 platformu ön uç geliştirmesi.",
+        "client": "Zora Dijital",
+        "place": "Toronto",
+        "author": "Amanda Martinez"
+    }
+}

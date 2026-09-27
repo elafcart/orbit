@@ -1,0 +1,74 @@
+{
+    "What services does Orisa offer?": {
+        "question": "Orisa cung cấp những dịch vụ gì?",
+        "answer": "Orisa là agency sáng tạo toàn diện cung cấp thiết kế UI/UX, nhận diện thương hiệu, phát triển web, marketing số, đồ họa chuyển động và chiến lược nội dung. Chúng tôi làm việc với startup, SME và thương hiệu doanh nghiệp trên toàn thế giới."
+    },
+    "How do I get started with a project?": {
+        "question": "Làm thế nào để bắt đầu một dự án?",
+        "answer": "Bắt đầu rất đơn giản. Liên hệ qua trang Liên hệ hoặc gửi email cho chúng tôi tại hello@orisa.com. Chúng tôi sẽ sắp xếp cuộc gọi khám phá để hiểu mục tiêu, lịch trình và ngân sách của bạn trước khi đề xuất giải pháp phù hợp."
+    },
+    "What industries do you work with?": {
+        "question": "Orisa làm việc với những ngành nào?",
+        "answer": "Chúng tôi làm việc với khách hàng thuộc nhiều ngành bao gồm công nghệ, thời trang, y tế, fintech, khách sạn, thương mại điện tử và nhiều lĩnh vực khác. Quy trình sáng tạo linh hoạt giúp chúng tôi mang lại kết quả cho mọi lĩnh vực."
+    },
+    "How long does a typical project take?": {
+        "question": "Một dự án thường kéo dài bao lâu?",
+        "answer": "Thời gian dự án thay đổi tùy theo phạm vi và độ phức tạp. Dự án nhận diện thương hiệu thường mất 3-6 tuần, trong khi thiết kế và phát triển website đầy đủ có thể từ 6-12 tuần. Chúng tôi sẽ cung cấp lịch trình chi tiết trong giai đoạn đề xuất."
+    },
+    "Do you work with startups or only established brands?": {
+        "question": "Orisa có làm việc với startup không hay chỉ với thương hiệu lớn?",
+        "answer": "Chúng tôi thích làm việc với doanh nghiệp ở mọi giai đoạn. Dù bạn là startup xây dựng thương hiệu từ đầu hay công ty lớn muốn làm mới nhận diện, chúng tôi có phương pháp và mức giá phù hợp cho bạn."
+    },
+    "How is your pricing structured?": {
+        "question": "Cấu trúc giá của Orisa như thế nào?",
+        "answer": "Giá của chúng tôi theo dự án và phù hợp với phạm vi công việc. Chúng tôi cung cấp gói giá cố định cho dự án rõ ràng và báo giá tùy chỉnh cho dự án phức tạp hơn. Mọi giá đều minh bạch, không phí ẩn."
+    },
+    "Do you offer monthly retainer plans?": {
+        "question": "Orisa có gói duy trì hàng tháng không?",
+        "answer": "Có, chúng tôi cung cấp gói duy trì liên tục cho khách hàng cần hỗ trợ thiết kế, marketing hoặc phát triển thường xuyên. Gói duy trì thanh toán hàng tháng và có thể tăng giảm theo nhu cầu."
+    },
+    "What payment methods do you accept?": {
+        "question": "Orisa chấp nhận phương thức thanh toán nào?",
+        "answer": "Chúng tôi chấp nhận chuyển khoản ngân hàng, thẻ tín dụng/ghi nợ và PayPal. Đối với dự án theo gói, chúng tôi thường yêu cầu đặt cọc 50% để bắt đầu, phần còn lại thanh toán khi hoàn thành dự án."
+    },
+    "What is your revision policy?": {
+        "question": "Chính sách chỉnh sửa của Orisa là gì?",
+        "answer": "Các gói tiêu chuẩn bao gồm số lượt chỉnh sửa nhất định ở mỗi giai đoạn. Chúng tôi nêu rõ trong đề xuất dự án. Các chỉnh sửa bổ sung ngoài phạm vi thỏa thuận có thể được thực hiện theo giá giờ tiêu chuẩn."
+    },
+    "Will I own the final design files and assets?": {
+        "question": "Tôi có sở hữu file thiết kế và tài nguyên cuối cùng không?",
+        "answer": "Có. Sau khi thanh toán đầy đủ, toàn bộ quyền sở hữu tất cả sản phẩm giao và file nguồn được chuyển giao cho bạn. Bạn sẽ nhận được mọi tài nguyên thương hiệu, file thiết kế và mã nguồn liên quan."
+    },
+    "Do you offer post-launch support?": {
+        "question": "Orisa có hỗ trợ sau khi ra mắt không?",
+        "answer": "Hoàn toàn. Chúng tôi cung cấp 30 ngày hỗ trợ miễn phí sau khi giao dự án để xử lý mọi vấn đề. Đối với hỗ trợ liên tục, chúng tôi có gói bảo trì và hỗ trợ phù hợp với nhu cầu của bạn."
+    },
+    "Can you work with our existing team or platform?": {
+        "question": "Orisa có thể làm việc với đội ngũ hoặc nền tảng hiện có không?",
+        "answer": "Có. Chúng tôi có kinh nghiệm hợp tác với đội ngũ nội bộ, nhà phát triển bên thứ ba và các công cụ hoặc nền tảng hiện có. Chúng tôi thích ứng với quy trình và phong cách giao tiếp của bạn để hợp tác liền mạch."
+    },
+    "How do you handle feedback and communication during a project?": {
+        "question": "Orisa xử lý phản hồi và giao tiếp trong dự án như thế nào?",
+        "answer": "Chúng tôi sử dụng các công cụ quản lý dự án như Notion, Figma và Slack để hợp tác minh bạch. Bạn sẽ nhận được cập nhật tiến độ thường xuyên và có quyền truy cập trực tiếp đến người phụ trách dự án trong suốt quá trình."
+    },
+    "Do you offer remote design services?": {
+        "question": "Orisa có cung cấp dịch vụ thiết kế từ xa không?",
+        "answer": "Có, chúng tôi làm việc với khách hàng toàn cầu và được trang bị đầy đủ cho hợp tác từ xa. Đội ngũ trải rộng nhiều múi giờ và sử dụng công cụ hàng đầu để đảm bảo giao tiếp và giao hàng suôn sẻ bất kể vị trí."
+    },
+    "What makes Orisa different from other agencies?": {
+        "question": "Điều gì khiến Orisa khác biệt so với các agency khác?",
+        "answer": "Tại Orisa, chúng tôi kết hợp tư duy chiến lược với sự xuất sắc sáng tạo. Chúng tôi không chỉ làm cho mọi thứ đẹp mắt — chúng tôi đảm bảo mọi quyết định thiết kế phục vụ mục tiêu kinh doanh của bạn. Đội ngũ đầy nhiệt huyết, phản hồi nhanh và thực sự đầu tư vào thành công của bạn."
+    },
+    "Can I see examples of your previous work?": {
+        "question": "Tôi có thể xem ví dụ về công việc trước đây không?",
+        "answer": "Tất nhiên! Truy cập trang Portfolio để khám phá các nghiên cứu điển hình từ nhiều ngành và loại dự án. Chúng tôi sẵn lòng chia sẻ thêm mẫu công việc liên quan đến ngành của bạn theo yêu cầu."
+    },
+    "How do you ensure brand consistency across deliverables?": {
+        "question": "Orisa đảm bảo tính nhất quán thương hiệu trên các sản phẩm giao như thế nào?",
+        "answer": "Mỗi dự án bao gồm hướng dẫn phong cách thương hiệu toàn diện ghi chép màu sắc, kiểu chữ, giọng nói, sử dụng logo và nguyên tắc thiết kế. Điều này đảm bảo áp dụng nhất quán trên mọi điểm chạm, dù do chúng tôi hay đội nội bộ quản lý."
+    },
+    "What happens if I need changes after the project is complete?": {
+        "question": "Điều gì xảy ra nếu tôi cần thay đổi sau khi dự án hoàn thành?",
+        "answer": "Chúng tôi luôn đồng hành lâu dài. Sau khi hoàn thành dự án, chúng tôi cung cấp gói yêu cầu thay đổi linh hoạt. Chỉ cần liên hệ người phụ trách tài khoản và chúng tôi sẽ xác định phạm vi công việc bổ sung nhanh chóng."
+    }
+}

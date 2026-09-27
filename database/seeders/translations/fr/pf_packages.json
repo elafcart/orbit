@@ -1,0 +1,32 @@
+{
+    "Trial Plan": {
+        "name": "Plan d'essai",
+        "description": "Forfait d'essai gratuit",
+        "features": "+Un membre\n+Plus de 1200 blocs d'interface utilisateur\n+10 Go de stockage cloud\n-Compte de messagerie personnel\n-Support prioritaire",
+        "action_label": "Commencer"
+    },
+    "Standard": {
+        "name": "Standard",
+        "description": "Convient aux grands groupes",
+        "price": "49 $",
+        "annual_price": "441 $",
+        "features": "+05 Membres\n+Toutes les chaînes multimédia\n+Toutes les fonctionnalités CRM avancées\n+Jusqu'à 15 000 contacts\nAssistance +24h/24 et 7j/7 (e-mail, chat)",
+        "action_label": "Commencer"
+    },
+    "Business": {
+        "name": "Entreprise",
+        "description": "Projet avancé",
+        "price": "69 $",
+        "annual_price": "621 $",
+        "features": "+50 Membres\n+Plus de 1500 blocs d'interface utilisateur\n+100 Go de stockage cloud\n+Compte de messagerie personnel\n+Assistance prioritaire",
+        "action_label": "Commencer"
+    },
+    "Enterprise": {
+        "name": "Entreprise",
+        "description": "Pour les grandes entreprises",
+        "price": "99 $",
+        "annual_price": "891 $",
+        "features": "+Customization features\n+ Scalability & security\n+Gestion de compte\n+Unlimited chat history\n+50 Intégration",
+        "action_label": "Commencer"
+    }
+}

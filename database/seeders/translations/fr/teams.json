@@ -1,0 +1,42 @@
+{
+    "Michael Anderson": {
+        "name": "Michael Anderson",
+        "title": "Directeur créatif",
+        "address": "123 Creative Drive, San Francisco, Californie 94102"
+    },
+    "Jennifer Brown": {
+        "name": "Jennifer Brun",
+        "title": "PDG et fondateur",
+        "address": "456 Agency Hub, New York, NY 10001"
+    },
+    "Sarah Brown": {
+        "name": "Sarah Brun",
+        "title": "Responsable du département de conception UX",
+        "address": "789 Design Boulevard, Austin, Texas 78701"
+    },
+    "David Clark": {
+        "name": "David Clark",
+        "title": "Chef d'équipe de conception d'interface utilisateur",
+        "address": "321, rue Studio, Seattle, WA 98101"
+    },
+    "Jessica Carter": {
+        "name": "Jessica Carter",
+        "title": "Programmeur Front-End",
+        "address": "654 Web Avenue, Denver, CO 80202"
+    },
+    "Lauren Graham": {
+        "name": "Lauren Graham",
+        "title": "Expert en stratégie de marque",
+        "address": "987 Strategy Lane, Boston, MA 02101"
+    },
+    "James Bennett": {
+        "name": "James Bennett",
+        "title": "Chef du département marketing numérique",
+        "address": "246 Marketing Center, Chicago, IL 60601"
+    },
+    "William Foster": {
+        "name": "William Foster",
+        "title": "Concepteur de mouvement",
+        "address": "135 Motion Plaza, Los Angeles, Californie 90001"
+    }
+}

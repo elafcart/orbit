@@ -1,0 +1,18 @@
+{
+    "Branding": {
+        "name": "Markalaşma",
+        "description": "Marka kimliği tasarımı, logo oluşturma ve imaj stratejisi."
+    },
+    "UI/UX Design": {
+        "name": "Kullanıcı Arayüzü/UX Tasarımı",
+        "description": "Web ve mobil cihazlar için arayüz ve kullanıcı deneyimi tasarlayın."
+    },
+    "Web Development": {
+        "name": "Web Geliştirme",
+        "description": "Özel web siteleri ve web uygulamaları geliştirin."
+    },
+    "Digital Marketing": {
+        "name": "Dijital Pazarlama",
+        "description": "SEO, sosyal ağ ve performans pazarlama hizmetleri."
+    }
+}

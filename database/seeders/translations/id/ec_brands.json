@@ -1,0 +1,34 @@
+{
+    "KOMONO": {
+        "name": "KOMONO",
+        "description": "Kacamata dan aksesoris kelas atas dengan filosofi desain minimalis."
+    },
+    "BRAVEN": {
+        "name": "BRAVEN",
+        "description": "Busana pria kontemporer memadukan gaya jalanan dengan jahitan yang halus."
+    },
+    "HALSTON & CO.": {
+        "name": "HALSTON & CO.",
+        "description": "Pakaian rajut yang tak lekang oleh waktu dan kebutuhan fesyen yang terinspirasi dari warisan budaya."
+    },
+    "LORCAN STUDIO": {
+        "name": "LORCAN STUDIO",
+        "description": "Pakaian luar arsitektural dibuat dengan memperhatikan struktur dan detail."
+    },
+    "ETIQUE": {
+        "name": "ETIQUE",
+        "description": "Busana wanita canggih dengan penekanan pada keanggunan modern."
+    },
+    "MIRETTI": {
+        "name": "MIRETTI",
+        "description": "Busana kasual kelas atas yang dirancang untuk kenyamanan dan gaya canggih."
+    },
+    "SOLENE": {
+        "name": "SOLENE",
+        "description": "Fesyen yang terinspirasi dari Perancis dengan keanggunan yang mudah dan siluet yang bersih."
+    },
+    "RIDGEWAY": {
+        "name": "RIDGEWAY",
+        "description": "Penjahitan klasik Inggris dirancang ulang untuk profesional modern."
+    }
+}

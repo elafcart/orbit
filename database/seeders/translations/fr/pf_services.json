@@ -1,0 +1,26 @@
+{
+    "UI/UX Design": {
+        "name": "Conception UI/UX",
+        "description": "Nous vous aidons à créer des produits performants en comprenant le marché et les utilisateurs."
+    },
+    "Branding": {
+        "name": "Image de marque",
+        "description": "Nous vous aidons à créer des produits performants en comprenant le marché et les utilisateurs."
+    },
+    "Development": {
+        "name": "Développement",
+        "description": "Nous vous aidons à créer des produits performants en comprenant le marché et les utilisateurs."
+    },
+    "3D Animations": {
+        "name": "Animations 3D",
+        "description": "Nous vous aidons à créer des produits performants en comprenant le marché et les utilisateurs."
+    },
+    "Digital Marketing": {
+        "name": "Marketing numérique",
+        "description": "Nous vous aidons à créer des produits performants en comprenant le marché et les utilisateurs."
+    },
+    "Content Strategy": {
+        "name": "Stratégie de contenu",
+        "description": "Nous vous aidons à créer des produits performants en comprenant le marché et les utilisateurs."
+    }
+}

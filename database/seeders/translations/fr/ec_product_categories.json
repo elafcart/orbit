@@ -1,0 +1,58 @@
+{
+    "Women": {
+        "name": "Femmes",
+        "description": "La mode féminine soigneusement sélectionnée allie esthétique moderne et savoir-faire intemporel."
+    },
+    "Men": {
+        "name": "Hommes",
+        "description": "La mode masculine soigneusement sélectionnée allie esthétique moderne et savoir-faire intemporel."
+    },
+    "Dresses": {
+        "name": "Robes"
+    },
+    "Tops": {
+        "name": "Hauts"
+    },
+    "Jackets": {
+        "name": "Vestes"
+    },
+    "Shirts": {
+        "name": "Chemises"
+    },
+    "Hoodies": {
+        "name": "Sweats à capuche"
+    },
+    "Pants": {
+        "name": "Pantalon"
+    },
+    "Blazers": {
+        "name": "Vestes"
+    },
+    "Coats": {
+        "name": "Manteaux"
+    },
+    "Sweaters": {
+        "name": "Pulls"
+    },
+    "Knitwear": {
+        "name": "Tricots"
+    },
+    "Outerwear": {
+        "name": "Vêtements d'extérieur"
+    },
+    "Accessories": {
+        "name": "Accessoires"
+    },
+    "Sweatshirts": {
+        "name": "Sweat-shirts"
+    },
+    "Scarves": {
+        "name": "Foulards"
+    },
+    "Cardigans": {
+        "name": "Gilets"
+    },
+    "New Arrivals": {
+        "name": "Nouveautés"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "Trial Plan": {
+        "name": "Deneme Planı",
+        "description": "Ücretsiz deneme paketi",
+        "features": "+Bir üye\n+1200'den fazla kullanıcı arayüzü bloğu\n+10 GB bulut depolama alanı\n-Kişisel e-posta hesabı\n-Öncelikli destek",
+        "action_label": "Başlamak"
+    },
+    "Standard": {
+        "name": "Standart",
+        "description": "Büyük gruplara uygun",
+        "price": "49$",
+        "annual_price": "441$",
+        "features": "+05 Üye\n+Tüm multimedya kanalları\n+Tüm gelişmiş CRM özellikleri\n+15.000'e kadar kişi\n+7/24 destek (E-posta, Sohbet)",
+        "action_label": "Başlamak"
+    },
+    "Business": {
+        "name": "İşletme",
+        "description": "Gelişmiş proje",
+        "price": "69$",
+        "annual_price": "621 dolar",
+        "features": "+50 Üye\n+1500'den fazla kullanıcı arayüzü bloğu\n+100 GB cloud storage\n+Kişisel e-posta hesabı\n+Öncelikli destek",
+        "action_label": "Başlamak"
+    },
+    "Enterprise": {
+        "name": "Girişim",
+        "description": "Büyük şirketler için",
+        "price": "99 dolar",
+        "annual_price": "891 dolar",
+        "features": "+Özelleştirme özellikleri\n+ Ölçeklenebilirlik ve güvenlik\n+Account management\n+Sınırsız sohbet geçmişi\n+50 Entegrasyon",
+        "action_label": "Başlamak"
+    }
+}

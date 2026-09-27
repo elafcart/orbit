@@ -1,0 +1,26 @@
+{
+    "Senior Full Stack Engineer": {
+        "name": "Kıdemli Tam Yığın Mühendisi",
+        "description": "Ekibe Kıdemli Tam Yığın Mühendisi olarak katılın ve dünya çapındaki içerik oluşturucuları desteklemek için son teknoloji çözümler geliştirmemize yardımcı olun."
+    },
+    "Lead Backend Developer": {
+        "name": "Lider Arka Uç Geliştiricisi",
+        "description": "Arka Uç Ekip Liderinin ölçeklenebilir ve sağlam bir sistem oluşturma konusunda arka uç ekibine liderlik etmesi heyecan verici bir fırsat."
+    },
+    "UI/UX Designer": {
+        "name": "UI/UX Tasarımcısı",
+        "description": "Ürünlerimiz için sezgisel ve görsel olarak etkileyici kullanıcı deneyimleri yaratacak yetenekli UI/UX tasarımcıları arıyoruz."
+    },
+    "Product Manager": {
+        "name": "Ürün Müdürü",
+        "description": "Bir Ürün Yöneticisi olarak, değişen kullanıcı ihtiyaçlarını karşılamak için ürün geliştirme ve stratejiyi yönlendireceksiniz."
+    },
+    "Data Scientist": {
+        "name": "Veri Bilimcisi",
+        "description": "Büyük veri kümelerini analiz edecek ve iş kararlarını destekleyecek yararlı bilgiler elde edecek Veri Bilimcileri aranıyor."
+    },
+    "DevOps Engineer": {
+        "name": "DevOps Mühendisi",
+        "description": "Geliştirme sürecini optimize etmek ve altyapı güvenilirliğini ve ölçeklenebilirliğini sağlamak için DevOps Mühendislerini işe alıyoruz."
+    }
+}

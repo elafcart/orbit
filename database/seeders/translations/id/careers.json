@@ -1,0 +1,26 @@
+{
+    "Senior Full Stack Engineer": {
+        "name": "Insinyur Tumpukan Penuh Senior",
+        "description": "Bergabunglah dengan tim sebagai Senior Full Stack Engineer dan bantu kami membangun solusi mutakhir untuk mendukung pembuat konten di seluruh dunia."
+    },
+    "Lead Backend Developer": {
+        "name": "Pengembang Backend Utama",
+        "description": "Peluang menarik bagi Ketua Tim Backend untuk memimpin tim backend dalam membangun sistem yang skalabel dan kuat."
+    },
+    "UI/UX Designer": {
+        "name": "Desainer UI/UX",
+        "description": "Kami mencari desainer UI/UX berbakat untuk menciptakan pengalaman pengguna yang intuitif dan menakjubkan secara visual untuk produk kami."
+    },
+    "Product Manager": {
+        "name": "Manajer Produk",
+        "description": "Sebagai Manajer Produk, Anda akan mendorong pengembangan produk dan strategi untuk memenuhi kebutuhan pengguna yang terus berkembang."
+    },
+    "Data Scientist": {
+        "name": "Ilmuwan Data",
+        "description": "Mencari Ilmuwan Data untuk menganalisis kumpulan data besar dan memperoleh informasi berguna untuk mendukung keputusan bisnis."
+    },
+    "DevOps Engineer": {
+        "name": "Insinyur DevOps",
+        "description": "Kami mempekerjakan Insinyur DevOps untuk mengoptimalkan proses pengembangan dan memastikan keandalan dan skalabilitas infrastruktur."
+    }
+}

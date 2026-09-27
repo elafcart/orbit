@@ -1,0 +1,8 @@
+{
+    "Fashion": {"name": "Thời trang"},
+    "Casual": {"name": "Thường ngày"},
+    "Formal": {"name": "Trang trọng"},
+    "Winter": {"name": "Mùa đông"},
+    "Streetwear": {"name": "Thời trang đường phố"},
+    "Essentials": {"name": "Thiết yếu"}
+}

@@ -1,0 +1,58 @@
+{
+    "Women": {
+        "name": "Wanita",
+        "description": "Busana wanita yang dikurasi dengan cermat memadukan estetika modern dengan keahlian yang tak lekang oleh waktu."
+    },
+    "Men": {
+        "name": "Laki-laki",
+        "description": "Busana pria yang dikurasi dengan cermat memadukan estetika modern dengan keahlian yang tak lekang oleh waktu."
+    },
+    "Dresses": {
+        "name": "Gaun"
+    },
+    "Tops": {
+        "name": "Atasan"
+    },
+    "Jackets": {
+        "name": "Jaket"
+    },
+    "Shirts": {
+        "name": "kemeja"
+    },
+    "Hoodies": {
+        "name": "hoodie"
+    },
+    "Pants": {
+        "name": "Celana"
+    },
+    "Blazers": {
+        "name": "Blazer"
+    },
+    "Coats": {
+        "name": "mantel"
+    },
+    "Sweaters": {
+        "name": "sweter"
+    },
+    "Knitwear": {
+        "name": "Pakaian rajut"
+    },
+    "Outerwear": {
+        "name": "Pakaian luar"
+    },
+    "Accessories": {
+        "name": "Aksesoris"
+    },
+    "Sweatshirts": {
+        "name": "Kaus"
+    },
+    "Scarves": {
+        "name": "syal"
+    },
+    "Cardigans": {
+        "name": "Cardigan"
+    },
+    "New Arrivals": {
+        "name": "Pendatang Baru"
+    }
+}

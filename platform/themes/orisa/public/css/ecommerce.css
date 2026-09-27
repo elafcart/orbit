@@ -1,0 +1,46 @@
+.ecommerce-products-carousel__swiper {
+    overflow: hidden;
+}
+
+.ecommerce-products-carousel__swiper .swiper-wrapper {
+    align-items: stretch;
+}
+
+.ecommerce-products-carousel__swiper .swiper-slide {
+    height: auto;
+}
+
+.ecommerce-products-carousel__swiper .swiper-slide .product-card__inner {
+    height: 100%;
+}
+
+/* The theme's global .swiper-pagination is a translucent-white blurred pill meant to
+   float over a hero image. This block renders it statically on the page background,
+   where the blur just reads as a smudge - give it a solid surface instead. */
+.ecommerce-products-carousel .swiper-pagination {
+    position: static;
+    transform: none;
+    left: auto !important;
+    background-color: var(--at-neutral-50);
+    border: 1px solid var(--at-neutral-100);
+    backdrop-filter: none;
+}
+
+/* Swiper's default bullets are black at 0.2 opacity - all but invisible on the
+   theme's light surfaces. Use the neutral ramp so both states are legible. */
+.ecommerce-products-carousel .swiper-pagination .swiper-pagination-bullet {
+    background-color: var(--at-neutral-300);
+    opacity: 1;
+}
+
+.ecommerce-products-carousel .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--at-neutral-900);
+}
+
+/* Swiper marks the nav buttons "locked" when every slide already fits, but its own
+   stylesheet only targets .swiper-button-next/prev - this block uses the theme's
+   arrow classes, so hide them here or they sit there looking clickable and do nothing. */
+.ecommerce-products-carousel .swiper-btn-prev.swiper-button-lock,
+.ecommerce-products-carousel .swiper-btn-next.swiper-button-lock {
+    display: none;
+}

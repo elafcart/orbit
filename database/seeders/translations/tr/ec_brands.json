@@ -1,0 +1,34 @@
+{
+    "KOMONO": {
+        "name": "KOMONO",
+        "description": "Minimalist tasarım felsefesine sahip üst düzey gözlük ve aksesuarlar."
+    },
+    "BRAVEN": {
+        "name": "BRAVEN",
+        "description": "Çağdaş erkek modası sokak stilini rafine terzilikle birleştiriyor."
+    },
+    "HALSTON & CO.": {
+        "name": "HALSTON & CO.",
+        "description": "Zamansız trikolar ve mirastan ilham alan modanın vazgeçilmezleri."
+    },
+    "LORCAN STUDIO": {
+        "name": "LORCAN STUDIO",
+        "description": "Mimari dış giyim, yapıya ve detaylara dikkat edilerek üretilir."
+    },
+    "ETIQUE": {
+        "name": "ETIQUE",
+        "description": "Modern zarafete vurgu yapan sofistike kadın modası."
+    },
+    "MIRETTI": {
+        "name": "MIRETTI",
+        "description": "Konfor ve sofistike stil için tasarlanmış üst düzey gündelik moda."
+    },
+    "SOLENE": {
+        "name": "SOLENE",
+        "description": "Zahmetsiz zarafet ve temiz silüetlerle Fransız esintili moda."
+    },
+    "RIDGEWAY": {
+        "name": "RIDGEWAY",
+        "description": "Klasik İngiliz terziliği, modern profesyoneller için yeniden tasarlandı."
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "Lumina Brand Identity": {
+        "name": "Nhận diện thương hiệu Lumina",
+        "description": "Hệ thống nhận diện thương hiệu hoàn chỉnh cho thương hiệu chăm sóc da cao cấp, bao gồm logo, kiểu chữ, bảng màu, thiết kế bao bì và hướng dẫn thương hiệu.",
+        "client": "Lumina Skincare",
+        "place": "San Francisco",
+        "author": "Michael Anderson"
+    },
+    "Nomad Travel App": {
+        "name": "Ứng dụng du lịch Nomad",
+        "description": "Thiết kế UI/UX cho ứng dụng đặt phòng du lịch di động dành cho dân du mục kỹ thuật số, với tính năng lập kế hoạch hành trình thông minh và cộng đồng.",
+        "client": "Nomad Co.",
+        "place": "New York",
+        "author": "Jennifer Brown"
+    },
+    "Verde E-Commerce Platform": {
+        "name": "Nền tảng thương mại điện tử Verde",
+        "description": "Website thương mại điện tử đầy đủ tính năng cho thương hiệu thời trang bền vững, với giao diện sạch, thanh toán liền mạch và CMS tích hợp.",
+        "client": "Verde Fashion",
+        "place": "London",
+        "author": "David Clark"
+    },
+    "Pulse Digital Campaign": {
+        "name": "Chiến dịch số Pulse",
+        "description": "Chiến dịch marketing kỹ thuật số đa kênh thúc đẩy nhận diện thương hiệu và tăng trưởng khách hàng tiềm năng gấp 3 lần thông qua SEO có mục tiêu và quảng cáo mạng xã hội.",
+        "client": "Pulse Fitness",
+        "place": "Berlin",
+        "author": "Sarah Johnson"
+    },
+    "Bloom Agency Website": {
+        "name": "Website Agency Bloom",
+        "description": "Thiết kế lại website agency sáng tạo với hoạt ảnh tùy chỉnh, trưng bày portfolio và nhận diện hình ảnh mạnh mẽ.",
+        "client": "Bloom Studio",
+        "place": "Singapore",
+        "author": "Robert Williams"
+    },
+    "Helio SaaS Dashboard": {
+        "name": "Bảng điều khiển SaaS Helio",
+        "description": "Thiết kế giao diện bảng điều khiển phức tạp cho nền tảng phân tích SaaS, tập trung vào tính rõ ràng của dữ liệu, khả năng truy cập và hiệu quả quy trình làm việc.",
+        "client": "Helio Analytics",
+        "place": "Tokyo",
+        "author": "Emily Davis"
+    },
+    "Craft Coffee Branding": {
+        "name": "Thương hiệu Craft Coffee",
+        "description": "Nhận diện thương hiệu và thiết kế bao bì cho xưởng rang cà phê thủ công, thể hiện sự ấm áp và tay nghề đằng sau mỗi tách cà phê.",
+        "client": "Craft Coffee Co.",
+        "place": "Sydney",
+        "author": "James Wilson"
+    },
+    "Zora NFT Marketplace": {
+        "name": "Chợ NFT Zora",
+        "description": "Thiết kế UI/UX và phát triển front-end nền tảng Web3 cho chợ NFT với hồ sơ nghệ sĩ và tính năng đấu giá.",
+        "client": "Zora Digital",
+        "place": "Toronto",
+        "author": "Amanda Martinez"
+    }
+}

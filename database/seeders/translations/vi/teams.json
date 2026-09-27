@@ -1,0 +1,42 @@
+{
+    "Michael Anderson": {
+        "name": "Michael Anderson",
+        "title": "Giám đốc sáng tạo",
+        "address": "123 Creative Drive, San Francisco, CA 94102"
+    },
+    "Jennifer Brown": {
+        "name": "Jennifer Brown",
+        "title": "CEO & Nhà sáng lập",
+        "address": "456 Agency Hub, New York, NY 10001"
+    },
+    "Sarah Brown": {
+        "name": "Sarah Brown",
+        "title": "Trưởng phòng thiết kế UX",
+        "address": "789 Design Boulevard, Austin, TX 78701"
+    },
+    "David Clark": {
+        "name": "David Clark",
+        "title": "Trưởng nhóm thiết kế UI",
+        "address": "321 Studio Street, Seattle, WA 98101"
+    },
+    "Jessica Carter": {
+        "name": "Jessica Carter",
+        "title": "Lập trình viên Front-End",
+        "address": "654 Web Avenue, Denver, CO 80202"
+    },
+    "Lauren Graham": {
+        "name": "Lauren Graham",
+        "title": "Chuyên gia chiến lược thương hiệu",
+        "address": "987 Strategy Lane, Boston, MA 02101"
+    },
+    "James Bennett": {
+        "name": "James Bennett",
+        "title": "Trưởng phòng Marketing số",
+        "address": "246 Marketing Center, Chicago, IL 60601"
+    },
+    "William Foster": {
+        "name": "William Foster",
+        "title": "Nhà thiết kế chuyển động",
+        "address": "135 Motion Plaza, Los Angeles, CA 90001"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "Fashion": {
+        "name": "Mode"
+    },
+    "Casual": {
+        "name": "Occasionnel"
+    },
+    "Formal": {
+        "name": "Officiel"
+    },
+    "Winter": {
+        "name": "Hiver"
+    },
+    "Streetwear": {
+        "name": "Streetwear"
+    },
+    "Essentials": {
+        "name": "Essentiel"
+    }
+}

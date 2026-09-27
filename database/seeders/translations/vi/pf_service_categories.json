@@ -1,0 +1,18 @@
+{
+    "Branding": {
+        "name": "Xây dựng thương hiệu",
+        "description": "Thiết kế nhận diện thương hiệu, sáng tạo logo và chiến lược hình ảnh."
+    },
+    "UI/UX Design": {
+        "name": "Thiết kế UI/UX",
+        "description": "Thiết kế giao diện và trải nghiệm người dùng cho web và di động."
+    },
+    "Web Development": {
+        "name": "Phát triển Web",
+        "description": "Phát triển website và ứng dụng web tùy chỉnh."
+    },
+    "Digital Marketing": {
+        "name": "Marketing số",
+        "description": "Dịch vụ SEO, mạng xã hội và marketing hiệu suất."
+    }
+}

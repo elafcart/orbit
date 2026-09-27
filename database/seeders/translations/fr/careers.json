@@ -1,0 +1,26 @@
+{
+    "Senior Full Stack Engineer": {
+        "name": "Ingénieur Full Stack Sénior",
+        "description": "Rejoignez l'équipe en tant qu'ingénieur Full Stack senior et aidez-nous à créer des solutions de pointe pour soutenir les créateurs du monde entier."
+    },
+    "Lead Backend Developer": {
+        "name": "Développeur back-end principal",
+        "description": "Opportunité passionnante pour le chef d'équipe backend de diriger l'équipe backend dans la construction d'un système évolutif et robuste."
+    },
+    "UI/UX Designer": {
+        "name": "Concepteur UI/UX",
+        "description": "Nous recherchons des designers UI/UX talentueux pour créer des expériences utilisateur intuitives et visuellement époustouflantes pour nos produits."
+    },
+    "Product Manager": {
+        "name": "Chef de produit",
+        "description": "En tant que chef de produit, vous dirigerez le développement de produits et la stratégie pour répondre aux besoins changeants des utilisateurs."
+    },
+    "Data Scientist": {
+        "name": "Scientifique des données",
+        "description": "Nous recherchons des Data Scientists pour analyser de grands ensembles de données et en extraire des informations utiles pour soutenir les décisions commerciales."
+    },
+    "DevOps Engineer": {
+        "name": "Ingénieur DevOps",
+        "description": "Nous recrutons des ingénieurs DevOps pour optimiser le processus de développement et garantir la fiabilité et l'évolutivité de l'infrastructure."
+    }
+}

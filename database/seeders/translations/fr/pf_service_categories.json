@@ -1,0 +1,18 @@
+{
+    "Branding": {
+        "name": "Image de marque",
+        "description": "Design d'identité de marque, création de logo et stratégie d'image."
+    },
+    "UI/UX Design": {
+        "name": "Conception UI/UX",
+        "description": "Concevoir une interface et une expérience utilisateur pour le web et le mobile."
+    },
+    "Web Development": {
+        "name": "Développement Web",
+        "description": "Développer des sites Web et des applications Web personnalisés."
+    },
+    "Digital Marketing": {
+        "name": "Marketing numérique",
+        "description": "Services de référencement, de réseaux sociaux et de marketing à la performance."
+    }
+}

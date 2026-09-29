@@ -1,0 +1,11 @@
+{
+    "id": "botble/elafcart",
+    "name": "Elafcart Core",
+    "namespace": "Botble\\Elafcart\\",
+    "provider": "Botble\\Elafcart\\Providers\\ElafcartServiceProvider",
+    "author": "Elafcart Team",
+    "url": "https://elafcart.com",
+    "version": "1.0.0",
+    "description": "Custom core features for Elafcart - Add custom post types, shortcodes, widgets and more",
+    "minimum_core_version": "7.4.0"
+}

@@ -1,0 +1,11 @@
+{
+    "id": "botble/elafcart",
+    "name": "Elafcart Portfolio",
+    "namespace": "Theme\\Elafcart\\",
+    "author": "Elafcart Team",
+    "url": "https://elafcart.com",
+    "version": "2.0.0",
+    "description": "Modern Portfolio + E-commerce Theme - Digital & Physical Products, Perfect for creators selling templates, courses, merch",
+    "required_plugins": ["portfolio", "blog", "contact", "testimonial", "team", "ecommerce"],
+    "screenshot": "screenshot.png"
+}

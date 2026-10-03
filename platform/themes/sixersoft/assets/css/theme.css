@@ -1,0 +1,193 @@
+/*!
+ * Sixersoft — Botble CMS starter theme stylesheet
+ * Built with Tailwind CSS v4 (compiled by the Vite build pipeline)
+ */
+
+@import 'tailwindcss' source(none);
+
+/* Scan only this theme's Blade templates and JS for utility classes. */
+@source '../../layouts';
+@source '../../partials';
+@source '../../views';
+@source '../../functions';
+@source '../js';
+
+/* Class-based dark mode (`.dark` on <html>, toggled from the header). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans:
+        'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+        'Noto Sans Bengali', 'Helvetica Neue', Arial, sans-serif;
+    --font-display:
+        'Space Grotesk', 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+    /* Brand palette — `--color-brand-600` is overridden at runtime from
+       Theme Options (see layouts/base.blade.php inline style). */
+    --color-brand-50: #eef2ff;
+    --color-brand-100: #e0e7ff;
+    --color-brand-200: #c7d2fe;
+    --color-brand-300: #a5b4fc;
+    --color-brand-400: #818cf8;
+    --color-brand-500: #6366f1;
+    --color-brand-600: #4f46e5;
+    --color-brand-700: #4338ca;
+    --color-brand-800: #3730a3;
+    --color-brand-900: #312e81;
+    --color-brand-950: #1e1b4b;
+
+    --shadow-card: 0 10px 40px -12px rgb(15 23 42 / 0.12);
+    --shadow-card-hover: 0 24px 60px -16px rgb(15 23 42 / 0.22);
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-white font-sans text-base text-slate-600 antialiased dark:bg-slate-950 dark:text-slate-300;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-display font-semibold text-slate-900 dark:text-white;
+    }
+
+    ::selection {
+        @apply bg-brand-600 text-white;
+    }
+}
+
+@layer components {
+    /* Layout helpers */
+    .container-shell {
+        @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+    }
+
+    .section {
+        @apply py-16 sm:py-24;
+    }
+
+    .section-eyebrow {
+        @apply text-xs font-semibold tracking-[0.2em] text-brand-600 uppercase dark:text-brand-400;
+    }
+
+    .section-title {
+        @apply mt-3 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white;
+    }
+
+    /* Buttons */
+    .btn {
+        @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600;
+    }
+
+    .btn-primary {
+        @apply bg-brand-600 text-white shadow-lg shadow-brand-600/25 hover:opacity-90 dark:text-white;
+    }
+
+    .btn-outline {
+        @apply border border-slate-300 bg-transparent text-slate-800 hover:border-brand-600 hover:text-brand-600 dark:border-slate-700 dark:text-slate-100 dark:hover:border-brand-400 dark:hover:text-brand-400;
+    }
+
+    /* Cards */
+    .card {
+        @apply rounded-2xl border border-slate-200 bg-white shadow-(--shadow-card) transition duration-300 dark:border-slate-800 dark:bg-slate-900;
+    }
+
+    .card-hover {
+        @apply hover:-translate-y-1 hover:shadow-(--shadow-card-hover);
+    }
+
+    /* Site header — `.is-scrolled` is toggled from main.js */
+    .site-header {
+        @apply fixed inset-x-0 top-0 z-50 border-b border-transparent bg-white/80 backdrop-blur-md transition duration-300 dark:bg-slate-950/80;
+    }
+
+    .site-header.is-scrolled {
+        @apply border-slate-200/80 shadow-sm dark:border-slate-800/80;
+    }
+
+    /* CMS content (pages / posts) — hand-rolled typography for editor output */
+    .entry-content {
+        @apply leading-relaxed text-slate-600 dark:text-slate-300;
+    }
+
+    .entry-content > * + * {
+        margin-top: 1.25em;
+    }
+
+    .entry-content h1,
+    .entry-content h2,
+    .entry-content h3,
+    .entry-content h4,
+    .entry-content h5,
+    .entry-content h6 {
+        @apply mt-[1.6em] font-display font-semibold text-slate-900 dark:text-white;
+    }
+
+    .entry-content h1 {
+        @apply text-3xl;
+    }
+
+    .entry-content h2 {
+        @apply text-2xl;
+    }
+
+    .entry-content h3 {
+        @apply text-xl;
+    }
+
+    .entry-content a {
+        @apply text-brand-600 underline decoration-brand-600/40 underline-offset-4 hover:decoration-brand-600 dark:text-brand-400;
+    }
+
+    .entry-content img {
+        @apply h-auto max-w-full rounded-xl;
+    }
+
+    .entry-content ul {
+        @apply list-disc space-y-2 ps-6;
+    }
+
+    .entry-content ol {
+        @apply list-decimal space-y-2 ps-6;
+    }
+
+    .entry-content blockquote {
+        @apply border-s-4 border-brand-600 bg-brand-600/5 px-6 py-4 text-lg text-slate-800 italic dark:text-slate-100;
+    }
+
+    .entry-content pre {
+        @apply overflow-x-auto rounded-xl bg-slate-900 p-5 text-sm leading-relaxed text-slate-100 dark:bg-slate-800;
+    }
+
+    .entry-content code {
+        @apply rounded bg-slate-100 px-1.5 py-0.5 text-sm font-medium text-brand-700 dark:bg-slate-800 dark:text-brand-300;
+    }
+
+    .entry-content pre code {
+        @apply bg-transparent p-0 text-slate-100 dark:text-slate-100;
+    }
+
+    .entry-content table {
+        @apply w-full border-collapse text-sm;
+    }
+
+    .entry-content th,
+    .entry-content td {
+        @apply border border-slate-200 px-4 py-2.5 text-start dark:border-slate-700;
+    }
+
+    .entry-content th {
+        @apply bg-slate-50 font-semibold text-slate-900 dark:bg-slate-800 dark:text-white;
+    }
+
+    .entry-content iframe {
+        @apply max-w-full rounded-xl;
+    }
+}

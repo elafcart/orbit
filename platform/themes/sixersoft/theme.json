@@ -1,0 +1,11 @@
+{
+    "id": "botble/sixersoft",
+    "name": "Sixersoft",
+    "namespace": "Theme\\Sixersoft\\",
+    "author": "Sixersoft",
+    "url": "https://sixersoft.com",
+    "version": "1.0.0",
+    "description": "Sixersoft - Basic starter theme for Botble CMS built with Tailwind CSS v4, GSAP and Vite",
+    "required_plugins": [],
+    "screenshot": "screenshot.png"
+}

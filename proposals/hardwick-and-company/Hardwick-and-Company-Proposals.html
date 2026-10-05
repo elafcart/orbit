@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hardwick &amp; Company — Website Proposals</title>
+<style>
+:root{
+  --ink:#1a1a1a; --muted:#5c6470; --line:#e2e5ea; --accent:#7a1f2b;
+  --accent-soft:#fbf3f4; --bg:#f6f7f9;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; padding:0; background:var(--bg); color:var(--ink);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.page{
+  max-width:860px; margin:32px auto; background:#fff; padding:64px 72px;
+  border-radius:10px; box-shadow:0 1px 3px rgba(0,0,0,.08),0 12px 40px rgba(0,0,0,.06);
+}
+h1,h2,h3,h4{line-height:1.25;margin:1.9em 0 .6em;font-weight:650;letter-spacing:-.01em}
+h1{font-size:2.05em;margin-top:0}
+h2{font-size:1.45em;padding-bottom:.35em;border-bottom:2px solid var(--line)}
+h3{font-size:1.16em}
+h4{font-size:1.02em;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:.85em}
+p{margin:.85em 0}
+ul,ol{margin:.85em 0;padding-left:1.4em}
+li{margin:.34em 0}
+a{color:var(--accent);text-decoration:none}
+hr{border:0;border-top:1px solid var(--line);margin:2.6em 0}
+strong{font-weight:650}
+code{background:var(--bg);padding:.12em .38em;border-radius:4px;font-size:.9em;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:#1f2328;color:#e6edf3;padding:18px 20px;border-radius:8px;overflow-x:auto}
+pre code{background:none;color:inherit;padding:0}
+blockquote{
+  margin:1.5em 0;padding:20px 26px;background:var(--accent-soft);
+  border-left:4px solid var(--accent);border-radius:0 8px 8px 0;
+}
+blockquote p:first-child{margin-top:0}
+blockquote p:last-child{margin-bottom:0}
+table{width:100%;border-collapse:collapse;margin:1.5em 0;font-size:.94em}
+th,td{border:1px solid var(--line);padding:11px 14px;text-align:left;vertical-align:top}
+th{background:#fafbfc;font-weight:650}
+tbody tr:nth-child(even){background:#fcfcfd}
+.doc-title{
+  text-align:center;padding:100px 0 60px;border-bottom:3px double var(--line);margin-bottom:0;
+}
+.doc-title h1{border:0;padding:0;font-size:2.4em;margin-bottom:.2em}
+.doc-title p{color:var(--muted);font-size:1.08em}
+.doc-meta{margin-top:2em;color:var(--muted);font-size:.94em}
+.section-break{page-break-before:always;border-top:3px double var(--line);padding-top:60px;margin-top:60px}
+@media print{
+  body{background:#fff}
+  .page{box-shadow:none;margin:0;padding:0;max-width:none;border-radius:0}
+  h2{page-break-after:avoid}
+  table,blockquote,pre{page-break-inside:avoid}
+  @page{margin:18mm}
+}
+@media(max-width:700px){
+  .page{padding:32px 22px;margin:0;border-radius:0}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+    <div class="doc-title">
+      <h1>Hardwick &amp; Company</h1>
+      <p>Website Proposals — hardwickandcompany.com</p>
+      <p class="doc-meta">
+        Prepared by [Your Name] &middot; [Date]<br>
+        Proposal A — Technical Remediation: <strong>$500</strong><br>
+        Proposal B — UI/UX Redesign + Technical: <strong>$1,400</strong>
+      </p>
+    </div>
+    <div class="section-break"><h1>Proposal A — Technical Audit &amp; Remediation</h1>
+<h3>Hardwick and Company (hardwickandcompany.com)</h3>
+<p><strong>Prepared for:</strong> Hardwick &amp; Company, 70 2nd St NE, Cleveland, TN <strong>Prepared by:</strong> [Your Name] <strong>Date:</strong> [Date] <strong>Investment:</strong> <strong>$500 USD (fixed)</strong> <strong>Valid for:</strong> 30 days</p>
+<hr>
+<h2>📧 EMAIL — COPY FROM HERE</h2>
+<p><strong>Subject:</strong> 12 technical issues I found on hardwickandcompany.com — I can fix them for $500</p>
+<p>Hi [Client Name],</p>
+<p>I went through hardwickandcompany.com properly this week — homepage, shop, product pages, cart, checkout, about, contact, and the policy pages — plus the technical layer underneath that most people never look at: sitemaps, robots.txt, media encoding, and the product database.</p>
+<p>First, the good news: the site is live, WooCommerce is running, and the brand story is genuinely great. A store that's been dressing Cleveland since 1926 deserves a site that reflects that.</p>
+<p>The honest news: there are <strong>twelve technical problems</strong> quietly costing you traffic, trust, and sales. Three of them are urgent.</p>
+<h3>The three urgent ones</h3>
+<p><strong>1. Your contact page is still showing the theme's demo content.</strong> hardwickandcompany.com/contact-2/ currently displays:</p>
+<ul><li>"New York — 456 189th Street, Lower East West Village"</li><li>"Los Angeles — 12 Buenas Tardes Blvd., Griffith Hills"</li><li>Emails: howdy@crafty.shop, press@crafty.shop, returns@crafty.shop, sales@crafty.shop</li></ul>
+<p>Those are placeholder addresses shipped with the WordPress theme. There is no Cleveland address, no phone number, no store hours, and no working email. <strong>A customer who wants to call the store or ask about a tux fitting currently cannot.</strong></p>
+<p><strong>2. The obvious URL — hardwickandcompany.com/contact/ — returns a server error (HTTP 500).</strong> Anyone who types it, or finds an old link to it, hits a broken page.</p>
+<p><strong>3. Your hero video is broken.</strong> The homepage's most valuable space shows a black box reading: <em>"Media error: Format(s) not supported or source(s) not found."</em> The video file is being served, but it isn't encoded in a web-playable format, so browsers refuse to play it. Your first impression is a broken media player.</p>
+<h3>The other nine</h3>
+<ol><li><strong>Refund &amp; Returns policy is a word-for-word copy of your Privacy Policy.</strong> Both pages contain identical text. WooCommerce, card processors, and Google Shopping all expect a distinct, clearly-labelled returns policy. This is also a real legal and compliance exposure.</li><li><strong>Your admin username is public.</strong> Your sitemap exposes /author/hw-admin/, handing attackers half of a login.</li><li><strong>robots.txt throttles Google to one page per minute</strong> (<code>crawl-delay: 60</code>) and never points to your sitemap.</li><li><strong>Homepage has six separate H1 headings</strong> instead of one — confusing search engines about what the page is about.</li><li><strong>60+ product categories, almost all showing the grey WooCommerce placeholder image</strong>, with heavy duplication (Blazer / Blazers and Sport Coats / Sport Coat, Jeans / Jeans &amp; Denim, Polos / Polos &amp; Henley, and so on). "Uncategorized" is publicly visible.</li><li><strong>Sizes are separate products instead of variations.</strong> "Water Activated Swim Trunks" exists as 11 different listings (S, M, L, XL, 2XL across two colours). It's duplicate content, it floods your shop pages, and it makes inventory unmanageable.</li><li><strong>Unoptimised images</strong> — full-size <code>-scaled.jpeg</code> product photos and multi-megabyte <code>Screenshot-2024-09-07…png</code> files, with no WebP and no lazy loading.</li><li><strong>Theme placeholder text is visible on every page</strong> — "Type and Press 'enter' to Search" renders as real page content site-wide.</li><li><strong>No SEO plugin, no schema markup, no meta descriptions.</strong> Your store has no LocalBusiness or Product structured data, so Google can't show your address, hours, or prices in results.</li></ol>
+<p>There are also copy errors a customer notices: <em>"When only the finest will <strong>due</strong>"</em> (should be "do"), <em>"Hardwickandcompany<strong>,</strong>com"</em>, and an incomplete sentence in your refund section.</p>
+<h3>What I'll do — Scope of Work</h3>
+<p><strong>1. Broken media &amp; the homepage hero</strong></p>
+<ul><li>Re-encode the banner video to web-standard H.264 MP4 + WebM, fast-start enabled</li><li>Add a poster image so the space looks right even before playback</li><li>Verify playback across Chrome, Safari, Firefox, and mobile</li></ul>
+<p><strong>2. Contact &amp; store information (urgent)</strong></p>
+<ul><li>Build a proper contact page with your real Cleveland address, phone, hours, and a working enquiry form</li><li>Add an embedded Google Map so locals can find the store</li><li>Replace all four placeholder <code>@crafty.shop</code> emails with real, working addresses</li><li>Fix the HTTP 500 on <code>/contact/</code> and 301-redirect <code>/contact-2/</code> → <code>/contact/</code></li></ul>
+<p><strong>3. Legal &amp; policy pages</strong></p>
+<ul><li>Write a genuine, standalone Refund &amp; Returns policy (separate from Privacy Policy)</li><li>Correct the typos and the incomplete sentence in the existing Privacy Policy</li><li>Ensure Shipping, Refunds, and Privacy are clearly separated and linked from the footer and checkout</li></ul>
+<p><strong>4. Security hardening</strong></p>
+<ul><li>Remove the user/author sitemap and stop admin username enumeration</li><li>Disable XML-RPC, block author-scanning, and disable theme/plugin file editing</li><li>Add login rate-limiting and standard security headers</li><li>Confirm SSL is enforced site-wide with no mixed content</li></ul>
+<p><strong>5. SEO foundation</strong></p>
+<ul><li>Install and configure an SEO plugin (Yoast or Rank Math)</li><li>Write meta titles and descriptions for homepage, shop, about, contact, and policies</li><li>Add LocalBusiness schema (address, phone, hours, geo) and Product schema</li><li>Fix robots.txt: remove <code>crawl-delay: 60</code>, add a proper <code>Sitemap:</code> directive</li><li>Submit and verify the site in Google Search Console and set up GA4 analytics</li></ul>
+<p><strong>6. Site structure &amp; code quality</strong></p>
+<ul><li>Correct heading hierarchy — one H1 per page, logical H2/H3 below</li><li>Remove the visible "Type and Press 'enter' to Search" placeholder text</li><li>Merge or delete duplicate product categories; hide "Uncategorised" and empty categories</li><li>Add canonical tags and 301 redirects for duplicate variant product URLs</li><li><strong>Product data hygiene:</strong> populate missing SKUs and normalise title casing (e.g. <em>"the normal brand gerard washed twill shirt - xl"</em> → <em>"The Normal Brand — Gerard Washed Twill Shirt"</em>), and strip sizes out of product titles</li></ul>
+<p><strong>7. Performance</strong></p>
+<ul><li>Convert images to WebP with compression; compress the oversized screenshot PNGs</li><li>Enable lazy loading and responsive <code>srcset</code> sizing</li><li>Set up page caching, minification, and deferred JavaScript</li><li>Clean the WordPress database (revisions, transients, orphaned meta)</li></ul>
+<p><strong>8. Stability &amp; safety</strong></p>
+<ul><li>Full backup before any work begins; work on a staging copy, never your live site</li><li>Update WordPress core, theme, and plugins to current versions</li><li>Configure automated scheduled backups going forward</li></ul>
+<h3>Deliverables</h3>
+<ul><li>✅ Fully repaired, secured, and optimised live site</li><li>✅ Working hero video with poster fallback</li><li>✅ Real, working contact page with map and store details</li><li>✅ Standalone Refund &amp; Returns policy</li><li>✅ SEO plugin configured + Search Console &amp; GA4 connected</li><li>✅ Cleaned category structure and product data</li><li>✅ Automated backups configured</li><li>✅ <strong>Written before/after report</strong> documenting every change</li></ul>
+<h3>Timeline</h3>
+<p><strong>7–10 business days</strong> from project start and receipt of store details (address, phone, hours, real email addresses).</p>
+<h3>Investment</h3>
+<blockquote><h2>$500 USD — fixed price</h2>
+<p>No hourly billing. No surprise add-ons.</p></blockquote>
+<p><strong>Payment terms:</strong> 50% ($250) to begin · 50% ($250) on completion and your approval. <strong>Includes:</strong> 2 rounds of revisions · 14-day post-launch warranty on all work delivered.</p>
+<h3>Not included</h3>
+<p>So there are no surprises — this proposal covers <strong>technical repair and optimisation only</strong>. It does <strong>not</strong> include visual redesign, new page layouts, custom features, Figma mockups, product photography or category imagery, or bulk product data entry. Those are covered in my separate full UI/UX proposal, which I'm happy to share.</p>
+<h3>Next steps</h3>
+<p>Reply to this email with your store's phone number, hours, and the email addresses you'd like used, and I can start within 48 hours. If you'd rather talk it through first, I'm happy to do a 15-minute call and screen-share the issues live.</p>
+<p>Either way, the contact page is worth fixing this week — right now it's telling customers you're in New York and Los Angeles.</p>
+<p>Warm regards, <strong>[Your Name]</strong> [Your Email] · [Your Phone] · [Your Website]</p>
+<hr>
+<h2>Appendix — Verified Findings (technical evidence)</h2>
+<table><thead><tr>
+<th>#</th><th>Issue</th><th>Location</th><th>Severity</th>
+</tr></thead><tbody>
+<tr><td>1</td><td>Hero video fails: "Media error: Format(s) not supported or source(s) not found"</td><td><code>/</code></td><td>Critical</td></tr>
+<tr><td>2</td><td>Theme demo content: fake NY/LA addresses, <code>@crafty.shop</code> emails</td><td><code>/contact-2/</code></td><td>Critical</td></tr>
+<tr><td>3</td><td>HTTP 500 server error</td><td><code>/contact/</code></td><td>Critical</td></tr>
+<tr><td>4</td><td>Refund &amp; Returns page is byte-identical to Privacy Policy</td><td><code>/refund_returns/</code></td><td>High</td></tr>
+<tr><td>5</td><td>Admin username <code>hw-admin</code> exposed via author sitemap</td><td><code>/wp-sitemap-users-1.xml</code></td><td>High</td></tr>
+<tr><td>6</td><td><code>crawl-delay: 60</code>; no <code>Sitemap:</code> directive</td><td><code>/robots.txt</code></td><td>High</td></tr>
+<tr><td>7</td><td>Six H1 tags on one page</td><td><code>/</code></td><td>Medium</td></tr>
+<tr><td>8</td><td>60+ categories, near-universal placeholder images, heavy duplication</td><td><code>/shop/</code></td><td>High</td></tr>
+<tr><td>9</td><td>Variants created as separate products (11 listings for 2 items)</td><td><code>/product-category/swim-shorts/</code></td><td>High</td></tr>
+<tr><td>10</td><td>Full-size <code>-scaled.jpeg</code> + multi-MB <code>Screenshot-…png</code>; no WebP/lazy load</td><td>site-wide</td><td>Medium</td></tr>
+<tr><td>11</td><td>Placeholder text "Type and Press 'enter' to Search" visible on every page</td><td>site-wide</td><td>Medium</td></tr>
+<tr><td>12</td><td>No SEO plugin, no LocalBusiness/Product schema</td><td>site-wide</td><td>Medium</td></tr>
+<tr><td>13</td><td><code>SKU: N/A</code>; inconsistent title casing; sizes embedded in titles</td><td>product pages</td><td>Medium</td></tr>
+<tr><td>14</td><td>Copy errors: "finest will due", "Hardwickandcompany,com", incomplete sentence</td><td><code>/</code>, policies</td><td>Low</td></tr>
+<tr><td>15</td><td>Homepage feature labels don't match their copy ("Comfy" shows 1926 history)</td><td><code>/</code></td><td>Medium</td></tr>
+<tr><td>16</td><td><code>/sitemap_index.xml</code> 404s — no SEO plugin present</td><td>site-wide</td><td>Low</td></tr>
+</tbody></table>
+<p>Full detail in: <code>site-audit-findings.md</code></p></div><div class="section-break"><h1>Proposal B — Complete UI/UX Redesign + Full Technical Rebuild</h1>
+<h3>Hardwick and Company (hardwickandcompany.com)</h3>
+<p><strong>Prepared for:</strong> Hardwick &amp; Company, 70 2nd St NE, Cleveland, TN <strong>Prepared by:</strong> [Your Name] <strong>Date:</strong> [Date] <strong>Investment:</strong> <strong>$1,400 USD (fixed)</strong> <strong>Valid for:</strong> 30 days</p>
+<hr>
+<h2>📧 EMAIL — COPY FROM HERE</h2>
+<p><strong>Subject:</strong> Your 100th year deserves better than a broken homepage — full redesign proposal</p>
+<p>Hi [Client Name],</p>
+<p>I spent real time on hardwickandcompany.com this week — every page, every click path, on desktop and mobile. I looked at it the way a first-time customer would, and then the way your store's regulars would.</p>
+<p>Let me start with what's genuinely strong, because it matters: <strong>you have something almost nobody else has.</strong> A menswear store that opened its doors in Cleveland in 1926, grew into a woolen mill, and is still here a century later. You're known across the region for tux and suit fitting. You carry Pendleton, The Normal Brand, Scully, Southern Casanova, Fish Hippie, Bald Headed Blues, Trask, Over Under, Genteal and more. That is a hundred years of earned trust.</p>
+<p><strong>Right now the website doesn't tell any of that story. And in places, it actively works against you.</strong></p>
+<h3>What a customer sees today</h3>
+<p><strong>The homepage hero is broken.</strong> The first thing a visitor encounters is a black rectangle reading <em>"Media error: Format(s) not supported or source(s) not found."</em> Your most valuable piece of screen real estate — the space that should be showing craftsmanship, fabric, a well-dressed man walking out of your door — is an error message.</p>
+<p><strong>The shop page is a wall of grey boxes.</strong> You have over 60 product categories, and essentially every one is displaying the default WooCommerce placeholder image. Not your merchandise — a grey silhouette. A customer landing there sees no colour, no texture, no product. There's no reason to click.</p>
+<p><strong>The catalogue fights itself.</strong> Because sizes were set up as separate products instead of variations, your Swim Shorts category shows eleven separate listings for what is really two trunks in five sizes. Multiply that across the store and you get shop pages that feel endless and repetitive — the opposite of a curated menswear experience.</p>
+<p><strong>Buying takes too many clicks.</strong> Products show "Select options" instead of "Add to cart." There are no filters — no way to shop by size, colour, brand, or price. For a store with this much inventory, that's the single biggest conversion barrier on the site.</p>
+<p><strong>The fitting expertise is invisible.</strong> You're known for tux and suit fitting — that's a high-value, appointment-driven service and a genuine differentiator. There is no way on this site to book a fitting, and no size or fit guidance anywhere.</p>
+<p><strong>The contact page is still showing the theme's demo content.</strong> It currently lists addresses in "New York" and "Los Angeles" and emails ending in <code>@crafty.shop</code>. No Cleveland address. No phone number. No hours. Your customers literally cannot reach you.</p>
+<p><strong>And 2026 is your centennial year.</strong> A hundred years of Hardwick &amp; Company. That is a once-in-a-lifetime marketing moment — and the site currently says "nearly 100 years" without celebrating it anywhere. No heritage timeline, no centennial collection, no reason for a lapsed customer to come back in.</p>
+<h3>Here's what I'm proposing</h3>
+<p>A <strong>complete UI/UX redesign</strong> — researched, designed, and built in WordPress/WooCommerce — that turns the site into something worthy of the brand, bundled with <strong>every technical fix</strong> the site needs.</p>
+<hr>
+<h2>Scope of Work</h2>
+<h3>Phase 1 — Research &amp; Information Architecture (Week 1)</h3>
+<ul><li>Review your analytics, Search Console, and best-selling categories to understand what people actually look for</li><li>Define the four shopper journeys: the loyal local, the wedding/tux customer, the gift buyer, and the out-of-town visitor</li><li><strong>Rebuild the category structure</strong> — collapse 60+ duplicated categories into a clean, intuitive set of 6–8 top-level collections with a proper mega menu</li><li>Map the browse → size → buy path and design out every unnecessary click</li><li>Competitive review of how leading independent menswear retailers present heritage and product</li></ul>
+<h3>Phase 2 — Design (Weeks 2–3)</h3>
+<p>I'll design in <strong>Figma</strong> and share clickable mockups for your approval before I build anything. Desktop and mobile, every screen.</p>
+<ul><li><strong>Homepage</strong> — a working hero (properly encoded video or a strong photographic alternative), your 1926 heritage told visually, brand showcase, featured collections, seasonal/centennial edit, trust signals, reviews, and newsletter capture</li><li><strong>Shop &amp; category pages</strong> — real category imagery, faceted filtering by size / colour / brand / price, and product cards with quick-add</li><li><strong>Product page</strong> — image gallery, a proper <strong>size and fit guide</strong>, clear shipping and returns visibility, reviews, intelligent related products, and stock urgency</li><li><strong>Cart &amp; checkout</strong> — a calmer, shorter flow with a progress indicator, trust badges, and shipping clarity up front</li><li><strong>About page</strong> — a genuine heritage timeline from the 1926 mercantile store through the woolen mill to today</li><li><strong>Contact &amp; fittings page</strong> — real address, phone, hours, embedded map, and a <strong>tux and suit fitting enquiry form</strong></li><li><strong>Mobile-first responsive refinement</strong> across every template</li><li><strong>Design system</strong> — type scale, colour palette, spacing, buttons, and reusable components so future pages stay consistent</li></ul>
+<h3>Phase 3 — Build &amp; Technical (Weeks 3–5)</h3>
+<p>This includes <strong>everything in my technical audit</strong>, at no extra cost:</p>
+<ul><li>Fix the broken hero video (H.264 MP4 + WebM, fast-start, poster fallback) — verified on Chrome, Safari, Firefox, and mobile</li><li>Replace all demo contact content with your real store details; fix the HTTP 500 on <code>/contact/</code> and redirect <code>/contact-2/</code> → <code>/contact/</code></li><li>Write a genuine standalone Refund &amp; Returns policy and correct the Privacy Policy</li><li>Security hardening — remove admin username exposure, disable XML-RPC, block author scanning, disable file editing, add login rate-limiting and security headers</li><li>Full SEO setup — Yoast or Rank Math, meta titles and descriptions, <strong>LocalBusiness and Product schema</strong>, robots.txt fix, Search Console and GA4 connected</li><li>Image pipeline — WebP conversion, compression, lazy loading, responsive <code>srcset</code></li><li>Performance — page caching, minification, deferred JavaScript, database cleanup</li><li>Catalogue restructuring — convert size-as-product listings into proper WooCommerce variable products, populate missing SKUs, normalise product titles, add canonical tags and 301 redirects</li><li>Accessibility improvements toward WCAG 2.1 AA</li><li>Staging environment, full backups, and core/theme/plugin updates</li></ul>
+<h3>Phase 4 — Launch &amp; Handover (Week 5)</h3>
+<ul><li>Cross-browser and cross-device QA</li><li>Zero-downtime launch with redirect mapping so you keep every search ranking you have</li><li><strong>Recorded walkthrough video</strong> showing you how to add products, manage variations, and use the new tools</li><li>14 days of priority support after launch</li></ul>
+<hr>
+<h2>Deliverables</h2>
+<table><thead><tr>
+<th>Deliverable</th><th>Detail</th>
+</tr></thead><tbody>
+<tr><td>🎨 Figma designs</td><td>All key templates, desktop + mobile, approved before build</td></tr>
+<tr><td>🏗️ Redesigned WordPress/WooCommerce site</td><td>Fully built and launched</td></tr>
+<tr><td>🎬 Working hero video</td><td>Encoded, with poster fallback</td></tr>
+<tr><td>📐 Size &amp; fit guide</td><td>Built into product pages</td></tr>
+<tr><td>🤵 Fitting enquiry form</td><td>With real store contact details</td></tr>
+<tr><td>🔧 Complete technical remediation</td><td>All 16 audit items resolved</td></tr>
+<tr><td>📊 SEO + analytics</td><td>Schema, meta, Search Console, GA4</td></tr>
+<tr><td>🎥 Recorded training walkthrough</td><td>So you can run it yourself</td></tr>
+<tr><td>📄 Before/after report</td><td>Documenting every change</td></tr>
+<tr><td>🛡️ 14-day post-launch support</td><td>Priority response</td></tr>
+</tbody></table>
+<h2>Timeline</h2>
+<p><strong>5 weeks</strong> from kickoff, with approval checkpoints at the end of each phase.</p>
+<table><thead><tr>
+<th>Week</th><th>Milestone</th><th>Your involvement</th>
+</tr></thead><tbody>
+<tr><td>1</td><td>Research &amp; IA sign-off</td><td>One call</td></tr>
+<tr><td>2–3</td><td>Design mockups</td><td>Review &amp; approve</td></tr>
+<tr><td>3–5</td><td>Build &amp; technical</td><td>Light check-ins</td></tr>
+<tr><td>5</td><td>Launch &amp; handover</td><td>Final review</td></tr>
+</tbody></table>
+<h2>Investment</h2>
+<blockquote><h2>$1,400 USD — fixed price</h2>
+<p>Complete UI/UX redesign <strong>+</strong> full technical remediation. No hourly billing. No hidden costs.</p></blockquote>
+<p><strong>Payment schedule — three milestones:</strong></p>
+<table><thead><tr>
+<th>Payment</th><th>Amount</th><th>Due</th>
+</tr></thead><tbody>
+<tr><td>1st</td><td>$500</td><td>On project kickoff</td></tr>
+<tr><td>2nd</td><td>$500</td><td>On design approval (end of Week 3)</td></tr>
+<tr><td>3rd</td><td>$400</td><td>On launch and your sign-off</td></tr>
+</tbody></table>
+<p><strong>Includes:</strong> 3 rounds of design revisions · 2 rounds of build revisions · 14-day priority support · 30-day bug-fix warranty.</p>
+<h2>What this doesn't include</h2>
+<p>To be completely transparent: <strong>product photography</strong> (I'll art-direct and specify exactly what you need, and I can source stock imagery for category headers), <strong>copywriting from scratch</strong> (I'll polish and restructure your existing copy), <strong>paid plugin licences</strong> (I'll build on free tools wherever possible and flag anything paid before buying), and <strong>ongoing maintenance</strong> (available separately from $X/month).</p>
+<h2>Why this is worth doing now</h2>
+<p>You're in your <strong>centennial year</strong>. Every piece of marketing you do in 2026 — the window display, the Christmas season, the wedding and prom rush — is going to point people at this website. Right now it greets them with an error message, shows them grey placeholder boxes, and gives them a New York address.</p>
+<p>A hundred-year-old store should look like it has nothing left to prove. This gets you there.</p>
+<h2>Next steps</h2>
+<p>Reply to this email, or let's jump on a 15-minute call — I'll screen-share the site and walk you through the issues live, and we can talk through what you'd like the new homepage to say.</p>
+<p>If you'd rather start smaller, I've also sent a <strong>technical-only proposal at $500</strong> that fixes all 16 problems without changing the design. Happy to do that first and credit it toward the full project if you decide to go ahead within 60 days.</p>
+<p>Either way, I'd genuinely like to help you get this right for the hundredth year.</p>
+<p>Warm regards, <strong>[Your Name]</strong> [Your Email] · [Your Phone] · [Your Website]</p>
+<hr>
+<h2>Appendix — Quick Comparison</h2>
+<table><thead><tr>
+<th></th><th><strong>Proposal A</strong> — Technical</th><th><strong>Proposal B</strong> — UI/UX + Technical</th>
+</tr></thead><tbody>
+<tr><td><strong>Price</strong></td><td>$500</td><td>$1,400</td></tr>
+<tr><td>Fixes broken hero video</td><td>✅</td><td>✅</td></tr>
+<tr><td>Real contact page &amp; store details</td><td>✅</td><td>✅</td></tr>
+<tr><td>Refund policy + legal pages</td><td>✅</td><td>✅</td></tr>
+<tr><td>Security hardening</td><td>✅</td><td>✅</td></tr>
+<tr><td>SEO, schema &amp; analytics</td><td>✅</td><td>✅</td></tr>
+<tr><td>Image &amp; speed optimisation</td><td>✅</td><td>✅</td></tr>
+<tr><td>Catalogue &amp; variation restructuring</td><td>✅</td><td>✅</td></tr>
+<tr><td>Research &amp; information architecture</td><td>—</td><td>✅</td></tr>
+<tr><td>Figma designs (desktop + mobile)</td><td>—</td><td>✅</td></tr>
+<tr><td>Full visual redesign</td><td>—</td><td>✅</td></tr>
+<tr><td>Size &amp; fit guide</td><td>—</td><td>✅</td></tr>
+<tr><td>Tux/suit fitting enquiry form</td><td>—</td><td>✅</td></tr>
+<tr><td>Filtered shop experience</td><td>—</td><td>✅</td></tr>
+<tr><td>Heritage storytelling &amp; centennial</td><td>—</td><td>✅</td></tr>
+<tr><td>Mobile UX refinement</td><td>—</td><td>✅</td></tr>
+<tr><td>Accessibility (WCAG 2.1 AA)</td><td>—</td><td>✅</td></tr>
+<tr><td>Recorded training walkthrough</td><td>—</td><td>✅</td></tr>
+<tr><td><strong>Timeline</strong></td><td>7–10 days</td><td>5 weeks</td></tr>
+</tbody></table>
+<p><strong>Recommendation:</strong> If the budget allows, Proposal B is the better investment. Proposal A makes the site <em>work</em>; Proposal B makes it <em>sell</em> — and the technical work in A is included in B either way, so you're not paying twice for it.</p>
+<p>Full audit detail in: <code>site-audit-findings.md</code></p></div><div class="section-break"><h1>Site Audit — hardwickandcompany.com</h1>
+<p><strong>Client:</strong> Hardwick &amp; Company — Fine Men's Clothing, 70 2nd St NE, Cleveland, TN 37311 <strong>Platform:</strong> WordPress + WooCommerce <strong>Audited:</strong> [Date] <strong>Method:</strong> Manual page-by-page review — homepage, shop, category, product, cart, checkout, about, contact, and policy pages; plus sitemaps, robots.txt, media delivery, and product data structure.</p>
+<hr>
+<h2>Executive summary</h2>
+<p>Hardwick &amp; Company is a genuine Cleveland institution — a mercantile store founded in 1926 by C.L. Hardwick that grew into a woolen mill and is still trading a century later, known regionally for tux and suit fitting and for brands like Pendleton, The Normal Brand, Scully, Southern Casanova, Fish Hippie, Bald Headed Blues, Trask, Over Under, Genteal and Martin Dingman.</p>
+<p>The website does not reflect any of that. Three issues are urgent because they actively cost the business money today:</p>
+<ol><li><strong>The contact page still contains the WordPress theme's demo content</strong> — fake New York and Los Angeles addresses and <code>@crafty.shop</code> placeholder emails. There is no working way for a customer to reach the store.</li><li><strong>The homepage hero video is broken</strong> — an error message occupies the most valuable space on the site.</li><li><strong>The obvious <code>/contact/</code> URL returns HTTP 500</strong>, while the real page lives at <code>/contact-2/</code>.</li></ol>
+<p>Beyond those, the catalogue architecture is working against the business: 60+ duplicated categories with placeholder imagery, and product sizes created as separate products rather than variations.</p>
+<hr>
+<h2>🔴 CRITICAL</h2>
+<h3>1. Contact page contains theme demo / placeholder content</h3>
+<p><strong>Location:</strong> https://hardwickandcompany.com/contact-2/ (titled "Contact")</p>
+<p>The page renders the stock content shipped with the theme:</p>
+<blockquote><p><strong>New York</strong> — 456 189th Street, Lower East West Village <strong>Los Angeles</strong> — 12 Buenas Tardes Blvd., Griffith Hills General: howdy@crafty.shop · Press: press@crafty.shop · Returns: returns@crafty.shop · Wholesale: sales@crafty.shop</p></blockquote>
+<p><strong>Impact:</strong> No Cleveland address, no phone number, no store hours, no working email. A customer wanting to call the store, ask about stock, or book a tux fitting cannot. All four email addresses belong to the theme vendor, not the business — any message sent goes nowhere.</p>
+<p><strong>Also relevant:</strong> the business is at 70 2nd St NE, Cleveland, TN 37311. Older public listings reference 120 N. Ocoee St. and 92 Oak St. SW, so the site should carry the current address explicitly to avoid confusing existing customers.</p>
+<hr>
+<h3>2. Homepage hero video does not play</h3>
+<p><strong>Location:</strong> Homepage hero</p>
+<p>The player renders:</p>
+<blockquote><p><strong>Video Player</strong> Media error: Format(s) not supported or source(s) not found Download File: https://hardwickandcompany.com/wp-content/uploads/2024/09/hardwickvideobanner.mp4</p></blockquote>
+<p><strong>Diagnosis:</strong> The file <em>is</em> being served and returns <code>Content-Type: video/mp4</code>, so this is not a missing-file or permissions problem. The file is not in a web-deliverable state — most commonly an MP4 encoded with a codec browsers won't decode (e.g. HEVC/H.265), or one lacking the fast-start / progressive-download flag so playback never initialises. Either way the browser refuses it.</p>
+<p><strong>Impact:</strong> The single most valuable area of the homepage — the element that sets the emotional tone for a heritage menswear brand — is a black error box. For a store selling on craft and quality, this is the worst possible first impression.</p>
+<p><strong>Fix:</strong> Re-encode to H.264 MP4 (with a WebM alternative), enable fast-start, add a poster frame, and verify across Chrome, Safari, Firefox, iOS and Android.</p>
+<hr>
+<h3>3. <code>/contact/</code> returns HTTP 500</h3>
+<p><strong>Location:</strong> https://hardwickandcompany.com/contact/</p>
+<p>Returns a server error. The live contact page instead lives at the WordPress auto-generated slug <code>/contact-2/</code> — created when a page named "Contact" was duplicated.</p>
+<p><strong>Impact:</strong> Anyone typing the obvious URL, following an old link, or reaching it from a search result hits a broken page. <code>/contact-2/</code> is also an unprofessional URL to put on a business card, storefront sign, or Instagram bio.</p>
+<p><strong>Fix:</strong> Repair the 500 error, move the content to <code>/contact/</code>, and 301-redirect <code>/contact-2/</code> → <code>/contact/</code>.</p>
+<hr>
+<h2>🟠 HIGH</h2>
+<h3>4. Refund &amp; Returns policy is a duplicate of the Privacy Policy</h3>
+<p><strong>Locations:</strong> <code>/refund_returns/</code> and <code>/privacy-policy/</code></p>
+<p>Both pages contain <strong>identical text</strong> — Shipping, Refunds, Privacy, Payments &amp; Shipping Options, and Copyright sections are byte-for-byte the same on both URLs.</p>
+<p><strong>Impact:</strong></p>
+<ul><li><strong>Legal/compliance exposure</strong> — a returns policy that is actually a privacy policy may not satisfy consumer-protection disclosure requirements, and payment processors and Google Shopping expect a distinct, clearly-labelled returns policy.</li><li><strong>SEO</strong> — duplicate content; Google will likely index one and ignore the other.</li><li><strong>Trust</strong> — a customer checking return terms before buying a $300 blazer finds a privacy notice instead.</li></ul>
+<p><strong>Also in this text:</strong></p>
+<ul><li>Typo: <em>"Your use of <strong>Hardwickandcompany,com</strong> is subject to…"</em> (comma instead of a period)</li><li>Typo: <em>"Shipping and Handling charge <strong>will added</strong> per the purchased product"</em></li><li>Incomplete sentence: <em>"…on purchases made directly through as long as the returned product is not custom, visibly worn or damaged."</em> — the object of "through" is missing.</li></ul>
+<hr>
+<h3>5. Admin username publicly exposed</h3>
+<p><strong>Location:</strong> https://hardwickandcompany.com/wp-sitemap-users-1.xml</p>
+<p>The WordPress core user sitemap exposes <code>https://hardwickandcompany.com/author/hw-admin/</code>, revealing that the administrator account is <strong><code>hw-admin</code></strong>.</p>
+<p><strong>Impact:</strong> Username enumeration hands an attacker half of a login credential and makes brute-force and credential-stuffing attacks dramatically easier. Combined with the absence of visible login rate-limiting, this is a real risk.</p>
+<p><strong>Fix:</strong> Disable the user sitemap, block <code>/?author=</code> scanning, add login rate-limiting, and ideally rename the admin account.</p>
+<hr>
+<h3>6. Catalogue architecture: sizes created as separate products</h3>
+<p><strong>Location:</strong> e.g. https://hardwickandcompany.com/product-category/swim-shorts/</p>
+<p>"Water Activated Swim Trunks" exists as <strong>eleven separate products</strong> — five sizes (S, M, L, XL, 2XL) across two colourways, each its own product record and its own URL.</p>
+<p><strong>Impact:</strong></p>
+<ul><li><strong>Shop pages flood with near-identical rows</strong> — eleven listings for what a customer perceives as two products. It reads as clutter, not curation.</li><li><strong>SEO</strong> — eleven pages of near-duplicate content competing for the same query (keyword cannibalisation), diluting ranking potential across the whole catalogue.</li><li><strong>Inventory</strong> — stock, pricing, and edits must be repeated across every size record. Genuinely unmanageable at scale.</li><li><strong>UX</strong> — the customer must leave the grid and open a product page to discover that other sizes exist.</li></ul>
+<p><strong>Fix:</strong> Convert to true WooCommerce variable products — one product, size and colour as attributes with a single dropdown. Apply 301 redirects from the retired URLs.</p>
+<hr>
+<h3>7. 60+ product categories, almost entirely placeholder imagery and heavy duplication</h3>
+<p><strong>Location:</strong> https://hardwickandcompany.com/shop/</p>
+<p>The shop page lists <strong>over 60 product categories, essentially every one showing the default grey WooCommerce placeholder image</strong> rather than real product photography.</p>
+<p>Duplication is extensive:</p>
+<table><thead><tr>
+<th>Cluster</th><th>Duplicated categories</th>
+</tr></thead><tbody>
+<tr><td>Jackets</td><td>Jacket · Jackets · Jacket Coat Vest · Blazer · Blazers and Sport Coats · Sport Coat · Leather Jacket · Rain Jacket · Sweater Jacket</td></tr>
+<tr><td>Trousers</td><td>Pants &amp; Chino · Dress Pants · Straight Pants · Khakis · Bottoms · Jeans · Jeans &amp; Denim</td></tr>
+<tr><td>Knitwear</td><td>Sweater · Sweaters · Sweaters/Pullovers/Hoodies · Pullover · Quarter Zips · Sweatshirts</td></tr>
+<tr><td>Shirts</td><td>Casual Shirts · Dress Shirts · Long Sleeve · Short Sleeve · Polos · Polos &amp; Henley · Flannels · Tees · T-Shirt &amp; Tanks · Top</td></tr>
+<tr><td>Nightwear</td><td>Sleepwear · Sleepwear &amp; Underwear · Pajama · Lounge Pant · Lounge Shirt · Boxer · Underwear</td></tr>
+<tr><td>Tailoring</td><td>Suits · Suits &amp; Tuxedos · Vest · Vests · Suit Vest</td></tr>
+</tbody></table>
+<p>Additionally:</p>
+<ul><li><strong>"Uncategorized" is publicly visible</strong> — pure noise on a customer-facing page.</li><li><strong>Near-empty categories</strong> — "Suits &amp; Tuxedos", the category representing a signature high-value service, contains exactly <strong>one</strong> product.</li><li><strong>Slug inconsistency</strong> — "Scarves" resolves to the slug <code>scarfs</code>.</li><li><strong>There are no filters at all</strong> — no way to shop by size, colour, brand, or price.</li></ul>
+<p><strong>Impact:</strong> With no imagery and no filters, the shop page gives a customer no visual reason to click and no way to narrow down. For a store with this much inventory, this is the single largest conversion barrier on the site.</p>
+<hr>
+<h2>🟡 MEDIUM</h2>
+<h3>8. Broken heading hierarchy — six H1 tags on the homepage</h3>
+<p>The homepage renders six separate level-one headings:</p>
+<p><code>Fine Men's Clothing</code> · <code>Old Style - New Name</code> · <code>Stunning</code> · <code>Comfy</code> · <code>Sustainable</code> · <code>Stylish</code></p>
+<p><strong>Impact:</strong> Search engines use the H1 to determine what a page is about. Six competing H1s dilute topical focus and signal an unedited page. It also breaks screen-reader navigation for visually impaired users.</p>
+<h3>9. Homepage feature labels don't match their content</h3>
+<p>The four feature blocks are mislabelled relative to the copy inside them:</p>
+<table><thead><tr>
+<th>Label</th><th>Actual content</th>
+</tr></thead><tbody>
+<tr><td>Stunning</td><td>Brand names — Scully, Normal Brand, Southern Casanova</td></tr>
+<tr><td><strong>Comfy</strong></td><td>"Hardwick &amp; Company started as a mercantile store in 1926"</td></tr>
+<tr><td><strong>Sustainable</strong></td><td>"C.L. Hardwick would end up starting a woolen mill…"</td></tr>
+<tr><td><strong>Stylish</strong></td><td>"Today, Hardwick &amp; Company has continued that same mission…"</td></tr>
+</tbody></table>
+<p>The 1926 founding and the woolen mill history are sitting under "Comfy" and "Sustainable" — labels that were clearly never updated from the template. <strong>The brand's most valuable story is misfiled under headings that make no sense.</strong></p>
+<h3>10. Visible theme placeholder text site-wide</h3>
+<p>Every page on the site renders the literal string:</p>
+<blockquote><p><strong>Type and Press "enter" to Search</strong></p></blockquote>
+<p>This is search-field placeholder copy leaking into visible page content, appearing on the homepage, shop, product, cart, about, contact, and policy pages. It signals an unfinished site.</p>
+<h3>11. Image delivery is unoptimised</h3>
+<ul><li>Product pages load full-resolution <code>-scaled.jpeg</code> files (e.g. <code>original-14-scaled.jpeg</code>) rather than appropriately sized derivatives.</li><li>Decorative images are full-size macOS screenshots — <code>Screenshot-2024-09-07-at-11.50.46 PM.png</code> — typically multi-megabyte retina PNGs.</li><li>No WebP or AVIF anywhere; no responsive <code>srcset</code>; no lazy loading.</li></ul>
+<p><strong>Impact:</strong> Direct hit to mobile load time, Core Web Vitals, and bounce rate — on a site whose customers increasingly browse on phones.</p>
+<h3>12. No SEO plugin, schema, or meta control</h3>
+<ul><li><code>/sitemap_index.xml</code> returns a 404 — no Yoast, Rank Math, or equivalent is installed. Only the bare WordPress core sitemap (<code>/wp-sitemap.xml</code>) exists.</li><li>No <strong>LocalBusiness schema</strong> — so Google has no structured address, phone, hours, or geo data for a business whose trade depends on local footfall.</li><li>No <strong>Product schema</strong> — prices and availability won't surface in search results or Google Shopping.</li><li>No per-page meta titles or descriptions under the site's control.</li></ul>
+<h3>13. robots.txt throttles crawlers</h3>
+<pre><code>user-agent: *
+disallow:
+crawl-delay: 60</code></pre>
+<ul><li><strong><code>crawl-delay: 60</code></strong> caps crawlers at one page per minute. With a catalogue this large, full indexing becomes impractical.</li><li><strong>No <code>Sitemap:</code> directive</strong> — crawlers must guess where the sitemap lives.</li></ul>
+<h3>14. Product data quality</h3>
+<ul><li><strong><code>SKU: N/A</code></strong> on products — nothing to key inventory against.</li><li><strong>Inconsistent title casing</strong> — <em>"Pendleton Flannel – Tan &amp; Rust plaid"</em> (lowercase "plaid") alongside <em>"the normal brand gerard washed twill shirt - xl"</em> (all lowercase brand name).</li><li><strong>Sizes embedded in titles</strong> — <em>"stephen indigo gingham from normal brand medium"</em>, <em>"water activated swim trunks clearwater pacific blue 2xl"</em>. This is the visible symptom of issue #6 and makes titles unreadable in search results.</li></ul>
+<h3>15. Cart and checkout lack trust signals</h3>
+<p>The cart renders correctly and <code>/checkout/</code> routes properly when empty, but the flow carries none of the reassurance a first-time buyer looks for: no shipping cost visibility before checkout, no security or payment trust badges, no progress indicator, and no returns reassurance at the point of purchase.</p>
+<h3>16. Missing conversion and retention elements</h3>
+<ul><li><strong>No email capture anywhere</strong> — no newsletter signup, despite the Privacy Policy referencing a marketing list sent 2–3 times monthly. The list is referenced but never built on-site.</li><li><strong>No customer reviews or testimonials</strong> — for a business built on a century of personal relationships, this is the most persuasive content available and none of it is on the site.</li><li><strong>No size or fit guide</strong> — critical for a menswear retailer specifically known for tux and suit fitting.</li><li><strong>No fitting appointment mechanism</strong> — the signature high-value service is invisible.</li></ul>
+<hr>
+<h2>🔵 LOW / COPY</h2>
+<table><thead><tr>
+<th>Issue</th><th>Location</th>
+</tr></thead><tbody>
+<tr><td><em>"When only the finest will <strong>due</strong>"</em> — should be "do"</td><td>Homepage hero</td></tr>
+<tr><td><em>"Hardwickandcompany<strong>,</strong>com"</em> — comma for period</td><td>Privacy / Refund policy</td></tr>
+<tr><td><em>"Shipping and Handling charge <strong>will added</strong>"</em></td><td>Privacy / Refund policy</td></tr>
+<tr><td>Incomplete sentence: <em>"…made directly through as long as…"</em></td><td>Privacy / Refund policy</td></tr>
+<tr><td><em>"Hardwick and Company offers some of the top-of-the-line <strong>brand</strong> such as"</em> — should be "brands"</td><td>Homepage</td></tr>
+</tbody></table>
+<hr>
+<h2>Priority order</h2>
+<table><thead><tr>
+<th>Priority</th><th>Items</th>
+</tr></thead><tbody>
+<tr><td><strong>Do immediately</strong></td><td>1 (demo contact content) · 2 (hero video) · 3 (<code>/contact/</code> 500)</td></tr>
+<tr><td><strong>Do this month</strong></td><td>4 (refund policy) · 5 (username exposure) · 7 (categories) · 13 (robots.txt)</td></tr>
+<tr><td><strong>Do this quarter</strong></td><td>6 (variations) · 8 (headings) · 11 (images) · 12 (SEO/schema) · 16 (conversion)</td></tr>
+<tr><td><strong>Polish</strong></td><td>9 · 10 · 14 · 15 · copy fixes</td></tr>
+</tbody></table>
+<hr>
+<h2>What's genuinely working</h2>
+<p>Worth saying plainly, because it shapes the recommendation:</p>
+<ul><li><strong>The brand is exceptional.</strong> A 1926 founding, a woolen mill, a century of continuous trade, and regional fame for tux and suit fitting. Very few retailers have this story.</li><li><strong>2026 is the centennial year.</strong> A once-in-a-lifetime marketing moment that the site currently mentions only as "nearly 100 years".</li><li><strong>The About page is structurally sound</strong> — the "find your style" section (Commitment to quality, Comfort meets everyday cool, The perfect fit, Brilliant Minds) is well-conceived and close to good. It needs real photography and the fitting service made actionable.</li><li><strong>WooCommerce is functioning.</strong> Cart, account, and checkout routing all work; the platform is a solid base to build on rather than something to replace.</li><li><strong>Product descriptions are well written</strong> — the Pendleton flannel copy is genuinely good retail writing.</li><li><strong>The catalogue is deep</strong> — brands most independents can't get hold of. The inventory is an asset currently hidden behind placeholder images.</li></ul>
+<p><strong>Bottom line:</strong> this is not a rebuild-from-scratch situation. It's a strong business with a website that was launched unfinished and never finished. The fixes are well-understood and bounded.</p></div>
+</div>
+</body>
+</html>
